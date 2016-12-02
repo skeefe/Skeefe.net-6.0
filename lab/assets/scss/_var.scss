@@ -1,0 +1,144 @@
+/* ---- Sitewide Variables ---- */
+
+/* General */
+
+// Site Colours
+$white: #fff;
+$black: #000;
+
+$grey-9: #050505;
+$grey-8: #111;
+$grey-7: #222;
+$grey-6: #333;
+$grey-5: #555;//mid
+$grey-4: #999;
+$grey-3: #ccc;
+$grey-2: #dedede;
+$grey-1: #eee;
+
+$green-8:#08452c;
+$green-7:#0a5c3b;
+$green-6:#0d734a;
+$green-5:#0f8a59; //mid
+$green-4: #14b876;
+$green-3: #19e694;
+$green-2: #5AEDB2;
+
+$overlay-md: rgba(0,0,0,0.78);
+$overlay-sm: rgba(0,0,0,0.6);
+
+
+/* Misc */
+
+// Breakpoints
+$screen-xl:1400px; //Extra wide
+$screen-lg:1200px; //Desktop
+$screen-md:960px; //Landscape Tablet
+$screen-sm:768px; //Portrait Tablet
+$screen-xs:640px; //Landscape Phone
+$screen-xxs:480px; //Portrait Phone
+
+// Transitions
+$transition-xl: 50ms ease-out;
+$transition-lg: 100ms ease-out;
+$transition-md: 200ms ease-out;
+$transition-sm: 300ms ease-out;
+$transition-xs: 400ms ease-out;
+
+//Box-shadow
+$shadow-md: 0 2px 2px 0 rgba(0,0,0,0.2);
+
+//Tables
+$table-border: $grey-8;
+$theading-background: $grey-8;
+$table-row-altnerate: $grey-6;
+$table-row-hover: $green-8;
+
+
+/* Layout */
+
+//vw Widths
+$col12:100vw;
+$col11:91.66vw;
+$col10:83.33vw;
+$col9:75vw;
+$col8:66.66vw;
+$col7:58.33vw;
+$col6:50vw;
+$col5:41.66vw;
+$col4:33.33vw;
+$col3:25vw;
+$col2:16.66vw;
+$col1:8.33vw;
+
+//Children Widths
+$child-col12:100%;
+$child-col11:91.66%;
+$child-col10:83.33%;
+$child-col9:75%;
+$child-col8:66.66%;
+$child-col7:58.33%;
+$child-col6:50%;
+$child-col5:41.66%;
+$child-col4:33.33%;
+$child-col3:25%;
+$child-col2:16.66%;
+$child-col1:8.33%;
+
+// Spacing
+$space-xxl: 3rem; //48px
+$space-xl: 2rem; //32px
+$space-lg: 1.5rem; //24px
+$space-md: 1rem; //16px
+$space-sm: 0.75rem; //12px
+$space-xs: 0.625rem; //10px
+$space-xxs: 0.5rem; //8px
+$space-xxxs: 0.25rem; //4px
+$space-xxxxs: 0.125rem; //2px
+
+//Border
+$border-md:0.25rem solid; //2px
+$border-sm:0.125rem solid; //2px
+$border-xs:1px solid; //1px
+
+
+
+//Box Shadow
+
+
+/* Typography */
+
+//Colours
+$heading-colour-lg:$white;
+$heading-colour-md:$grey-1;
+$heading-colour-sm:$grey-2;
+$copy-colour:$grey-3;
+$link-color:$green-5;
+$link-color-hover:$green-4;
+
+// Font Families
+$font-heading: georgia, serif;
+$font-copy: calibri, sans-serif;
+
+// Font Sizing
+$size-xxl: 2rem; //32px
+$size-xl: 1.5rem; //24px
+$size-lg: 1.125rem; //18px
+$size-md: 1rem; //16px
+$size-sm: 0.875rem; //14px
+$size-xs: 0.75rem; //12px
+$size-xxs: 0.625rem; //10px 
+
+// Font Weights
+$weight-copy:500;
+$weight-heading:700;
+$weight-link:700;
+
+// Line-Height
+$line-lg:2;
+$line-md:1.4;
+$line-sm:1;
+$line-xs:0.5;
+
+//Icon
+$icon-md: 1.75rem;

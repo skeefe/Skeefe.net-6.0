@@ -1,0 +1,39 @@
+header.primary{
+	background:$grey-8;
+	overflow:visible;
+	padding:$space-xs $space-md;
+	position:fixed;
+	width:100%;
+	z-index: 5;
+
+	@media (min-width: $screen-md){
+		height:100vh;
+		padding:$space-lg $space-md;
+		width:$col3;
+	}
+	@media (min-width: $screen-lg){
+		padding:$space-lg;
+		width:$col2;
+	}
+	
+	.logo{
+		display:block;
+		float:left;
+		width:5rem;
+
+		@media (min-width: $screen-md){
+			float:none;
+			width:100%;
+		}
+
+		path{
+			fill:$grey-3;
+			transition:fill $transition-md;
+		}
+
+		&:hover path{
+			fill:$white;
+		}
+	}
+
+}

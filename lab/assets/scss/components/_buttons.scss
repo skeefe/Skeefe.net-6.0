@@ -1,0 +1,36 @@
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+#content .btn{
+	background:$green-6;
+	border:none;
+	box-shadow:$shadow-md;
+	color:$white;
+	cursor:pointer;
+	display:block;
+	font:$size-md $font-copy;
+	line-height:$line-sm;
+	margin-bottom:$space-xxs;
+	padding:$space-sm $space-md;
+	text-align:center;
+	transition:background $transition-lg;
+	width:100%;
+
+	&:hover,
+	&:focus,
+	&:active{
+		background:$green-7;
+		color:$white;
+	}
+
+	&.btn--lg{
+		font:$size-lg $font-copy;
+		padding:$space-sm $space-xl;
+		
+	}
+}
+
+input[type="reset"]{
+	background:$green-8;
+}

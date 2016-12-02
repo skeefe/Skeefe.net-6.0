@@ -1,0 +1,5 @@
+@mixin overlay {
+	background:$overlay-sm;
+	padding:$space-md;
+	transition:background $transition-xs;
+}

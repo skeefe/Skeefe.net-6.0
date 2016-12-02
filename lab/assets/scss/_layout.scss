@@ -1,0 +1,120 @@
+#content{
+	overflow:auto;
+	padding:$space-xl*2.5 0 0;
+
+	@media (min-width: $screen-md){
+		margin-left:$col3;
+		padding:$space-xl 0;
+	}
+
+	@media (min-width: $screen-lg){
+		margin-left:$col2;
+	}
+}
+
+.section{
+	margin-bottom:$line-md * $size-md;
+}
+
+.layout{
+
+	.layout__primary{
+		padding:0 $space-md $space-md;
+
+
+		@media (min-width: $screen-lg){
+			float:left;
+			padding:$space-xs*2 0 $space-md $space-lg;
+			width:$child-col8;
+		}
+
+	}
+
+	.layout__secondary{
+		overflow: auto;
+		padding:0 $space-md $space-md;
+
+		@media (min-width: $screen-lg){
+			float:left;
+			padding:0 $space-lg $space-md;
+			width:$child-col4;
+		}
+
+		.section{
+
+			@media (min-width: $screen-xs){
+				float:left;
+				width:$child-col6;
+
+				&:nth-child(2n+1){
+					padding-right:$space-md/2;
+				}
+				&:nth-child(2n){
+					padding-left:$space-md/2;
+				}
+			}
+
+			@media (min-width: $screen-lg){
+				float:none;
+				width:$child-col12;
+
+				&:nth-child(2n+1),
+				&:nth-child(2n){
+					padding:0;
+				}
+			}
+
+			.inner{
+				background:$grey-8;
+				padding:$space-lg;
+			}
+		}
+
+	}
+
+	&.layout--right{
+		
+	}
+
+}
+
+
+
+
+/* General Layout */
+.col-12{
+	width:$col12;
+}
+.col-11{
+	width:$col11;
+}
+.col-10{
+	width:$col10;
+}
+.col-9{
+	width:$col9;
+}
+.col-8{
+	width:$col8;
+}
+.col-7{
+	width:$col7;
+}
+.col-6{
+	width:$col6;
+}
+.col-5{
+	width:$col5;
+}
+.col-4{
+	width:$col4;
+}
+.col-3{
+	width:$col3;
+}
+.col-2{
+	width:$col2;
+}
+.col-1{
+	width:$col1;
+}

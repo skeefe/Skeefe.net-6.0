@@ -1,0 +1,19 @@
+#work-details{
+	@media (min-width: $screen-lg){
+		margin:0 1.5rem 0 -1.5rem;
+	}
+
+	h1{
+		display:inline-block;
+	}
+
+	.view-site{
+		margin-top:-$space-xxxs*1.5;
+
+		@media (min-width: $screen-xs){
+			float:right;			
+			width:auto;
+		}
+	}
+
+}

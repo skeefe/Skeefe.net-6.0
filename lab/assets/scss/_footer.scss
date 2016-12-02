@@ -1,0 +1,41 @@
+footer.primary{
+	color:$grey-4;
+	font:$size-sm $font-copy;
+	padding:$space-md;
+	text-align: center;
+
+	@media (min-width: $screen-md){
+		bottom:0;
+		position:fixed;
+		width:$col3;
+		z-index: 5;
+	}
+
+	@media (min-width: $screen-lg){
+		width:$col2;
+	}
+
+	nav{
+		margin:0 0 $space-xs;
+
+		li{
+			display:inline;
+
+			a{
+				display:inline-block;
+				margin:0 $space-xxs/2;
+
+				.icon{
+					fill:$grey-4;
+					transition:fill $transition-md;
+					width:$space-lg;
+				}
+
+				&:hover .icon{
+					fill:$green-5;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,104 @@
+input:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]),
+textarea,
+select{
+	background:$grey-8;
+	border:1px solid $grey-6;
+	display:block;
+	outline:none;
+	margin-bottom:$space-xxs;
+	padding:$space-xxs $space-sm;
+	transition:background $transition-md, border-color $transition-md;
+	width:100%;
+
+	@media (min-width: $screen-sm){
+		flex:1;
+	}
+
+	&:hover,
+	&:focus{
+		background:$grey-8;
+		border-color:$green-6;
+	}
+}
+textarea{
+	height:100px;
+}
+
+:-ms-input-placeholder{  
+   color: $grey-4;  
+}
+::-moz-placeholder{
+   color: $grey-4;
+}
+::-webkit-input-placeholder{
+   color: $grey-4;
+}
+
+
+.form__row{
+	padding:$space-xxs/2 0;
+	width:100%;
+
+	@media (min-width: $screen-sm){
+		display: flex;
+	}
+
+	label{
+		display:block;
+		margin-bottom:$space-xxs/3;
+
+		&:first-child{
+
+			@media (min-width: $screen-sm){
+				padding-right:$space-md;
+				width:6.5rem;
+			}
+
+		}			
+
+		&:last-child{
+			background:$grey-8;
+			border:1px solid $grey-6;
+			display:inline-block;
+
+			@media (min-width: $screen-sm){
+				height:2.5rem;
+				margin-left:$space-md;
+				transition:background $transition-md, border-color $transition-md;
+				width:8rem;
+
+				&:hover{
+					background:$grey-8;
+					border-color:$green-6;
+				}
+			}
+		}
+
+	}
+}
+
+.form__row.form__row--submit{
+	margin-top:$space-lg;
+	display: block;
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button{
+
+		@media (min-width: $screen-sm){
+			display:inline-block;
+			min-width:200px;
+			width:auto;
+
+			&:first-child{
+				margin-left:6.5rem;
+			}
+
+		}
+	}
+
+	input[type="reset"]{
+		float:right;
+	}
+}

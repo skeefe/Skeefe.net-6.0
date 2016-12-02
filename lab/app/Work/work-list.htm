@@ -1,0 +1,21 @@
+<div class="layout__secondary">
+	<section id="work-list" class="section">
+		<div class="inner">
+			<h2>Featured Work</h2>
+			<ul>
+				<li *ngFor="let work of works" (click)="onSelect(work)">
+					<img src="http://placehold.it/400x225" alt="Thumbnail of Logo">
+					<span>{{work.title}}</span>
+				</li>
+			</ul>
+		</div>
+	</section>
+</div>
+
+<div class="layout__primary">
+	<section id="work-details" class="section">
+		<div class="inner">
+			<router-outlet></router-outlet>
+		</div>
+	</section>
+</div>

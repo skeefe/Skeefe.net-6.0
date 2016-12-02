@@ -1,0 +1,65 @@
+#content{
+	h1{
+		color:$heading-colour-lg;
+		font-family:$font-heading;
+		font-size:$size-xl;
+		line-height:$line-md;
+		margin-bottom:$space-lg;
+	}
+	h2{
+		color:$heading-colour-md;
+		font-family:$font-heading;
+		font-size:$size-lg;
+		line-height:$line-md;
+		margin-bottom:$space-md;
+	}
+	.layout__secondary h2{
+		margin-top:$space-xxxxs;
+	}
+	h3{
+		color:$heading-colour-sm;
+		font-family:$font-heading;
+		font-size:$size-md;
+		margin-bottom:$space-md;
+	}
+	th{
+		color:$heading-colour-sm;
+		font-family:$font-heading;
+		font-size:$size-md;
+		text-align: left;
+	}
+	p, li, button, label, input, textarea, td{
+		color:$copy-colour;
+		font-family:$font-copy;
+		font-size:$size-md;
+		line-height:$line-md;
+	}
+	p, ul, ol, figure, table{
+		margin-bottom:$line-md * $size-md;
+	}
+	a{
+		color:$link-color;
+		text-decoration: none;
+
+		transition:color $transition-lg;
+
+		&:hover{
+			color:$link-color-hover;
+		}
+	}
+
+	ol{
+		list-style:decimal outside none;
+		margin-left:$space-md;
+	}
+	ul{
+		list-style:square outside none;
+		margin-left:$space-md;
+	}
+
+	.icon{
+		//font-size:$icon-md;
+		//line-height:$size-md;
+	}
+	
+}

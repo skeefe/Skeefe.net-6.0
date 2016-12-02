@@ -1,0 +1,39 @@
+#social-nav{
+
+	ul{
+		border-top:1px solid $grey-6;
+		list-style:none inside none;
+		margin:0;
+	
+		li{
+			border-bottom:1px solid $grey-6;
+
+			a{
+				color:$grey-2;
+				display: block;
+				padding:$space-xs $space-sm;
+				transition:color $transition-md;
+
+				.icon{
+					fill:$grey-2;
+					margin-right:$space-xs;
+					margin-bottom:-$space-xs/1.5;
+					transition:fill $transition-md;
+					width:$space-lg;
+				}
+
+				&:hover{
+					color:$link-color-hover;
+
+					.icon{
+						fill:$green-5;
+					}
+				}
+				
+			}
+			
+		}
+
+	}
+	
+}

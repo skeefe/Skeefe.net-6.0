@@ -1,0 +1,24 @@
+table{
+	border-bottom:$border-sm $table-border;
+	border-top:$border-xs $table-border;
+	width:100%;
+}
+th{
+	background:$theading-background;
+	padding:$space-md $space-sm;
+}
+tr{
+	td{
+		border-bottom:$border-xs $table-border;
+		padding:$space-xs*.5 $space-sm;
+		transition:background $transition-md;
+	}
+
+	&:nth-child(2n) td{
+		background:$table-row-altnerate;
+	}
+
+	&:hover td{
+		background:$table-row-hover;
+	}
+}
