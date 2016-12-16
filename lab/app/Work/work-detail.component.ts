@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { Work } from './work.service';
-
-//import { Work, WorkService } from './work.service'; // Think this is wrong.
-//import { DialogService }  from '../dialog.service'; //Don't think I need this.
-
+import { Work } from './work';
 
 @Component({
 	templateUrl: './app/Work/work-detail.htm'
@@ -27,10 +23,6 @@ export class WorkDetailComponent implements OnInit {
 
 	gotoWork() {
 		let workID = this.work ? this.work.id : null;
-		// Pass along the work id if available
-		// so that the WorkListComponent can select that work.
-		// Add a totally useless `sdk` parameter for kicks.
-		// Relative navigation back to the work list.
 		this.router.navigate(['../', { id: workID }], { relativeTo: this.route });
 	}
 }

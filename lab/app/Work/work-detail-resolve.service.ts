@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Router, Resolve, ActivatedRouteSnapshot } from '@angular/router';
 
-import { Work, WorkService } from './work.service';
+import { Work } from './work';
+import { WorkService } from './work.service';
 
 @Injectable()
 export class WorkDetailResolve implements Resolve<Work> {
@@ -13,8 +14,8 @@ export class WorkDetailResolve implements Resolve<Work> {
 		return this.cs.getWork(id).then(work => {
 			if (work) {
 				return work;
-			} else { // id not found
-				this.router.navigate(['/work']);
+			} else {
+				this.router.navigate(['/Work']); //Alternatively redirect to a "404 Work" page.
 				return false;
 			}
 		});

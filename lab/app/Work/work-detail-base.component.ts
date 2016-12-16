@@ -1,11 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	templateUrl: './app/Work/work-detail-base.htm'
 })
 
-export class WorkDetailBaseComponent implements OnInit {
-	ngOnInit() {
-
-	}
-}
+export class WorkDetailBaseComponent { }

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 
-import { Work, WorkService } from './work.service';
+import { Work } from './work';
+import { WorkService } from './work.service';
 
 @Component({
 	templateUrl: './app/Work/work-list.htm'
@@ -31,8 +32,6 @@ export class WorkListComponent implements OnInit {
 
 	onSelect(work: Work) {
 		this.selectedId = work.id;
-
-		// Navigate with relative link
 		this.router.navigate([work.id], { relativeTo: this.route });
 	}
 }

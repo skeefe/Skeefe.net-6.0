@@ -21,8 +21,6 @@ System.register(['@angular/core'], function(exports_1, context_1) {
             ContactComponent = (function () {
                 function ContactComponent() {
                 }
-                ContactComponent.prototype.ngOnInit = function () {
-                };
                 ContactComponent = __decorate([
                     core_1.Component({
                         templateUrl: './app/Contact/contact.htm'

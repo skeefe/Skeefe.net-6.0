@@ -43,4 +43,5 @@ import { WorkDetailResolve } from './work-detail-resolve.service';
 		WorkDetailResolve
 	]
 })
+
 export class WorkRoutingModule { }

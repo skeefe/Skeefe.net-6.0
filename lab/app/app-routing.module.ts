@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-//import { CommonModule }     from '@angular/common';
 
 import { HomeComponent } from "./Home/Home.component";
-import { SkillsetComponent } from "./Skillset/Skillset.component";
+import { SkillsetComponent } from "./Skillset/skillset.component";
 import { ContactComponent } from "./Contact/Contact.component";
 import { Error404Component } from "./Error/Error404.component";
 
-
 @NgModule({
 	imports: [
-		//CommonModule,
 		RouterModule.forRoot([
 			{
 				path: '',
@@ -23,7 +20,7 @@ import { Error404Component } from "./Error/Error404.component";
 			},
 			{
 				path: 'Work',
-				loadChildren: 'app/work/work.module#WorkModule'
+				loadChildren: 'app/Work/work.module#WorkModule'
 			},
 			{
 				path: 'Skillset',
@@ -44,7 +41,6 @@ import { Error404Component } from "./Error/Error404.component";
 	],
 	declarations: [
 		HomeComponent,
-		SkillsetComponent,
 		ContactComponent,
 		Error404Component
 	]

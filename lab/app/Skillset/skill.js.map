@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/Skillset/skill.ts"],"names":[],"mappings":";;;;;;;YAAA,aAAa;YACb;gBAAA;gBAGA,CAAC;gBAAD,YAAC;YAAD,CAHA,AAGC,IAAA;YAHD,yBAGC,CAAA","file":"skill.js","sourcesContent":["//Skill Model\r\nexport class Skill {\r\n\ttitle: string;\r\n\tlevel: number;\r\n}"],"sourceRoot":"/lab"}

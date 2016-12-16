@@ -21,8 +21,6 @@ System.register(['@angular/core'], function(exports_1, context_1) {
             HomeComponent = (function () {
                 function HomeComponent() {
                 }
-                HomeComponent.prototype.ngOnInit = function () {
-                };
                 HomeComponent = __decorate([
                     core_1.Component({
                         templateUrl: './app/Home/home.htm'

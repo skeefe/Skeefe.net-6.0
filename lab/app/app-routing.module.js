@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/router', "./Home/Home.component", "./Skillset/Skillset.component", "./Contact/Contact.component", "./Error/Error404.component"], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/router', "./Home/Home.component", "./Skillset/skillset.component", "./Contact/Contact.component", "./Error/Error404.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, Home_component_1, Skillset_component_1, Contact_component_1, Error404_component_1;
+    var core_1, router_1, Home_component_1, skillset_component_1, Contact_component_1, Error404_component_1;
     var AppRoutingModule;
     return {
         setters:[
@@ -23,8 +23,8 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
             function (Home_component_1_1) {
                 Home_component_1 = Home_component_1_1;
             },
-            function (Skillset_component_1_1) {
-                Skillset_component_1 = Skillset_component_1_1;
+            function (skillset_component_1_1) {
+                skillset_component_1 = skillset_component_1_1;
             },
             function (Contact_component_1_1) {
                 Contact_component_1 = Contact_component_1_1;
@@ -39,7 +39,6 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
                 AppRoutingModule = __decorate([
                     core_1.NgModule({
                         imports: [
-                            //CommonModule,
                             router_1.RouterModule.forRoot([
                                 {
                                     path: '',
@@ -52,11 +51,11 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
                                 },
                                 {
                                     path: 'Work',
-                                    loadChildren: 'app/work/work.module#WorkModule'
+                                    loadChildren: 'app/Work/work.module#WorkModule'
                                 },
                                 {
                                     path: 'Skillset',
-                                    component: Skillset_component_1.SkillsetComponent
+                                    component: skillset_component_1.SkillsetComponent
                                 },
                                 {
                                     path: 'Contact',
@@ -73,7 +72,6 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
                         ],
                         declarations: [
                             Home_component_1.HomeComponent,
-                            Skillset_component_1.SkillsetComponent,
                             Contact_component_1.ContactComponent,
                             Error404_component_1.Error404Component
                         ]

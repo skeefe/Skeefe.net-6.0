@@ -37,7 +37,7 @@ System.register(['@angular/core', '@angular/router', './work.service'], function
                             return work;
                         }
                         else {
-                            _this.router.navigate(['/work']);
+                            _this.router.navigate(['/Work']); //Alternatively redirect to a "404 Work" page.
                             return false;
                         }
                     });

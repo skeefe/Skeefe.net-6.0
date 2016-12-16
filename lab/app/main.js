@@ -2,7 +2,6 @@ System.register(['@angular/platform-browser-dynamic', './app.module'], function(
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var platform_browser_dynamic_1, app_module_1;
-    var platform;
     return {
         setters:[
             function (platform_browser_dynamic_1_1) {
@@ -12,8 +11,7 @@ System.register(['@angular/platform-browser-dynamic', './app.module'], function(
                 app_module_1 = app_module_1_1;
             }],
         execute: function() {
-            platform = platform_browser_dynamic_1.platformBrowserDynamic();
-            platform.bootstrapModule(app_module_1.AppModule);
+            platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
         }
     }
 });

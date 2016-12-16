@@ -1,4 +1,4 @@
-System.register(['@angular/core'], function(exports_1, context_1) {
+System.register(['@angular/core', 'rxjs/Rx', './skillset.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,24 +10,37 @@ System.register(['@angular/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
+    var core_1, skillset_service_1;
     var SkillsetComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (_1) {},
+            function (skillset_service_1_1) {
+                skillset_service_1 = skillset_service_1_1;
             }],
         execute: function() {
             SkillsetComponent = (function () {
-                function SkillsetComponent() {
+                function SkillsetComponent(skillsetService) {
+                    this.skillsetService = skillsetService;
                 }
+                SkillsetComponent.prototype.loadSkillset = function () {
+                    var _this = this;
+                    this.skillsetService.getSkillset()
+                        .subscribe(function (skillset) { return _this.skillset = skillset; }, function (err) {
+                        console.log(err);
+                    });
+                };
                 SkillsetComponent.prototype.ngOnInit = function () {
+                    this.loadSkillset();
                 };
                 SkillsetComponent = __decorate([
                     core_1.Component({
                         templateUrl: './app/Skillset/skillset.htm'
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [skillset_service_1.SkillsetService])
                 ], SkillsetComponent);
                 return SkillsetComponent;
             }());

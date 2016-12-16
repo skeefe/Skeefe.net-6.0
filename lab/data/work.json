@@ -1,0 +1,22 @@
+[
+	{
+		"id": "Rugby",
+		"title": "Rugby.com.au",
+		"url": "http://www.rugby.com.au"
+	},
+	{
+		"id": "Sydney7s",
+		"title": "Sydney 7s",
+		"url": "http://www.sydney7s.com.au"
+	},
+	{
+		"id": "CornerstoneDigital",
+		"title": "Cornerstone Digital",
+		"url": "http://cornerstone-digital.com.au"
+	},
+	{
+		"id": "RSLPoppyShop",
+		"title": "RSL Poppy Shop",
+		"url": "https://poppyshop.org.au/"
+	}
+]

@@ -1,7 +1,7 @@
 <div class="layout__primary">
 	<section id="skillset" class="section">
 		<div class="inner">
-			<h1>Skillset</h1>
+			<h1>Primary Skillset</h1>
 			<table>
 				<thead>
 					<tr>
@@ -10,33 +10,9 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>HTML 5</td>
-						<td>Strong</td>
-					</tr>
-					<tr>
-						<td>HTML 5</td>
-						<td>Strong</td>
-					</tr>
-					<tr>
-						<td>HTML 5</td>
-						<td>Strong</td>
-					</tr>
-					<tr>
-						<td>HTML 5</td>
-						<td>Strong</td>
-					</tr>
-					<tr>
-						<td>HTML 5</td>
-						<td>Strong</td>
-					</tr>
-					<tr>
-						<td>HTML 5</td>
-						<td>Strong</td>
-					</tr>
-					<tr>
-						<td>HTML 5</td>
-						<td>Strong</td>
+					<tr *ngFor="let skill of skillset">
+						<td>{{skill.title}}</td>
+						<td>{{skill.level}}</td>
 					</tr>
 				</tbody>
 			</table>
@@ -46,9 +22,16 @@
 
 <div class="layout__secondary">
 
-	<section id="heroImage" class="section">
+	<section id="skillset-filter" class="section">
 		<div class="inner">
 			<h2>Filter Skillet</h2>
+			<ul class="filter">
+				<li class="active"><a href="#">Show All</a></li>
+				<li><a href="#">Languages and Frameworks</a></li>
+				<li><a href="#">Web Software</a></li>
+				<li><a href="#">General Web</a></li>
+				<li><a href="#">Business Skills</a></li>
+			</ul>
 		</div>
 	</section>
 

@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/Work/work.ts"],"names":[],"mappings":";;;;;;;YAAA,YAAY;YACZ;gBAAA;gBAIA,CAAC;gBAAD,WAAC;YAAD,CAJA,AAIC,IAAA;YAJD,uBAIC,CAAA","file":"work.js","sourcesContent":["//Work Model\r\nexport class Work {\r\n\tid: string;\r\n\ttitle: string;\r\n\turl: string;\r\n}\r\n"],"sourceRoot":"/lab"}

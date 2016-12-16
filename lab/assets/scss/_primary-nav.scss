@@ -45,8 +45,11 @@ nav.primary{
 		}
 
 		li{
-			//border-bottom:1px solid $grey-6;
 			display:block;
+
+			@media (min-width: $screen-md){
+				border-bottom:1px solid $grey-6;
+			}
 			
 			a{
 				color:$grey-2;

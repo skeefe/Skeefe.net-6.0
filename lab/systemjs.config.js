@@ -21,8 +21,9 @@ System.import('app').then(null, console.error.bind(console));
 			'@angular/router': 'npm:@angular/router/bundles/router.umd.js',
 			'@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 			// other libraries
-			'rxjs': 'npm:rxjs',
-			'angular-in-memory-web-api': 'npm:angular-in-memory-web-api'
+			//'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',// Not used
+			'rxjs': 'npm:rxjs'
+			
 		},
 		// packages tells the System loader how to load when no filename and/or no extension
 		packages: {
@@ -30,11 +31,13 @@ System.import('app').then(null, console.error.bind(console));
 				main: '/main.js',
 				defaultExtension: 'js'
 			},
-			rxjs: {
+			/*
+			'angular-in-memory-web-api': { // Not used
+				main: './index.js',
 				defaultExtension: 'js'
 			},
-			'angular-in-memory-web-api': {
-				main: './index.js',
+			*/
+			rxjs: {
 				defaultExtension: 'js'
 			}
 		}

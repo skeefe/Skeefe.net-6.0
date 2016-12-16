@@ -6,6 +6,9 @@ export class Work {
 	) { }
 }
 
+//import { Work } from './work';
+//import { WorkService } from './work.service';
+
 //I assume this should come from a JSON file/feed.
 const WORKS = [
 	new Work('Rugby', 'Rugby.com.au', 'http://www.rugby.com.au'),

@@ -27,6 +27,8 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 return Work;
             }());
             exports_1("Work", Work);
+            //import { Work } from './work';
+            //import { WorkService } from './work.service';
             //I assume this should come from a JSON file/feed.
             WORKS = [
                 new Work('Rugby', 'Rugby.com.au', 'http://www.rugby.com.au'),

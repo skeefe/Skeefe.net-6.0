@@ -11,27 +11,35 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var WorkDetailBaseComponent;
+    var EmitterService;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            WorkDetailBaseComponent = (function () {
-                function WorkDetailBaseComponent() {
+            EmitterService = (function () {
+                function EmitterService() {
                 }
-                WorkDetailBaseComponent = __decorate([
-                    core_1.Component({
-                        templateUrl: './app/Work/work-detail-base.htm'
-                    }), 
+                // Set a new event in the store with a given ID
+                // as key
+                EmitterService.get = function (ID) {
+                    if (!this._emitters[ID]) {
+                        this._emitters[ID] = new core_1.EventEmitter();
+                    }
+                    return this._emitters[ID];
+                };
+                // Event store
+                EmitterService._emitters = {};
+                EmitterService = __decorate([
+                    core_1.Injectable(), 
                     __metadata('design:paramtypes', [])
-                ], WorkDetailBaseComponent);
-                return WorkDetailBaseComponent;
+                ], EmitterService);
+                return EmitterService;
             }());
-            exports_1("WorkDetailBaseComponent", WorkDetailBaseComponent);
+            exports_1("EmitterService", EmitterService);
         }
     }
 });
 
-//# sourceMappingURL=work-detail-base.component.js.map
+//# sourceMappingURL=emitter.service.js.map

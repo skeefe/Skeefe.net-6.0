@@ -21,8 +21,6 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                 router_1 = router_1_1;
             }],
         execute: function() {
-            //import { Work, WorkService } from './work.service'; // Think this is wrong.
-            //import { DialogService }  from '../dialog.service'; //Don't think I need this.
             WorkDetailComponent = (function () {
                 function WorkDetailComponent(route, router) {
                     this.route = route;
@@ -36,10 +34,6 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                 };
                 WorkDetailComponent.prototype.gotoWork = function () {
                     var workID = this.work ? this.work.id : null;
-                    // Pass along the work id if available
-                    // so that the WorkListComponent can select that work.
-                    // Add a totally useless `sdk` parameter for kicks.
-                    // Relative navigation back to the work list.
                     this.router.navigate(['../', { id: workID }], { relativeTo: this.route });
                 };
                 WorkDetailComponent = __decorate([

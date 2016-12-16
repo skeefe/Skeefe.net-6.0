@@ -43,7 +43,6 @@ System.register(['@angular/core', '@angular/router', './work.service'], function
                 };
                 WorkListComponent.prototype.onSelect = function (work) {
                     this.selectedId = work.id;
-                    // Navigate with relative link
                     this.router.navigate([work.id], { relativeTo: this.route });
                 };
                 WorkListComponent = __decorate([

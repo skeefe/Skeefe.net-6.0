@@ -21,8 +21,6 @@ System.register(['@angular/core'], function(exports_1, context_1) {
             Error404Component = (function () {
                 function Error404Component() {
                 }
-                Error404Component.prototype.ngOnInit = function () {
-                };
                 Error404Component = __decorate([
                     core_1.Component({
                         templateUrl: './app/Error/error404.htm'
