@@ -19,16 +19,32 @@ import { Error404Component } from "./Error/Error404.component";
 				redirectTo: '/'
 			},
 			{
+				path: 'home',
+				redirectTo: '/'
+			},
+			{
 				path: 'Work',
-				loadChildren: 'app/Work/work.module#WorkModule'
+				loadChildren: 'app/Work/work.module#WorkModule',
+			},
+			{
+				path: 'work',
+				redirectTo: '/Work/Rugby'
 			},
 			{
 				path: 'Skillset',
 				component: SkillsetComponent
 			},
 			{
+				path: 'skillset',
+				redirectTo: '/Skillset'
+			},
+			{
 				path: 'Contact',
 				component: ContactComponent
+			},
+			{
+				path: 'contact',
+				redirectTo: '/Contact'
 			},
 			{
 				path: '**',

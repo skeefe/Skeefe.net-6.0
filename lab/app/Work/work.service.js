@@ -1,4 +1,4 @@
-System.register(['@angular/core'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/http', 'rxjs/Observable'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,44 +10,39 @@ System.register(['@angular/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
-    var Work, WORKS, worksPromise, WorkService;
+    var core_1, http_1, Observable_1;
+    var WorkService;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (http_1_1) {
+                http_1 = http_1_1;
+            },
+            function (Observable_1_1) {
+                Observable_1 = Observable_1_1;
             }],
         execute: function() {
-            Work = (function () {
-                function Work(id, title, url) {
-                    this.id = id;
-                    this.title = title;
-                    this.url = url;
-                }
-                return Work;
-            }());
-            exports_1("Work", Work);
-            //import { Work } from './work';
-            //import { WorkService } from './work.service';
-            //I assume this should come from a JSON file/feed.
-            WORKS = [
-                new Work('Rugby', 'Rugby.com.au', 'http://www.rugby.com.au'),
-                new Work('Sydney7s', 'Sydney 7s', 'http://www.sydney7s.com.au'),
-                new Work('CornerstoneDigital', 'Cornerstone Digital', 'http://cornerstone-digital.com.au'),
-                new Work('RSLPoppyShop', 'RSL Poppy Shop', 'https://poppyshop.org.au/')
-            ];
-            worksPromise = Promise.resolve(WORKS);
             WorkService = (function () {
-                function WorkService() {
+                function WorkService(http) {
+                    this.http = http;
+                    this.workData = 'data/work.json';
                 }
-                WorkService.prototype.getWorks = function () { return worksPromise; };
-                WorkService.prototype.getWork = function (id) {
-                    return worksPromise
-                        .then(function (works) { return works.find(function (work) { return work.id === id; }); });
+                //Return all Work
+                WorkService.prototype.getWorks = function () {
+                    return this.http.get(this.workData)
+                        .map(function (res) { return res.json(); })
+                        .catch(function (error) { return Observable_1.Observable.throw(error.json().error || 'Server error'); });
+                };
+                //Return selected Work
+                WorkService.prototype.getWork = function (workID) {
+                    return this.getWorks()
+                        .map(function (works) { return works.filter(function (work) { return work.id === workID; }); });
                 };
                 WorkService = __decorate([
                     core_1.Injectable(), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [http_1.Http])
                 ], WorkService);
                 return WorkService;
             }());

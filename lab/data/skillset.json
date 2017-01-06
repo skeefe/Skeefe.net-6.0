@@ -1,26 +1,67 @@
 [
 	{
 		"title": "HTML5",
-		"level": 5
+		"level": 5,
+		"category":
+			[
+				{ "title": "Language/Framework" },
+				{ "title": "CMS" }
+			]
 	},
 	{
 		"title": "CSS3",
-		"level": 5
+		"level": 5,
+		"category":
+			[
+				{ "title": "Language/Framework" }
+			]
 	},
 	{
 		"title": "WordPress",
-		"level": 4
+		"level": 4,
+		"category":
+			[
+				{ "title": "CMS" }
+			]
 	},
 	{
 		"title": "DNN",
-		"level": 4
+		"level": 4,
+		"category":
+			[
+				{ "title": "CMS" }
+			]
 	},
 	{
 		"title": "SiteCore",
-		"level": 4
+		"level": 4,
+		"category":
+			[
+				{ "title": "CMS" }
+			]
 	},
 	{
 		"title": "NetSuite Templates",
-		"level": 3
-	}	
+		"level": 4,
+		"category":
+			[
+				{ "title": "Web Software/System" }
+			]
+	},
+	{
+		"title": "Visual Studio",
+		"level": 4,
+		"category":
+			[
+				{ "title": "Web Software/System" }
+			]
+	},
+	{
+		"title": "Project Management",
+		"level": 5,
+		"category":
+			[
+				{ "title": "General Business" }
+			]
+	}
 ]

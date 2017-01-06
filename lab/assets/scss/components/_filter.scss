@@ -5,15 +5,21 @@
 
 	li{
 		border-bottom:1px solid $grey-6;
+		color:$link-color;
+		cursor:pointer;
+		padding:$space-xs $space-sm;
+		transition:color $transition-lg;
 
-		a{
-			display: block;
-			padding:$space-xs $space-sm;
+		&:hover{
+			color:$link-color-hover;
 		}
 
-		&.active a{
+
+		&.active,
+		&:active,
+		&:focus{
 			background-color:$green-7;
-			color:#fff;
+			color:$white;
 		}
 	}
 	

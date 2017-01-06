@@ -38,7 +38,7 @@ System.register(['@angular/core', '@angular/router', './work.service'], function
                     this.route.params.forEach(function (params) {
                         _this.selectedId = params['id'];
                         _this.service.getWorks()
-                            .then(function (works) { return _this.works = works; });
+                            .subscribe(function (works) { return _this.works = works; });
                     });
                 };
                 WorkListComponent.prototype.onSelect = function (work) {

@@ -25,12 +25,11 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Observable'], function(
             }],
         execute: function() {
             SkillsetService = (function () {
-                // Resolve HTTP using the constructor
                 function SkillsetService(http) {
                     this.http = http;
-                    this.skillsetData = 'data/skillset.json'; //
+                    this.skillsetData = 'data/skillset.json';
                 }
-                // Fetch all Skills
+                // Return all Skills
                 SkillsetService.prototype.getSkillset = function () {
                     return this.http.get(this.skillsetData)
                         .map(function (res) { return res.json(); })

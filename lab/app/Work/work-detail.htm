@@ -4,74 +4,30 @@
 	<a href="{{work.url}}" target="_blank" class="view-site btn btn--lg">View Site <span class="icon">&#9656;</span></a>
 
 	<section class="meta">
-		<span>Company: <a href="#">Company Name</a></span>
-		<span>Project Launched: Jul 2014</span>
+		<span>Project Launched: {{work.launched}}</span>
+		<span *ngIf="work.company">Company: <a href="{{work.company-url}}">{{work.company}}</a></span>
+		<span *ngIf="work.client">Client: {{work.client}}</span>
 	</section>
 
-	<ul class="carousel">
-		<li>
+	<ul class="carousel" *ngIf="work.screenshots">
+		<li *ngFor="let screenshot of work.screenshots">
 			<figure>
-				<img src="http://placehold.it/935x400" />
-				<figcaption>Image caption lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam
-					eu.
-				</figcaption>
+				<img src="{{screenshot.file}}" />
+				<figcaption [innerHTML]="screenshot.caption" class="copy"></figcaption>
 			</figure>
 		</li>
 	</ul>
 	
-	<section class="copy">
+	<section *ngIf="work.summary">
 		<h2>Project Summary</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam
-			maximus mattis nibh vitae tempor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus,
-			ac dictum elit hendrerit sed. Suspendisse ac placerat nibh, eu semper quam. Nam ornare nec nisi vitae hendrerit. In sem
-			sem, commodo non enim et, tempus suscipit ipsum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam
-			maximus mattis nibh vitae tempor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus,
-			ac dictum elit hendrerit sed.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam
-			maximus mattis nibh vitae tempor. Suspendisse vitae porttitor ligula, ut sagittis massa.</p>
+		<div class="copy" [innerHTML]="work.summary"></div>
 	</section>
 
-	<section>
-		<h2>Skills Used</h2>
-		<table>
-			<thead>
-				<tr>
-					<th>Skill Title</th>
-					<th>Level</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>HTML 5</td>
-					<td>Strong</td>
-				</tr>
-				<tr>
-					<td>HTML 5</td>
-					<td>Strong</td>
-				</tr>
-				<tr>
-					<td>HTML 5</td>
-					<td>Strong</td>
-				</tr>
-				<tr>
-					<td>HTML 5</td>
-					<td>Strong</td>
-				</tr>
-				<tr>
-					<td>HTML 5</td>
-					<td>Strong</td>
-				</tr>
-				<tr>
-					<td>HTML 5</td>
-					<td>Strong</td>
-				</tr>
-				<tr>
-					<td>HTML 5</td>
-					<td>Strong</td>
-				</tr>
-			</tbody>
-		</table>
+	<section *ngIf="work.workskills">
+		<h2>Primary Skills Required</h2>
+		<ul>
+			<li *ngFor="let skill of work.workskills">{{skill.title}}</li>
+		</ul>
 	</section>
 
 </section>

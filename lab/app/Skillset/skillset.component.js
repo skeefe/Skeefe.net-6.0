@@ -12,6 +12,15 @@ System.register(['@angular/core', 'rxjs/Rx', './skillset.service'], function(exp
     };
     var core_1, skillset_service_1;
     var SkillsetComponent;
+    //Check if Skill exists in cateogry
+    function SkillCategorySearch(skill, list) {
+        for (var i = 0; i < list.length; i++) {
+            if (list[i].title === skill) {
+                return true;
+            }
+        }
+        return false;
+    }
     return {
         setters:[
             function (core_1_1) {
@@ -26,6 +35,7 @@ System.register(['@angular/core', 'rxjs/Rx', './skillset.service'], function(exp
                 function SkillsetComponent(skillsetService) {
                     this.skillsetService = skillsetService;
                 }
+                //Return All Skills.
                 SkillsetComponent.prototype.loadSkillset = function () {
                     var _this = this;
                     this.skillsetService.getSkillset()
@@ -35,6 +45,24 @@ System.register(['@angular/core', 'rxjs/Rx', './skillset.service'], function(exp
                 };
                 SkillsetComponent.prototype.ngOnInit = function () {
                     this.loadSkillset();
+                };
+                //Return Selected Skill Category
+                SkillsetComponent.prototype.loadCategorySkills = function (skillCategory) {
+                    var _this = this;
+                    return this.skillsetService.getSkillset()
+                        .map(function (skillset) { return skillset.filter(function (skill) { return SkillCategorySearch(skillCategory, skill.category); }); })
+                        .subscribe(function (skillset) { return _this.skillset = skillset; }, function (err) {
+                        console.log(err);
+                    });
+                };
+                //Return Strongest Skills
+                SkillsetComponent.prototype.loadStrongestSkills = function (skillLevel) {
+                    var _this = this;
+                    return this.skillsetService.getSkillset()
+                        .map(function (skillset) { return skillset.filter(function (skill) { return skill.level >= skillLevel; }); })
+                        .subscribe(function (skillset) { return _this.skillset = skillset; }, function (err) {
+                        console.log(err);
+                    });
                 };
                 SkillsetComponent = __decorate([
                     core_1.Component({

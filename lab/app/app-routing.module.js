@@ -50,16 +50,32 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
                                     redirectTo: '/'
                                 },
                                 {
+                                    path: 'home',
+                                    redirectTo: '/'
+                                },
+                                {
                                     path: 'Work',
-                                    loadChildren: 'app/Work/work.module#WorkModule'
+                                    loadChildren: 'app/Work/work.module#WorkModule',
+                                },
+                                {
+                                    path: 'work',
+                                    redirectTo: '/Work/Rugby'
                                 },
                                 {
                                     path: 'Skillset',
                                     component: skillset_component_1.SkillsetComponent
                                 },
                                 {
+                                    path: 'skillset',
+                                    redirectTo: '/Skillset'
+                                },
+                                {
                                     path: 'Contact',
                                     component: Contact_component_1.ContactComponent
+                                },
+                                {
+                                    path: 'contact',
+                                    redirectTo: '/Contact'
                                 },
                                 {
                                     path: '**',

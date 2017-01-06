@@ -5,12 +5,11 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class SkillsetService {
-	// Resolve HTTP using the constructor
 	constructor(private http: Http) { }
 
-	private skillsetData = 'data/skillset.json'; //
+	private skillsetData = 'data/skillset.json';
 
-	// Fetch all Skills
+	// Return all Skills
 	getSkillset(): Observable<Skill[]> {
 		return this.http.get(this.skillsetData)
 		.map((res: Response) => res.json())

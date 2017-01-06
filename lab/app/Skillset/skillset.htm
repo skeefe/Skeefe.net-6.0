@@ -10,7 +10,8 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr *ngFor="let skill of skillset">
+					<tr *ngFor="let skill of skillset | orderBy : ['-level', 'title']">
+					<!-- <tr *ngFor="let skill of skillset"> -->
 						<td>{{skill.title}}</td>
 						<td>{{skill.level}}</td>
 					</tr>
@@ -26,11 +27,12 @@
 		<div class="inner">
 			<h2>Filter Skillet</h2>
 			<ul class="filter">
-				<li class="active"><a href="#">Show All</a></li>
-				<li><a href="#">Languages and Frameworks</a></li>
-				<li><a href="#">Web Software</a></li>
-				<li><a href="#">General Web</a></li>
-				<li><a href="#">Business Skills</a></li>
+				<li (click)="loadSkillset()" class="active">Show All</li>
+				<li (click)="loadStrongestSkills(5)">Core Skills</li>
+				<li (click)="loadCategorySkills('Web Software/System')">Web Software/Systems</li>
+				<li (click)="loadCategorySkills('Language/Framework')">Languages/Frameworks</li>
+				<li (click)="loadCategorySkills('CMS')">Content Management Systems</li>
+				<li (click)="loadCategorySkills('General Business')">General Business</li>
 			</ul>
 		</div>
 	</section>

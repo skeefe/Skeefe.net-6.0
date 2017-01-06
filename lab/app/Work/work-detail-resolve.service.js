@@ -25,19 +25,20 @@ System.register(['@angular/core', '@angular/router', './work.service'], function
             }],
         execute: function() {
             WorkDetailResolve = (function () {
-                function WorkDetailResolve(cs, router) {
-                    this.cs = cs;
+                function WorkDetailResolve(WorkService, router) {
+                    this.WorkService = WorkService;
                     this.router = router;
                 }
                 WorkDetailResolve.prototype.resolve = function (route) {
                     var _this = this;
                     var id = route.params['id'];
-                    return this.cs.getWork(id).then(function (work) {
-                        if (work) {
-                            return work;
+                    return this.WorkService.getWork(id)
+                        .map(function (works) {
+                        if (works) {
+                            return works[0];
                         }
                         else {
-                            _this.router.navigate(['/Work']); //Alternatively redirect to a "404 Work" page.
+                            _this.router.navigate(['/Work/Rugby']); //Alternatively redirect to a "404 Work" page.
                             return false;
                         }
                     });

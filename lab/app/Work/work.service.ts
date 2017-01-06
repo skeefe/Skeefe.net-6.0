@@ -1,34 +1,26 @@
-export class Work {
-	constructor(
-		public id: string,
-		public title: string,
-		public url: string
-	) { }
-}
-
-//import { Work } from './work';
-//import { WorkService } from './work.service';
-
-//I assume this should come from a JSON file/feed.
-const WORKS = [
-	new Work('Rugby', 'Rugby.com.au', 'http://www.rugby.com.au'),
-	new Work('Sydney7s', 'Sydney 7s', 'http://www.sydney7s.com.au'),
-	new Work('CornerstoneDigital', 'Cornerstone Digital', 'http://cornerstone-digital.com.au'),
-	new Work('RSLPoppyShop', 'RSL Poppy Shop', 'https://poppyshop.org.au/')
-];
-
-let worksPromise = Promise.resolve(WORKS);
-
 import { Injectable } from '@angular/core';
+import { Http, Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+
+import { Work } from './work';
+
 
 @Injectable()
 export class WorkService {
+	constructor(private http: Http) { }
 
-	getWorks() { return worksPromise; }
+	private workData = 'data/work.json';
 
-	getWork(id: string) {
-		return worksPromise
-			.then(works => works.find(work => work.id === id));
+	//Return all Work
+	getWorks(): Observable<Work[]> {
+		return this.http.get(this.workData)
+		.map((res: Response) => res.json())
+		.catch((error: any) => Observable.throw(error.json().error || 'Server error'));
 	}
 
+	//Return selected Work
+	getWork(workID: string) {
+		return this.getWorks()
+		.map(works => works.filter(work => work.id === workID));
+	}
 }

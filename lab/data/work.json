@@ -2,21 +2,112 @@
 	{
 		"id": "Rugby",
 		"title": "Rugby.com.au",
-		"url": "http://www.rugby.com.au"
+		"url": "http://www.rugby.com.au",
+		"launched": "March 2016",
+		"company": "Australian Rugby Union",
+		"company-url": "http://www.aru.com.au",
+		"screenshots":
+			[
+				{
+					"file": "http://placehold.it/935x400",
+					"caption": "Placeholder caption 1."
+				},
+				{
+					"file": "http://placehold.it/935x400",
+					"caption": "Placeholder caption 2."
+				},
+				{
+					"file": "http://placehold.it/935x400",
+					"caption": "Placeholder caption 3."
+				}
+			],
+		"summary": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae tempor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus, ac dictum elit hendrerit sed. Suspendisse ac placerat nibh, eu semper quam. Nam ornare nec nisi vitae hendrerit. In sem sem, commodo non enim et, tempus suscipit ipsum.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae empor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus, ac dictum elit hendrerit sed.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae tempor.Suspendisse vitae porttitor ligula, ut sagittis massa.</p>",
+		"workskills":
+			[
+				{
+					"title": "HTML5"
+				},
+				{
+					"title": "CSS3"
+				}
+			]
 	},
 	{
 		"id": "Sydney7s",
 		"title": "Sydney 7s",
-		"url": "http://www.sydney7s.com.au"
+		"url": "http://www.sydney7s.com.au",
+		"launched": "March 2016",
+		"company": "Australian Rugby Union",
+		"company-url": "http://www.aru.com.au",
+		"screenshots":
+			[
+				{
+					"file": "http://placehold.it/935x400",
+					"caption": "Placeholder caption 1."
+				}
+			],
+		"summary": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae tempor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus, ac dictum elit hendrerit sed. Suspendisse ac placerat nibh, eu semper quam. Nam ornare nec nisi vitae hendrerit. In sem sem, commodo non enim et, tempus suscipit ipsum.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae empor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus, ac dictum elit hendrerit sed.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae tempor.Suspendisse vitae porttitor ligula, ut sagittis massa.</p>",
+		"workskills":
+			[
+				{
+					"title": "HTML5"
+				}
+			]
 	},
 	{
 		"id": "CornerstoneDigital",
 		"title": "Cornerstone Digital",
-		"url": "http://cornerstone-digital.com.au"
+		"url": "http://cornerstone-digital.com.au","launched": "March 2016",
+		"company": "Cornerstone Digital",
+		"company-url": "http://cornerstone-digital.com.au",
+		"screenshots":
+			[
+				{
+					"file": "http://placehold.it/935x400",
+					"caption": "Placeholder caption 1."
+				},
+				{
+					"file": "http://placehold.it/935x400",
+					"caption": "Placeholder caption 2."
+				}
+			],
+		"summary": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae tempor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus, ac dictum elit hendrerit sed. Suspendisse ac placerat nibh, eu semper quam. Nam ornare nec nisi vitae hendrerit. In sem sem, commodo non enim et, tempus suscipit ipsum.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae empor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus, ac dictum elit hendrerit sed.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae tempor.Suspendisse vitae porttitor ligula, ut sagittis massa.</p>",
+		"workskills":
+			[
+				{
+					"title": "HTML5"
+				}
+			]
 	},
 	{
 		"id": "RSLPoppyShop",
 		"title": "RSL Poppy Shop",
-		"url": "https://poppyshop.org.au/"
+		"url": "https://poppyshop.org.au/",
+		"launched": "March 2016",
+		"company": "Cornerstone Digital",
+		"company-url": "http://cornerstone-digital.com.au",
+		"client": "RSL NSW",
+		"screenshots":
+			[
+				{
+					"file": "http://placehold.it/935x400",
+					"caption": "Placeholder caption 1."
+				},
+				{
+					"file": "http://placehold.it/935x400",
+					"caption": "Placeholder caption 2."
+				},
+				{
+					"file": "http://placehold.it/935x400",
+					"caption": "Placeholder caption 3."
+				}
+			],
+		"summary": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae tempor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus, ac dictum elit hendrerit sed. Suspendisse ac placerat nibh, eu semper quam. Nam ornare nec nisi vitae hendrerit. In sem sem, commodo non enim et, tempus suscipit ipsum.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae empor. Suspendisse vitae porttitor ligula, ut sagittis massa. Integer volutpat blandit lacus, ac dictum elit hendrerit sed.<\/p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla feugiat erat nisi, id ultricies quam aliquam eu. Aliquam maximus mattis nibh vitae tempor.Suspendisse vitae porttitor ligula, ut sagittis massa.</p>",
+		"workskills":
+			[
+				{
+					"title": "HTML5"
+				}
+			]
 	}
 ]

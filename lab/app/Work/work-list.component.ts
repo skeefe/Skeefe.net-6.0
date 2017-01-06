@@ -4,6 +4,7 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Work } from './work';
 import { WorkService } from './work.service';
 
+
 @Component({
 	templateUrl: './app/Work/work-list.htm'
 })
@@ -26,7 +27,7 @@ export class WorkListComponent implements OnInit {
 		this.route.params.forEach((params: Params) => {
 			this.selectedId = params['id'];
 			this.service.getWorks()
-				.then(works => this.works = works);
+				.subscribe(works => this.works = works);
 		});
 	}
 

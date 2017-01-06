@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/common', './skillset.service', './skillset.component'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/common', './skillset.service', './skillset.component', "../sort"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/common', './skillset.service', './sk
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, common_1, skillset_service_1, skillset_component_1;
+    var core_1, common_1, skillset_service_1, skillset_component_1, sort_1;
     var SkillsetModule;
     return {
         setters:[
@@ -25,6 +25,9 @@ System.register(['@angular/core', '@angular/common', './skillset.service', './sk
             },
             function (skillset_component_1_1) {
                 skillset_component_1 = skillset_component_1_1;
+            },
+            function (sort_1_1) {
+                sort_1 = sort_1_1;
             }],
         execute: function() {
             SkillsetModule = (function () {
@@ -36,7 +39,8 @@ System.register(['@angular/core', '@angular/common', './skillset.service', './sk
                             common_1.CommonModule
                         ],
                         declarations: [
-                            skillset_component_1.SkillsetComponent
+                            skillset_component_1.SkillsetComponent,
+                            sort_1.OrderBy
                         ],
                         providers: [
                             skillset_service_1.SkillsetService

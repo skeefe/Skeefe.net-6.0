@@ -4,17 +4,22 @@ import { CommonModule } from '@angular/common';
 import { SkillsetService } from './skillset.service';
 import { SkillsetComponent } from './skillset.component';
 
+import { Pipe, PipeTransform } from "@angular/core";
+import { OrderBy } from "../sort";
+
+
 @NgModule({
 	imports: [
 		CommonModule
 	],
 	declarations: [
-		SkillsetComponent
+		SkillsetComponent,
+		OrderBy
 	],
 	providers: [
 		SkillsetService
 	],
-	exports:[
+	exports: [
 		SkillsetComponent
 	]
 })

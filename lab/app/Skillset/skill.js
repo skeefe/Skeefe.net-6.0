@@ -1,7 +1,7 @@
 System.register([], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var Skill;
+    var Skill, SkillCategory;
     return {
         setters:[],
         execute: function() {
@@ -12,6 +12,12 @@ System.register([], function(exports_1, context_1) {
                 return Skill;
             }());
             exports_1("Skill", Skill);
+            SkillCategory = (function () {
+                function SkillCategory() {
+                }
+                return SkillCategory;
+            }());
+            exports_1("SkillCategory", SkillCategory);
         }
     }
 });
