@@ -1,18 +1,48 @@
-#content ul.carousel{
-	list-style: none;
-	margin:0 0 $space-xl;
+.carousel{
+	margin:0 (-$space-md) $space-xl;
+
+	@media (min-width: $screen-md){
+		margin:0 0 $space-xl;
+	}
 
 	figure{
+		width:100%;
 
 		img{
 			display:block;
-			width:100%;
+			max-width:100%;
 		}
 
 		figcaption{
-			background:$grey-8;
-			padding:$space-lg;
+			background:$grey-9;
+			padding:$space-md;
 		}
 
 	}
+
+	.flickity-prev-next-button{
+		background:$green-6;
+
+		&:hover,
+		&:active,
+		&:focus{
+			background:$green-7;
+			opacity: 1;
+		}
+
+		path{
+			fill: #fff;
+		}
+	}
+
+	ol.flickity-page-dots{
+		bottom:-$space-xl;
+
+		.dot{
+			background:$grey-3;
+    		height: 0.7rem;
+			width: 0.7rem;
+		}
+	}
+	
 }

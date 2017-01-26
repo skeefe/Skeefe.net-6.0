@@ -136,9 +136,11 @@ gulp.task("vendor", () => {
 		'reflect-metadata/Reflect.js',
 		'rxjs/**/*.js',
 		'zone.js/dist/**',
-		'@angular/**/bundles/**'
+		'@angular/**/bundles/**',
+		'flickity/dist/flickity.pkgd.min.js',
+		'flickity/dist/flickity.min.css'
 	], { cwd: "node_modules/**" })
-		.pipe(gulp.dest("lab/assets/scripts/vendor"));
+		.pipe(gulp.dest("lab/assets/vendor"));
 });
 
 

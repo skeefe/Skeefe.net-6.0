@@ -5,7 +5,7 @@ System.import('app').then(null, console.error.bind(console));
 	System.config({
 		paths: {
 			// paths serve as alias
-			'npm:': '/assets/scripts/vendor/' //assets/scripts/vendor/
+			'npm:': '/assets/vendor/'
 		},
 		// map tells the System loader where to look for things
 		map: {
@@ -25,6 +25,7 @@ System.import('app').then(null, console.error.bind(console));
 			'rxjs': 'npm:rxjs'
 			
 		},
+
 		// packages tells the System loader how to load when no filename and/or no extension
 		packages: {
 			app: {

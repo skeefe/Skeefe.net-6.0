@@ -52,16 +52,16 @@ System.register(['@angular/core', '@angular/router', './work-list-base.component
                                             component: work_list_component_1.WorkListComponent,
                                             children: [
                                                 {
-                                                    path: '',
-                                                    component: work_detail_base_component_1.WorkDetailBaseComponent,
-                                                    redirectTo: '/Work/Rugby'
-                                                },
-                                                {
                                                     path: ':id',
                                                     component: work_detail_component_1.WorkDetailComponent,
                                                     resolve: {
                                                         work: work_detail_resolve_service_1.WorkDetailResolve
                                                     }
+                                                },
+                                                {
+                                                    path: '',
+                                                    component: work_detail_base_component_1.WorkDetailBaseComponent,
+                                                    redirectTo: '/Work/Rugby'
                                                 }
                                             ]
                                         }

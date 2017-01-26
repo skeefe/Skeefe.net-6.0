@@ -32,6 +32,14 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                         _this.work = data.work;
                     });
                 };
+                WorkDetailComponent.prototype.ngAfterViewInit = function () {
+                    //Trigger Flickity.
+                    $('.carousel').flickity({
+                        imagesLoaded: true,
+                        cellSelector: '.carousel__slide',
+                        percentPosition: false
+                    });
+                };
                 WorkDetailComponent.prototype.gotoWork = function () {
                     var workID = this.work ? this.work.id : null;
                     this.router.navigate(['../', { id: workID }], { relativeTo: this.route });

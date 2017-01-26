@@ -20,16 +20,16 @@ import { WorkDetailResolve } from './work-detail-resolve.service';
 						component: WorkListComponent,
 						children: [
 							{
-								path: '',
-								component: WorkDetailBaseComponent,
-								redirectTo: '/Work/Rugby'
-							},
-							{
 								path: ':id',
 								component: WorkDetailComponent,
 								resolve: {
 									work: WorkDetailResolve
 								}
+							},
+							{
+								path: '',
+								component: WorkDetailBaseComponent,
+								redirectTo: '/Work/Rugby'
 							}
 						]
 					}

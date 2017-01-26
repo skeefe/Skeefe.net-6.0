@@ -3,3 +3,8 @@
 	padding:$space-md;
 	transition:background $transition-xs;
 }
+@mixin overlay-sm {
+	background:$overlay-sm;
+	padding:$space-sm;
+	transition:background $transition-xs;
+}

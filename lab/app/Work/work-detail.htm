@@ -1,29 +1,29 @@
 <section *ngIf="work" id="work-detail" class="section">
 
 	<h1>{{work.title}}</h1>
-	<a href="{{work.url}}" target="_blank" class="view-site btn btn--lg">View Site <span class="icon">&#9656;</span></a>
+	<a href="{{work.url}}" target="_blank" class="view-site btn btn--lg">View Site</a>
 
 	<section class="meta">
-		<span>Project Launched: {{work.launched}}</span>
+		<span>Launched: {{work.launched}}</span>
 		<span *ngIf="work.company">Company: <a href="{{work.company-url}}">{{work.company}}</a></span>
 		<span *ngIf="work.client">Client: {{work.client}}</span>
 	</section>
 
-	<ul class="carousel" *ngIf="work.screenshots">
-		<li *ngFor="let screenshot of work.screenshots">
-			<figure>
+	<section id="screenshots" *ngIf="work.screenshots">
+		<div class="carousel">
+			<figure *ngFor="let screenshot of work.screenshots" class="carousel__slide">
 				<img src="{{screenshot.file}}" />
 				<figcaption [innerHTML]="screenshot.caption" class="copy"></figcaption>
 			</figure>
-		</li>
-	</ul>
+		</div>
+	</section>
 	
 	<section *ngIf="work.summary">
 		<h2>Project Summary</h2>
-		<div class="copy" [innerHTML]="work.summary"></div>
+		<article class="copy" [innerHTML]="work.summary"></article>
 	</section>
 
-	<section *ngIf="work.workskills">
+	<section id="primary-skills" *ngIf="work.workskills">
 		<h2>Primary Skills Required</h2>
 		<ul>
 			<li *ngFor="let skill of work.workskills">{{skill.title}}</li>

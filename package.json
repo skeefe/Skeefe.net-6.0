@@ -1,60 +1,61 @@
 {
-	"name": "skeefe.net-6.0",
-	"version": "1.0.0",
-	"description": "Simon Keefe's Front-End Web Development Portfolio",
-	"scripts": {
-		"clean": "gulp clean",
-		"build": "gulp build",
-		"postinstall": "typings install"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/skeefe/Skeefe.net-6.0.git"
-	},
-	"author": "Simon Keefe <simon@skeefe.net>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/skeefe/Skeefe.net-6.0/issues"
-	},
-	"dependencies": {
-		"@angular/common": "2.0.0",
-		"@angular/compiler": "2.0.0",
-		"@angular/core": "2.0.0",
-		"@angular/forms": "2.0.0",
-		"@angular/http": "2.0.0",
-		"@angular/platform-browser": "2.0.0",
-		"@angular/platform-browser-dynamic": "2.0.0",
-		"@angular/router": "3.0.0",
-		"@angular/upgrade": "2.0.0",
-		"angular-in-memory-web-api": "^0.1.14",
-		"core-js": "^2.4.1",
-		"reflect-metadata": "^0.1.3",
-		"rxjs": "5.0.0-beta.12",
-		"systemjs": "0.19.27",
-		"zone.js": "^0.6.23"
-	},
-	"devDependencies": {
-		"browser-sync": "^2.17.5",
-		"concurrently": "^2.2.0",
-		"connect-history-api-fallback": "^1.3.0",
-		"del": "^2.2.0",
-		"gulp": "^3.9.1",
-		"gulp-autoprefixer": "^3.1.1",
-		"gulp-cache": "^0.4.5",
-		"gulp-cli": "^1.2.2",
-		"gulp-cssnano": "^2.1.2",
-		"gulp-if": "^2.0.2",
-		"gulp-imagemin": "^3.1.1",
-		"gulp-sass": "^2.3.2",
-		"gulp-sourcemaps": "^1.6.0",
-		"gulp-tslint": "^6.1.1 ",
-		"gulp-typescript": "^2.13.6",
-		"gulp-uglify": "^2.0.0",
-		"gulp-useref": "^3.1.2",
-		"run-sequence": "^1.2.2",
-		"ts-node": "^1.3.0",
-		"tslint": "^3.5.0",
-		"typescript": "^2.0.2",
-		"typings": "^1.3.3"
-	}
+  "name": "skeefe.net-6.0",
+  "version": "1.0.0",
+  "description": "Simon Keefe's Front-End Web Development Portfolio",
+  "scripts": {
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "postinstall": "typings install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skeefe/Skeefe.net-6.0.git"
+  },
+  "author": "Simon Keefe <simon@skeefe.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skeefe/Skeefe.net-6.0/issues"
+  },
+  "dependencies": {
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/forms": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "@angular/router": "3.0.0",
+    "@angular/upgrade": "2.0.0",
+    "angular-in-memory-web-api": "^0.1.14",
+    "core-js": "^2.4.1",
+    "flickity": "^2.0.5",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.27",
+    "zone.js": "^0.6.23"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "concurrently": "^2.2.0",
+    "connect-history-api-fallback": "^1.3.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-cli": "^1.2.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^6.1.1 ",
+    "gulp-typescript": "^2.13.6",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2",
+    "ts-node": "^1.3.0",
+    "tslint": "^3.5.0",
+    "typescript": "^2.0.2",
+    "typings": "^1.3.3"
+  }
 }

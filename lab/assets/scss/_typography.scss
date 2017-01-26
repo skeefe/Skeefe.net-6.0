@@ -28,7 +28,7 @@
 		font-size:$size-md;
 		text-align: left;
 	}
-	p, li, button, label, input, textarea, td{
+	p, li, button, label, input, textarea, td, figcaption{
 		color:$copy-colour;
 		font-family:$font-copy;
 		font-size:$size-md;
@@ -47,7 +47,7 @@
 		}
 	}
 
-	ol{
+	ol:not(.flickity-page-dots){
 		list-style:decimal outside none;
 		margin-left:$space-md;
 	}

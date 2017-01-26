@@ -9,10 +9,75 @@
 
 	.view-site{
 		margin-top:-$space-xxxs*1.5;
+		margin-bottom:$line-md * $size-md;
 
 		@media (min-width: $screen-xs){
 			float:right;			
 			width:auto;
+		}
+	}
+
+	.meta{
+		@include overlay;
+		margin-bottom:$line-md * $size-md;
+
+		span{
+			color:$copy-colour;
+			display:block;
+			font-family:$font-copy;
+			font-size:$size-md;
+			line-height:$line-md;
+		}
+
+		@media (min-width: $screen-md){
+			display:table;		
+			width:100%;
+
+			span{				
+				display:table-cell;				
+				width:33.33%;
+			}
+			span:nth-child(2){
+				text-align: center;
+			}
+			span:last-child{
+				text-align: right;
+			}
+
+		}
+	}
+
+	#primary-skills{
+		ul{
+			list-style: none;
+			margin:0;
+
+			li{
+				@include overlay-sm;
+				margin-bottom:$space-xxxs;
+				text-align:center;
+			}
+			
+			@media (min-width: $screen-xs/1.5){
+				column-count: 2;
+				column-gap: $space-xxxs;
+
+				li{
+					-webkit-column-break-inside: avoid;
+					page-break-inside: avoid;
+					break-inside: avoid;
+					text-align: left;
+				}
+			}
+
+			@media (min-width: $screen-sm){
+				column-count: 3;
+			}
+
+			@media (min-width: $screen-xl){
+				column-count: 4;				
+			}
+
 		}
 	}
 

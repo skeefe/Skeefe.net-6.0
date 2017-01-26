@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from "./Home/Home.component";
 import { SkillsetComponent } from "./Skillset/skillset.component";
 import { ContactComponent } from "./Contact/Contact.component";
+import { ThankYouComponent } from "./Contact/thankyou.component";
 import { Error404Component } from "./Error/Error404.component";
 
 @NgModule({
@@ -47,6 +48,22 @@ import { Error404Component } from "./Error/Error404.component";
 				redirectTo: '/Contact'
 			},
 			{
+				path: 'Contact/Thank-You',
+				component: ThankYouComponent
+			},
+			{
+				path: 'contact/thank-you',
+				redirectTo: 'Contact/Thank-You'
+			},
+			{
+				path: 'Contact/thank-you',
+				redirectTo: 'Contact/Thank-You'
+			},
+			{
+				path: 'contact/Thank-You',
+				redirectTo: 'Contact/Thank-You'
+			},
+			{
 				path: '**',
 				component: Error404Component
 			}
@@ -58,6 +75,7 @@ import { Error404Component } from "./Error/Error404.component";
 	declarations: [
 		HomeComponent,
 		ContactComponent,
+		ThankYouComponent,
 		Error404Component
 	]
 })
