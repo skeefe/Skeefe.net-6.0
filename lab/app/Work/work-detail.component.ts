@@ -1,20 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { Work } from './work';
 
-declare var $: any;
+import { WorkService } from './work.service';
+
 
 @Component({
 	templateUrl: './app/Work/work-detail.htm'
 })
 
-export class WorkDetailComponent implements OnInit {
+export class WorkDetailComponent implements OnInit, AfterViewInit {
 	work: Work;
 
 	constructor(
 		private route: ActivatedRoute,
-		private router: Router
+		private router: Router,
+		private service: WorkService
 	) { }
 
 	ngOnInit() {
@@ -24,16 +26,8 @@ export class WorkDetailComponent implements OnInit {
 	}
 
 	ngAfterViewInit() {
-		//Trigger Flickity.
-		$('.carousel').flickity({
-			imagesLoaded: true,
-			cellSelector: '.carousel__slide',
-			percentPosition: false
-		});
+		//Trigger Flickity on page load.
+		this.service.triggerFlickity();
 	}
 
-	gotoWork() {
-		let workID = this.work ? this.work.id : null;
-		this.router.navigate(['../', { id: workID }], { relativeTo: this.route });
-	}
 }

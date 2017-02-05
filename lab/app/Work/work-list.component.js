@@ -41,9 +41,22 @@ System.register(['@angular/core', '@angular/router', './work.service'], function
                             .subscribe(function (works) { return _this.works = works; });
                     });
                 };
-                WorkListComponent.prototype.onSelect = function (work) {
-                    this.selectedId = work.id;
-                    this.router.navigate([work.id], { relativeTo: this.route });
+                WorkListComponent.prototype.ngAfterViewInit = function () {
+                    setTimeout(function () {
+                        //this.service.activeWork(window.location.pathname.split('/')[2]); //Unable to call from within a timeout.
+                        var workID = window.location.pathname.split('/')[2];
+                        //Remove old active state.
+                        $('#work-list option[selected="selected"]').removeAttr('selected');
+                        $('#work-list li.active').removeClass('active');
+                        //Add new active state.
+                        $('#work-list option[value="' + workID + '"]').attr('selected', 'selected');
+                        $('#work-list li[data-work="' + workID + '"]').addClass('active');
+                    }, 50);
+                };
+                WorkListComponent.prototype.onSelect = function (workID) {
+                    this.router.navigate([workID], { relativeTo: this.route });
+                    this.service.reloadFlickity();
+                    this.service.activeWork(workID);
                 };
                 WorkListComponent = __decorate([
                     core_1.Component({

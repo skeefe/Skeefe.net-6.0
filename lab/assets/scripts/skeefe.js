@@ -24,7 +24,7 @@ $(function () {
 	});
 
 	//Close the Mobile Nav on overlay click.
-	$("body").on("click", "#nav-overlay", function () {
+	$('body').on('click', '#nav-overlay', function () {
 		toggleNav()
 	});
 
@@ -51,5 +51,17 @@ $(function () {
 	}
 
 
+	/* ---- Filter Menu ---- */
+	$('body').on('click', '.filter li:not(.active)', function () {
+		var selectedFilter = $(this);
+
+		//Update the active filter item.
+		$(selectedFilter).add('.filter li.active').toggleClass('active');
+		
+		//Update the H1.
+		var headingBase = $('h1').data('filter-heading');
+		$(selectedFilter).index() === 0 ? $('h1').text(headingBase) : $('h1').text(headingBase + ': ' + $(selectedFilter).text());
+
+	});
 
 });

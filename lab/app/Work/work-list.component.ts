@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 
 import { Work } from './work';
 import { WorkService } from './work.service';
 
 
+declare var $: any;
+
 @Component({
 	templateUrl: './app/Work/work-list.htm'
 })
 
-export class WorkListComponent implements OnInit {
+export class WorkListComponent implements OnInit, AfterViewInit {
 	works: Work[];
 	public selectedId: string;
 
@@ -31,8 +33,27 @@ export class WorkListComponent implements OnInit {
 		});
 	}
 
-	onSelect(work: Work) {
-		this.selectedId = work.id;
-		this.router.navigate([work.id], { relativeTo: this.route });
+	ngAfterViewInit() {
+		setTimeout(function() { //Rewrite this - should not use a timeout.
+
+			//this.service.activeWork(window.location.pathname.split('/')[2]); //Unable to call from within a timeout.
+			var workID = window.location.pathname.split('/')[2];
+
+			//Remove old active state.
+			$('#work-list option[selected="selected"]').removeAttr('selected');
+			$('#work-list li.active').removeClass('active');
+
+			//Add new active state.
+			$('#work-list option[value="' + workID + '"]').attr('selected', 'selected');
+			$('#work-list li[data-work="' + workID + '"]').addClass('active');
+
+		}, 50);
 	}
+
+	onSelect(workID: String) {
+		this.router.navigate([workID], { relativeTo: this.route });
+		this.service.reloadFlickity();
+		this.service.activeWork(workID);
+	}
+
 }

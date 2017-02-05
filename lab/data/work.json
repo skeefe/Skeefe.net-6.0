@@ -2,6 +2,7 @@
 	{
 		"id": "Rugby",
 		"title": "Rugby.com.au",
+		"thumbnail": "http://placehold.it/400x225",
 		"url": "http://www.rugby.com.au",
 		"launched": "March 2016",
 		"company": "Australian Rugby Union",
@@ -41,6 +42,7 @@
 	{
 		"id": "Sydney7s",
 		"title": "Sydney 7s",
+		"thumbnail": "http://placehold.it/400x225",
 		"url": "http://www.sydney7s.com.au",
 		"launched": "March 2016",
 		"company": "Australian Rugby Union",
@@ -63,6 +65,7 @@
 	{
 		"id": "CornerstoneDigital",
 		"title": "Cornerstone Digital",
+		"thumbnail": "http://placehold.it/400x225",
 		"url": "http://cornerstone-digital.com.au","launched": "March 2016",
 		"company": "Cornerstone Digital",
 		"company-url": "http://cornerstone-digital.com.au",
@@ -88,6 +91,7 @@
 	{
 		"id": "RSLPoppyShop",
 		"title": "RSL Poppy Shop",
+		"thumbnail": "http://placehold.it/400x225",
 		"url": "https://poppyshop.org.au/",
 		"launched": "March 2016",
 		"company": "Cornerstone Digital",

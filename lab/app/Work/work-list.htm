@@ -2,9 +2,14 @@
 	<section id="work-list" class="section">
 		<div class="inner">
 			<h2>Featured Work</h2>
+
+			<select (change)="onSelect($event.target.value)">
+				<option *ngFor="let work of works" value="{{work.id}}">{{work.title}}</option>
+			</select>
+
 			<ul>
-				<li *ngFor="let work of works" (click)="onSelect(work)">
-					<img src="http://placehold.it/400x225" alt="Thumbnail of Logo">
+				<li *ngFor="let work of works" (click)="onSelect(work.id)" attr.data-work="{{work.id}}">
+					<img src="{{work.thumbnail}}" alt="{{work.title}}">
 					<span>{{work.title}}</span>
 				</li>
 			</ul>

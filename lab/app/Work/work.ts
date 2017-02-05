@@ -2,9 +2,11 @@
 export class Work {
 	id: string;
 	title: string;
+	thumbnail: string;
 	url: string;
 	launched: string;
 	company: string;
+	companyurl: string;
 	client: string;
 	screenshots: ScreenShots[];
 	summary: string;

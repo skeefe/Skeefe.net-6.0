@@ -40,6 +40,42 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Observable'], function(
                     return this.getWorks()
                         .map(function (works) { return works.filter(function (work) { return work.id === workID; }); });
                 };
+                //Trigger Flickity
+                WorkService.prototype.triggerFlickity = function () {
+                    $('.carousel').flickity({
+                        imagesLoaded: true,
+                        cellSelector: '.carousel__slide',
+                        percentPosition: false
+                    });
+                };
+                //Reload Flickity
+                WorkService.prototype.reloadFlickity = function () {
+                    this.destroyFlickity();
+                    setTimeout(function () {
+                        //this.triggerFlickity(); //Unable to call this function from within the timeout.
+                        $('.carousel').flickity({
+                            imagesLoaded: true,
+                            cellSelector: '.carousel__slide',
+                            percentPosition: false
+                        });
+                    }, 100);
+                };
+                //Destroy Flickity
+                WorkService.prototype.destroyFlickity = function () {
+                    $('.carousel').flickity('destroy');
+                };
+                //Set active classes.
+                WorkService.prototype.activeWork = function (selectedWork) {
+                    //Remove old active state.
+                    $('#work-list option[selected="selected"]').removeAttr('selected');
+                    $('#work-list li.active').removeClass('active');
+                    //Add new active state.
+                    $('#work-list option[value="' + selectedWork + '"]').attr('selected', 'selected');
+                    $('#work-list li[data-work="' + selectedWork + '"]').addClass('active');
+                    console.log($('#work-list option[value="' + selectedWork + '"]').length);
+                    console.log($('#work-list option').length);
+                    console.log('Activework');
+                };
                 WorkService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [http_1.Http])

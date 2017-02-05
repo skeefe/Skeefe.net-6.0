@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/router', './work-list-base.component', './work-list.component', './work-detail.component', './work-detail-base.component', './work-detail-resolve.service'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/router', './work-list.component', './work-detail.component', './work-detail-resolve.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/router', './work-list-base.component
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, work_list_base_component_1, work_list_component_1, work_detail_component_1, work_detail_base_component_1, work_detail_resolve_service_1;
+    var core_1, router_1, work_list_component_1, work_detail_component_1, work_detail_resolve_service_1;
     var WorkRoutingModule;
     return {
         setters:[
@@ -20,17 +20,11 @@ System.register(['@angular/core', '@angular/router', './work-list-base.component
             function (router_1_1) {
                 router_1 = router_1_1;
             },
-            function (work_list_base_component_1_1) {
-                work_list_base_component_1 = work_list_base_component_1_1;
-            },
             function (work_list_component_1_1) {
                 work_list_component_1 = work_list_component_1_1;
             },
             function (work_detail_component_1_1) {
                 work_detail_component_1 = work_detail_component_1_1;
-            },
-            function (work_detail_base_component_1_1) {
-                work_detail_base_component_1 = work_detail_base_component_1_1;
             },
             function (work_detail_resolve_service_1_1) {
                 work_detail_resolve_service_1 = work_detail_resolve_service_1_1;
@@ -45,25 +39,19 @@ System.register(['@angular/core', '@angular/router', './work-list-base.component
                             router_1.RouterModule.forChild([
                                 {
                                     path: '',
-                                    component: work_list_base_component_1.WorkListBaseComponent,
+                                    component: work_list_component_1.WorkListComponent,
                                     children: [
                                         {
+                                            path: ':id',
+                                            component: work_detail_component_1.WorkDetailComponent,
+                                            resolve: {
+                                                work: work_detail_resolve_service_1.WorkDetailResolve
+                                            }
+                                        },
+                                        {
                                             path: '',
-                                            component: work_list_component_1.WorkListComponent,
-                                            children: [
-                                                {
-                                                    path: ':id',
-                                                    component: work_detail_component_1.WorkDetailComponent,
-                                                    resolve: {
-                                                        work: work_detail_resolve_service_1.WorkDetailResolve
-                                                    }
-                                                },
-                                                {
-                                                    path: '',
-                                                    component: work_detail_base_component_1.WorkDetailBaseComponent,
-                                                    redirectTo: '/Work/Rugby'
-                                                }
-                                            ]
+                                            component: work_detail_component_1.WorkDetailComponent,
+                                            redirectTo: '/Work/Rugby',
                                         }
                                     ]
                                 }

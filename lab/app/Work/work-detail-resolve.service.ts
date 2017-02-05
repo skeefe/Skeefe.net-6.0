@@ -23,5 +23,6 @@ export class WorkDetailResolve implements Resolve<Work> {
 				return false;
 			}
 		});
+
 	}
 }

@@ -1,7 +1,7 @@
 <div class="layout__primary">
 	<section id="skillset" class="section">
 		<div class="inner">
-			<h1>Primary Skillset</h1>
+			<h1 data-filter-heading="Primary Skillset">Primary Skillset</h1>
 			<table>
 				<thead>
 					<tr>
@@ -11,7 +11,6 @@
 				</thead>
 				<tbody>
 					<tr *ngFor="let skill of skillset | orderBy : ['-level', 'title']">
-					<!-- <tr *ngFor="let skill of skillset"> -->
 						<td>{{skill.title}}</td>
 						<td>{{skill.level}}</td>
 					</tr>

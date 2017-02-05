@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { WorkService } from './work.service';
 
-import { WorkListBaseComponent } from './work-list-base.component';
 import { WorkListComponent } from './work-list.component';
 import { WorkDetailComponent } from './work-detail.component';
-import { WorkDetailBaseComponent } from './work-detail-base.component';
+
 
 import { WorkRoutingModule } from './work-routing.module';
 
@@ -16,10 +15,8 @@ import { WorkRoutingModule } from './work-routing.module';
 		WorkRoutingModule
 	],
 	declarations: [
-		WorkListBaseComponent,
 		WorkListComponent,
-		WorkDetailComponent,
-		WorkDetailBaseComponent
+		WorkDetailComponent
 	],
 	providers: [
 		WorkService

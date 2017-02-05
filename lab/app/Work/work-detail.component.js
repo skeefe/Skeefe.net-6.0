@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/router'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/router', './work.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1;
+    var core_1, router_1, work_service_1;
     var WorkDetailComponent;
     return {
         setters:[
@@ -19,12 +19,16 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
             },
             function (router_1_1) {
                 router_1 = router_1_1;
+            },
+            function (work_service_1_1) {
+                work_service_1 = work_service_1_1;
             }],
         execute: function() {
             WorkDetailComponent = (function () {
-                function WorkDetailComponent(route, router) {
+                function WorkDetailComponent(route, router, service) {
                     this.route = route;
                     this.router = router;
+                    this.service = service;
                 }
                 WorkDetailComponent.prototype.ngOnInit = function () {
                     var _this = this;
@@ -33,22 +37,14 @@ System.register(['@angular/core', '@angular/router'], function(exports_1, contex
                     });
                 };
                 WorkDetailComponent.prototype.ngAfterViewInit = function () {
-                    //Trigger Flickity.
-                    $('.carousel').flickity({
-                        imagesLoaded: true,
-                        cellSelector: '.carousel__slide',
-                        percentPosition: false
-                    });
-                };
-                WorkDetailComponent.prototype.gotoWork = function () {
-                    var workID = this.work ? this.work.id : null;
-                    this.router.navigate(['../', { id: workID }], { relativeTo: this.route });
+                    //Trigger Flickity on page load.
+                    this.service.triggerFlickity();
                 };
                 WorkDetailComponent = __decorate([
                     core_1.Component({
                         templateUrl: './app/Work/work-detail.htm'
                     }), 
-                    __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router])
+                    __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, work_service_1.WorkService])
                 ], WorkDetailComponent);
                 return WorkDetailComponent;
             }());
