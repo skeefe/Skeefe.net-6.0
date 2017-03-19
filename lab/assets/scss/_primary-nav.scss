@@ -46,6 +46,7 @@ nav.primary{
 
 		li{
 			display:block;
+			border-bottom:1px solid $green-7;
 
 			@media (min-width: $screen-md){
 				border-bottom:1px solid $grey-6;

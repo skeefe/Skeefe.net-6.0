@@ -5,7 +5,10 @@
 ::selection{
 	background:$green-5;
 }
+a::selection{
+	color:$green-3;
+}
 
 body{
-	background:$grey-7;
+	background:$body-bg;
 }

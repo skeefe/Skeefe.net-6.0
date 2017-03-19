@@ -1,18 +1,78 @@
-<div class="layout__primary">
+<div class="layout__primary layout--alpha">
 	<section id="error404" class="section">
 		<div class="inner">
-			<h1>Page Not Found - 404 Error</h1>
-			<p>404 error message.</p>
+			<h1>Page Not Found.</h1>
+			<p>Sorry the page you attempted to access was not found. Please use the menu above to find the page or alternatively contact me using the form below:</p>
+			<form action="https://formspree.io/simon@skeefe.net" method="post">
+				<input type="hidden" name="_subject" value="Skeefe.net - 404 Player!">
+				<input type="text" name="_gotcha" class="hidden">
+				<input type="hidden" name="_next" value="/Contact/Thank-You">
+				<fieldset>
+					<div class="form__row">
+						<label for="name">Name:</label>
+						<input id="name" name="name" placeholder="Enter your name." type="text" required>
+					</div>
+
+					<div class="form__row">
+						<label for="email">Email:</label>
+						<input id="email" name="email" placeholder="Enter your email address." type="email" required>
+					</div>
+
+					<div class="form__row">
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" placeholder="Enter your message." required></textarea>
+					</div>
+
+					<div class="form__row form__row--submit">
+						<input type="submit" value="Send Message">
+						<!-- <input type="reset"> -->
+					</div>
+				</fieldset>
+			</form>
 		</div>
 	</section>
 </div>
 
-<div class="layout__secondary">
+<div class="layout__secondary layout--beta">
 
-	<section id="heroImage" class="section">
+	<aside id="social-nav" class="module">
 		<div class="inner">
-			<h2>Social Nav?</h2>
+			<h2>Social</h2>
+			<ul class="link-block">
+				<li class="email">
+					<a href="mailto:simon@skeefe.net">
+						<svg viewBox="0 0 20 20" class="icon">
+							<use xlink:href="assets/images/icons-contact.svg#icon-email"></use>
+						</svg>
+						simon@skeefe.net
+					</a>
+				</li>
+				<li class="linked-in">
+					<a href="http://www.linkedin.com/simonkeefe" target="_blank">
+						<svg viewBox="0 2 16 16" class="icon">
+							<use xlink:href="assets/images/icons-contact.svg#icon-linkedin"></use>
+						</svg>
+						simonkeefe
+					</a>
+				</li>
+				<li class="twitter">
+					<a href="http://www.twitter.com/sdkeefe" target="_blank">
+						<svg viewBox="0 0 16 16" class="icon">
+							<use xlink:href="assets/images/icons-contact.svg#icon-twitter"></use>
+						</svg>
+						sdkeefe
+					</a>
+				</li>
+				<li class="instagram">
+					<a href="http://www.instagram.com/sdkeefe" target="_blank">
+						<svg viewBox="0 0 16 15" class="icon">
+							<use xlink:href="assets/images/icons-contact.svg#icon-instagram"></use>
+						</svg>
+						sdkeefe
+					</a>
+				</li>
+			</ul>
 		</div>
-	</section>
+	</aside>
 
 </div>

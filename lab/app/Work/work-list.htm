@@ -1,5 +1,5 @@
-<div class="layout__secondary">
-	<section id="work-list" class="section">
+<div class="layout__secondary layout--alpha">
+	<aside id="work-list" class="module">
 		<div class="inner">
 			<h2>Featured Work</h2>
 
@@ -14,13 +14,11 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+	</aside>
 </div>
 
-<div class="layout__primary">
-	<section id="work-details" class="section">
-		<div class="inner">
-			<router-outlet></router-outlet>
-		</div>
-	</section>
+<div class="layout__primary layout--beta">
+	<div class="inner">
+		<router-outlet></router-outlet>
+	</div>
 </div>

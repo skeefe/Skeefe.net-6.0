@@ -10,7 +10,11 @@
 
 		img{
 			display:block;
+			margin: 0 auto;
 			max-width:100%;
+
+			height:auto;
+			width:100%;
 		}
 
 		figcaption{
@@ -42,7 +46,21 @@
 			background:$grey-3;
     		height: 0.7rem;
 			width: 0.7rem;
+			transition:opacity $transition-md, background $transition-md;
+
+			&:not(.is-selected):hover{
+				background:$green-4;
+				opacity: .5
+			}
 		}
+	}
+
+	//Stop the pre-trigger flicker.
+	&:not(.flickity-enabled) .carousel__slide:first-child{
+		margin-bottom:3.375rem!important;
+	}
+	&:not(.flickity-enabled) .carousel__slide:not(:first-child){
+		display:none;
 	}
 	
 }

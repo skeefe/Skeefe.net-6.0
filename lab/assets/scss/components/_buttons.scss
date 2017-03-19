@@ -27,8 +27,17 @@ button,
 	&.btn--lg{
 		font:$size-lg $font-copy;
 		padding:$space-sm $space-xl;
-		
 	}
+
+	&.btn--sm{
+		font:$size-sm $font-copy;
+		padding:$space-xxs $space-lg;
+	}
+}
+
+#content a:hover button{
+	background:$green-7;
+	color:$white;
 }
 
 input[type="reset"]{

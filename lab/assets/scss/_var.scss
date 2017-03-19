@@ -27,6 +27,8 @@ $green-2: #5AEDB2;
 $overlay-md: rgba(0,0,0,0.78);
 $overlay-sm: rgba(0,0,0,0.6);
 
+$body-bg: $grey-7;
+
 
 /* Misc */
 
@@ -57,33 +59,19 @@ $table-row-hover: $green-8;
 
 /* Layout */
 
-//vw Widths
-$col12:100vw;
-$col11:91.66vw;
-$col10:83.33vw;
-$col9:75vw;
-$col8:66.66vw;
-$col7:58.33vw;
-$col6:50vw;
-$col5:41.66vw;
-$col4:33.33vw;
-$col3:25vw;
-$col2:16.66vw;
-$col1:8.33vw;
-
-//Child Widths
-$child-col12:100%;
-$child-col11:91.66%;
-$child-col10:83.33%;
-$child-col9:75%;
-$child-col8:66.66%;
-$child-col7:58.33%;
-$child-col6:50%;
-$child-col5:41.66%;
-$child-col4:33.33%;
-$child-col3:25%;
-$child-col2:16.66%;
-$child-col1:8.33%;
+//Widths
+$col12:100%;
+$col11:91.6666%;
+$col10:83.3333%;
+$col9:75%;
+$col8:66.6666%;
+$col7:58.3333%;
+$col6:50%;
+$col5:41.6666%;
+$col4:33.3333%;
+$col3:25%;
+$col2:16.6666%;
+$col1:8.3333%;
 
 // Spacing
 $space-xxl: 3rem; //48px

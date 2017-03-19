@@ -3,12 +3,12 @@
 	padding:$space-xl*2.5 0 0;
 
 	@media (min-width: $screen-md){
-		margin-left:$col3;
+		/*margin-left:$col3;*/
 		padding:$space-xl 0;
 	}
 
 	@media (min-width: $screen-lg){
-		margin-left:$col2;
+		/*margin-left:$col2;*/
 	}
 }
 
@@ -18,64 +18,138 @@
 
 .layout{
 
-	.layout__primary{
-		padding:0 $space-md $space-md;
+	//Trail - working out how to best put the .layout__secondary section first.
 
+	//Position - left (first)
+	.layout--alpha{
+		margin:0 $space-md $space-xxl;
+
+		@media (min-width: $screen-md){
+			margin-left:calc(#{$col3} + #{$space-md}); //Size of the header + gutter.
+			margin-right:0;
+		}
 
 		@media (min-width: $screen-lg){
-			float:left;
-			padding:$space-xs*2 0 $space-md $space-lg;
-			width:$child-col8;
+			margin-left:calc(#{$col2} + #{$space-lg}); //Size of the header + gutter.
+		}
+		
+	}
+
+	//Position - right (second)
+	.layout--beta{
+		margin:0 $space-md 0;
+
+		@media (min-width: $screen-md){
+			margin-left:calc(#{$col3} + #{$space-md}); //Size of the header + gutter.
+		}
+
+		@media (min-width: $screen-lg){
+			margin:0 $space-lg 0 0; //Distance from layout--beta.
+		}
+	}
+
+	//Section size.
+	//Large section.
+	.layout__primary{
+
+		@media (min-width: $screen-md){			
+			padding:0 $space-md 0 0;
+		}
+
+		@media (min-width: $screen-lg){
+			float:left;			
+			margin-top:$space-sm;
+			padding:0 $space-lg $space-md 0;
+			width: calc(#{$col8} - #{$space-lg}*2);
 		}
 
 	}
 
+	//Section width.
+	//Small section.
 	.layout__secondary{
 		overflow: auto;
-		padding:0 $space-md $space-md;
+		padding:0;
 
 		@media (min-width: $screen-lg){
 			float:left;
-			padding:0 $space-lg $space-md;
-			width:$child-col4;
+			margin-bottom:0;
+			padding:0;
+			width:$col2; //Save width as header.
 		}
 
-		.section{
 
-			@media (min-width: $screen-xs){
-				float:left;
-				width:$child-col6;
-
-				&:nth-child(2n+1){
-					padding-right:$space-md/2;
-				}
-				&:nth-child(2n){
-					padding-left:$space-md/2;
-				}
-			}
+		.module{
+			margin-bottom:$space-md;
 
 			@media (min-width: $screen-lg){
-				float:none;
-				width:$child-col12;
-
-				&:nth-child(2n+1),
-				&:nth-child(2n){
-					padding:0;
-				}
+				margin:0 0 $space-lg;
 			}
 
 			.inner{
 				background:$grey-8;
-				padding:$space-lg;
+				padding:$space-md;
+
+				@media (min-width: $screen-lg){
+					padding:$space-md $space-lg;
+				}
 			}
+
+			&.module--2{
+
+				@media (min-width: $screen-xs){
+					float:left;
+					width:50%;
+
+					&:nth-child(1) .inner{
+						margin-right:$space-md/2;
+					}
+					&:nth-child(2) .inner{
+						margin-left:$space-md/2;
+					}
+				}
+
+				@media (min-width: $screen-lg){			
+					float:none;
+					width:100%;
+
+					&:nth-child(1) .inner,
+					&:nth-child(2) .inner{
+						margin:0 0 $space-lg;
+					}
+				}
+
+			}
+
+			
+		}
+	}
+
+	.layout__secondary.layout--alpha{
+
+		@media (min-width: $screen-md){
+			margin-right: $space-md;
+			padding:0 0 $space-md;
+		}
+
+		@media (min-width: $screen-lg){
+			margin-right: 0;
+			padding:0 0 $space-md;
 		}
 
 	}
 
-	&.layout--right{
-		
-	}
+	.layout__primary.layout--beta{
 
+		@media (min-width: $screen-md){
+			padding:0 0 $space-md 0;
+		}
+
+		@media (min-width: $screen-lg){
+			padding:0 0 $space-md $space-lg;
+		}
+
+	}
 }
 
 

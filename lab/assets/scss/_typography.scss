@@ -13,6 +13,9 @@
 		line-height:$line-md;
 		margin-bottom:$space-md;
 	}
+	.layout__primary h2{
+		padding-top:$space-md;
+	}
 	.layout__secondary h2{
 		margin-top:$space-xxxxs;
 	}
@@ -54,11 +57,6 @@
 	ul{
 		list-style:square outside none;
 		margin-left:$space-md;
-	}
-
-	.icon{
-		//font-size:$icon-md;
-		//line-height:$size-md;
 	}
 	
 }

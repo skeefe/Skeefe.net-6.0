@@ -5,7 +5,7 @@
 
 	<section class="meta">
 		<span>Launched: {{work.launched}}</span>
-		<span *ngIf="work.company">Company: <a href="{{work.companyurl}}">{{work.company}}</a></span>
+		<span *ngIf="work.company">Company: <a href="{{work.companyurl}}" target="_blank">{{work.company}}</a></span>
 		<span *ngIf="work.client">Client: {{work.client}}</span>
 	</section>
 

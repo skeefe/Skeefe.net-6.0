@@ -47,6 +47,7 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Observable'], function(
                         cellSelector: '.carousel__slide',
                         percentPosition: false
                     });
+                    console.log('triggered');
                 };
                 //Reload Flickity
                 WorkService.prototype.reloadFlickity = function () {
@@ -63,6 +64,7 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Observable'], function(
                 //Destroy Flickity
                 WorkService.prototype.destroyFlickity = function () {
                     $('.carousel').flickity('destroy');
+                    console.log('destroyed');
                 };
                 //Set active classes.
                 WorkService.prototype.activeWork = function (selectedWork) {
@@ -72,9 +74,6 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Observable'], function(
                     //Add new active state.
                     $('#work-list option[value="' + selectedWork + '"]').attr('selected', 'selected');
                     $('#work-list li[data-work="' + selectedWork + '"]').addClass('active');
-                    console.log($('#work-list option[value="' + selectedWork + '"]').length);
-                    console.log($('#work-list option').length);
-                    console.log('Activework');
                 };
                 WorkService = __decorate([
                     core_1.Injectable(), 

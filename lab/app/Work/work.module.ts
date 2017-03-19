@@ -6,8 +6,8 @@ import { WorkService } from './work.service';
 import { WorkListComponent } from './work-list.component';
 import { WorkDetailComponent } from './work-detail.component';
 
-
 import { WorkRoutingModule } from './work-routing.module';
+
 
 @NgModule({
 	imports: [

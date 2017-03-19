@@ -1,6 +1,6 @@
-#work-details{
+#work-detail{
 	@media (min-width: $screen-lg){
-		margin:0 1.5rem 0 -1.5rem;
+		//margin:0 1.5rem 0 -1.5rem;
 	}
 
 	h1{
@@ -54,28 +54,47 @@
 
 			li{
 				@include overlay-sm;
-				margin-bottom:$space-xxxs;
-				text-align:center;
-			}
+				display: block;
+				
+				margin-bottom:2%;
+				
+				text-align:center;			
 			
-			@media (min-width: $screen-xs/1.5){
-				column-count: 2;
-				column-gap: $space-xxxs;
+				@media (min-width: $screen-xs/1.5){
+					float:left;
+					margin-left:2%;
+					width:49%;
 
-				li{
-					-webkit-column-break-inside: avoid;
-					page-break-inside: avoid;
-					break-inside: avoid;
-					text-align: left;
+					&:nth-child(2n + 1){
+						margin-left:0;
+					}
+
 				}
-			}
 
-			@media (min-width: $screen-sm){
-				column-count: 3;
-			}
+				@media (min-width: $screen-sm){
+					width:32%;
 
-			@media (min-width: $screen-xl){
-				column-count: 4;				
+					&:nth-child(2n + 1){
+						margin-left:2%;
+					}
+
+					&:nth-child(3n + 1){
+						margin-left:0;
+					}
+				}
+
+				@media (min-width: $screen-xl){
+					width:23.5%;
+
+					&:nth-child(3n + 1){
+						margin-left:2%;
+					}
+
+					&:nth-child(4n + 1){
+						margin-left:0;
+					}			
+				}
+
 			}
 
 		}

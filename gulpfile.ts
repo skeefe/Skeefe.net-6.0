@@ -213,9 +213,9 @@ gulp.task('useref', function () {
 // Optimises and places images.
 gulp.task('images', function () {
 	return gulp.src('lab/assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
-		.pipe(cache(imagemin({
-			interlaced: true,
-		})))
+		//.pipe(cache(imagemin({ //Resolve this.
+		//	interlaced: true,
+		//})))
 		.pipe(gulp.dest('distillery/assets/images/'))
 });
 

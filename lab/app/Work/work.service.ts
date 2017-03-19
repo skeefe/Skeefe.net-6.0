@@ -33,6 +33,8 @@ export class WorkService {
 			cellSelector: '.carousel__slide',
 			percentPosition: false
 		});
+
+		console.log('triggered');
 	}
 
 	//Reload Flickity
@@ -51,6 +53,8 @@ export class WorkService {
 	//Destroy Flickity
 	destroyFlickity() {
 		$('.carousel').flickity('destroy');
+
+		console.log('destroyed');
 	}
 
 	//Set active classes.
@@ -62,10 +66,5 @@ export class WorkService {
 		//Add new active state.
 		$('#work-list option[value="' + selectedWork + '"]').attr('selected', 'selected');
 		$('#work-list li[data-work="' + selectedWork + '"]').addClass('active');
-
-		console.log($('#work-list option[value="' + selectedWork + '"]').length);
-		console.log($('#work-list option').length);
-
-		console.log('Activework');
 	}
 }

@@ -1,0 +1,37 @@
+.featured-work__item{
+	overflow: auto;
+
+	.item-screenshot{
+		margin:0 0 $space-sm;
+
+		img{
+			display: block;
+			width:100%;
+		}
+	}
+
+	.item-meta{
+		display: table;
+		margin:0 0 $space-sm;
+
+		.item-logo{
+			display: table-cell;
+			vertical-align: middle;
+			width:$col4;
+
+			.logo{
+				display:block;
+				height:auto;
+				width:100%;
+			}
+		}
+
+		.item-title{
+			display: table-cell;
+			padding-left:$space-sm;
+			vertical-align: middle;
+			width:$col8;
+		}
+	}
+
+}

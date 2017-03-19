@@ -6,6 +6,7 @@ import { WorkDetailComponent } from './work-detail.component';
 
 import { WorkDetailResolve } from './work-detail-resolve.service';
 
+
 @NgModule({
 	imports: [
 		RouterModule.forChild([

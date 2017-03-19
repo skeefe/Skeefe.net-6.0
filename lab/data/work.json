@@ -6,19 +6,19 @@
 		"url": "http://www.rugby.com.au",
 		"launched": "March 2016",
 		"company": "Australian Rugby Union",
-		"company-url": "http://www.aru.com.au",
+		"companyurl": "http://www.aru.com.au",
 		"screenshots":
 			[
 				{
-					"file": "http://placehold.it/935x400",
+					"file": "http://placehold.it/1040x400",
 					"caption": "Placeholder caption 1."
 				},
 				{
-					"file": "http://placehold.it/935x400",
+					"file": "http://placehold.it/1040x400",
 					"caption": "Placeholder caption 2."
 				},
 				{
-					"file": "http://placehold.it/935x400",
+					"file": "http://placehold.it/1040x400",
 					"caption": "Placeholder caption 3."
 				}
 			],
@@ -46,11 +46,11 @@
 		"url": "http://www.sydney7s.com.au",
 		"launched": "March 2016",
 		"company": "Australian Rugby Union",
-		"company-url": "http://www.aru.com.au",
+		"companyurl": "http://www.aru.com.au",
 		"screenshots":
 			[
 				{
-					"file": "http://placehold.it/935x400",
+					"file": "http://placehold.it/1040x400",
 					"caption": "Placeholder caption 1."
 				}
 			],
@@ -68,15 +68,15 @@
 		"thumbnail": "http://placehold.it/400x225",
 		"url": "http://cornerstone-digital.com.au","launched": "March 2016",
 		"company": "Cornerstone Digital",
-		"company-url": "http://cornerstone-digital.com.au",
+		"companyurl": "http://cornerstone-digital.com.au",
 		"screenshots":
 			[
 				{
-					"file": "http://placehold.it/935x400",
+					"file": "http://placehold.it/1040x400",
 					"caption": "Placeholder caption 1."
 				},
 				{
-					"file": "http://placehold.it/935x400",
+					"file": "http://placehold.it/1040x400",
 					"caption": "Placeholder caption 2."
 				}
 			],
@@ -95,20 +95,20 @@
 		"url": "https://poppyshop.org.au/",
 		"launched": "March 2016",
 		"company": "Cornerstone Digital",
-		"company-url": "http://cornerstone-digital.com.au",
+		"companyurl": "http://cornerstone-digital.com.au",
 		"client": "RSL NSW",
 		"screenshots":
 			[
 				{
-					"file": "http://placehold.it/935x400",
+					"file": "http://placehold.it/1040x400",
 					"caption": "Placeholder caption 1."
 				},
 				{
-					"file": "http://placehold.it/935x400",
+					"file": "http://placehold.it/1040x400",
 					"caption": "Placeholder caption 2."
 				},
 				{
-					"file": "http://placehold.it/935x400",
+					"file": "http://placehold.it/1040x400",
 					"caption": "Placeholder caption 3."
 				}
 			],
