@@ -11,6 +11,7 @@ export class Work {
 	screenshots: ScreenShots[];
 	summary: string;
 	workskills: WorkSkills[];
+	//carousel: string;
 }
 
 export class ScreenShots {

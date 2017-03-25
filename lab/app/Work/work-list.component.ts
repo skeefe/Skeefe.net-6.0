@@ -51,9 +51,10 @@ export class WorkListComponent implements OnInit, AfterViewInit {
 	}
 
 	onSelect(workID: String) {
+		//this.service.destroyFlickity();
 		this.router.navigate([workID], { relativeTo: this.route });
-		this.service.reloadFlickity();
 		this.service.activeWork(workID);
+		this.service.reloadFlickity();
 	}
 
 }

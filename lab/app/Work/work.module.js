@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/common', './work.service', './work-list.component', './work-detail.component', './work-routing.module'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/common', './work-routing.module', './work-list.component', './work-detail.component', '../safe-pipe', './work.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/common', './work.service', './work-l
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, common_1, work_service_1, work_list_component_1, work_detail_component_1, work_routing_module_1;
+    var core_1, common_1, work_routing_module_1, work_list_component_1, work_detail_component_1, safe_pipe_1, work_service_1;
     var WorkModule;
     return {
         setters:[
@@ -20,8 +20,8 @@ System.register(['@angular/core', '@angular/common', './work.service', './work-l
             function (common_1_1) {
                 common_1 = common_1_1;
             },
-            function (work_service_1_1) {
-                work_service_1 = work_service_1_1;
+            function (work_routing_module_1_1) {
+                work_routing_module_1 = work_routing_module_1_1;
             },
             function (work_list_component_1_1) {
                 work_list_component_1 = work_list_component_1_1;
@@ -29,8 +29,11 @@ System.register(['@angular/core', '@angular/common', './work.service', './work-l
             function (work_detail_component_1_1) {
                 work_detail_component_1 = work_detail_component_1_1;
             },
-            function (work_routing_module_1_1) {
-                work_routing_module_1 = work_routing_module_1_1;
+            function (safe_pipe_1_1) {
+                safe_pipe_1 = safe_pipe_1_1;
+            },
+            function (work_service_1_1) {
+                work_service_1 = work_service_1_1;
             }],
         execute: function() {
             WorkModule = (function () {
@@ -44,7 +47,8 @@ System.register(['@angular/core', '@angular/common', './work.service', './work-l
                         ],
                         declarations: [
                             work_list_component_1.WorkListComponent,
-                            work_detail_component_1.WorkDetailComponent
+                            work_detail_component_1.WorkDetailComponent,
+                            safe_pipe_1.SafePipe
                         ],
                         providers: [
                             work_service_1.WorkService

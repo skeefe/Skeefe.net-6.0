@@ -54,9 +54,10 @@ System.register(['@angular/core', '@angular/router', './work.service'], function
                     }, 50);
                 };
                 WorkListComponent.prototype.onSelect = function (workID) {
+                    //this.service.destroyFlickity();
                     this.router.navigate([workID], { relativeTo: this.route });
-                    this.service.reloadFlickity();
                     this.service.activeWork(workID);
+                    this.service.reloadFlickity();
                 };
                 WorkListComponent = __decorate([
                     core_1.Component({

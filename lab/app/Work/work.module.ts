@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { WorkService } from './work.service';
+import { WorkRoutingModule } from './work-routing.module';
 
 import { WorkListComponent } from './work-list.component';
 import { WorkDetailComponent } from './work-detail.component';
+import { SafePipe } from '../safe-pipe';
 
-import { WorkRoutingModule } from './work-routing.module';
+import { WorkService } from './work.service';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { WorkRoutingModule } from './work-routing.module';
 	],
 	declarations: [
 		WorkListComponent,
-		WorkDetailComponent
+		WorkDetailComponent,
+		SafePipe
 	],
 	providers: [
 		WorkService

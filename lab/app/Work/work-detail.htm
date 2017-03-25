@@ -11,12 +11,16 @@
 
 	<section id="screenshots" *ngIf="work.screenshots">
 		<div class="carousel">
-			<figure *ngFor="let screenshot of work.screenshots" class="carousel__slide">
+			<figure *ngFor="let screenshot of work.screenshots;" class="carousel__slide">
 				<img src="{{screenshot.file}}" />
 				<figcaption [innerHTML]="screenshot.caption" class="copy"></figcaption>
 			</figure>
 		</div>
 	</section>
+
+	<!--
+	<section id="screenshots" *ngIf="work.screenshots" [innerHTML]="work.carousel | safe: 'html'"></section>
+	-->
 
 	<section *ngIf="work.summary">
 		<h2>Project Summary</h2>

@@ -33,28 +33,27 @@ export class WorkService {
 			cellSelector: '.carousel__slide',
 			percentPosition: false
 		});
-
 		console.log('triggered');
+	}
+
+	//Destroy Flickity
+	destroyFlickity() {
+		$('.carousel').flickity('destroy');
+		console.log('destroyed');
 	}
 
 	//Reload Flickity
 	reloadFlickity() {
 		this.destroyFlickity();
-		setTimeout(function() { //Rewrite this - should not use a timeout.
+		setTimeout(function() { //Rewrite this - should not use a timeout. The issue I have not been able to setup a callback function for the ngFor on the Carousel element.
 			//this.triggerFlickity(); //Unable to call this function from within the timeout.
 			$('.carousel').flickity({
 				imagesLoaded: true,
 				cellSelector: '.carousel__slide',
 				percentPosition: false
 			});
-		}, 100);
-	}
-
-	//Destroy Flickity
-	destroyFlickity() {
-		$('.carousel').flickity('destroy');
-
-		console.log('destroyed');
+		}, 50);
+		console.log('reloaded');
 	}
 
 	//Set active classes.

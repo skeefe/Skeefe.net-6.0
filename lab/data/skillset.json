@@ -17,6 +17,14 @@
 			]
 	},
 	{
+		"title": "Javascript",
+		"level": 4,
+		"category":
+			[
+				{ "title": "Language/Framework" }
+			]
+	},
+	{
 		"title": "WordPress",
 		"level": 4,
 		"category":

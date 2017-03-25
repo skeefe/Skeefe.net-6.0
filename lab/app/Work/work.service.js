@@ -49,6 +49,11 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Observable'], function(
                     });
                     console.log('triggered');
                 };
+                //Destroy Flickity
+                WorkService.prototype.destroyFlickity = function () {
+                    $('.carousel').flickity('destroy');
+                    console.log('destroyed');
+                };
                 //Reload Flickity
                 WorkService.prototype.reloadFlickity = function () {
                     this.destroyFlickity();
@@ -59,12 +64,8 @@ System.register(['@angular/core', '@angular/http', 'rxjs/Observable'], function(
                             cellSelector: '.carousel__slide',
                             percentPosition: false
                         });
-                    }, 100);
-                };
-                //Destroy Flickity
-                WorkService.prototype.destroyFlickity = function () {
-                    $('.carousel').flickity('destroy');
-                    console.log('destroyed');
+                    }, 50);
+                    console.log('reloaded');
                 };
                 //Set active classes.
                 WorkService.prototype.activeWork = function (selectedWork) {

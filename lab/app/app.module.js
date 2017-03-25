@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser', '@angular/http', './app.component', './app-routing.module', "./Work/work.module", './Skillset/skillset.module'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', './app-routing.module', '@angular/http', './app.component', "./Work/work.module", './Skillset/skillset.module'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/http', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_1, http_1, app_component_1, app_routing_module_1, work_module_1, skillset_module_1;
+    var core_1, platform_browser_1, app_routing_module_1, http_1, app_component_1, work_module_1, skillset_module_1;
     var AppModule;
     return {
         setters:[
@@ -20,14 +20,14 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/http', 
             function (platform_browser_1_1) {
                 platform_browser_1 = platform_browser_1_1;
             },
+            function (app_routing_module_1_1) {
+                app_routing_module_1 = app_routing_module_1_1;
+            },
             function (http_1_1) {
                 http_1 = http_1_1;
             },
             function (app_component_1_1) {
                 app_component_1 = app_component_1_1;
-            },
-            function (app_routing_module_1_1) {
-                app_routing_module_1 = app_routing_module_1_1;
             },
             function (work_module_1_1) {
                 work_module_1 = work_module_1_1;
@@ -52,7 +52,9 @@ System.register(['@angular/core', '@angular/platform-browser', '@angular/http', 
                         declarations: [
                             app_component_1.AppComponent
                         ],
-                        bootstrap: [app_component_1.AppComponent]
+                        bootstrap: [
+                            app_component_1.AppComponent
+                        ]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppModule);
