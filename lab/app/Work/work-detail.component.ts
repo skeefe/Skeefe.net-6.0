@@ -25,25 +25,6 @@ export class WorkDetailComponent implements OnInit, AfterViewInit {
 
 	ngOnInit() {
 		this.route.data.forEach((data: { work: Work }) => { //Doesn't need to be a loop.
-
-			/*
-			//Build the carousel;
-			if (data.work.screenshots.length > 0) {
-				//let flickityOptions = "='{"imagesLoaded": true, "cellSelector": ".carousel__slide", "percentPosition": false}'";
-				let carousel = "<div class='main-carousel carousel' data-flickity='{" + flickityOptions + "}'>";
-				data.work.screenshots.forEach(s => {
-					carousel = carousel + `
-						<figure class="carousel__slide carousel-cell">
-							<img src="` + s.file + `" />
-							<figcaption class="copy">` + s.caption + `</figcaption>
-						</figure>
-					`;
-				});
-				carousel = carousel + '</div>';
-				//data.work.carousel = carousel;
-			}
-			*/
-
 			this.work = data.work;
 		});
 	}

@@ -6,6 +6,7 @@
 $white: #fff;
 $black: #000;
 
+/*
 $grey-9: #050505;
 $grey-8: #111;
 $grey-7: #222;
@@ -15,11 +16,22 @@ $grey-4: #999;
 $grey-3: #ccc;
 $grey-2: #dedede;
 $grey-1: #eee;
+*/
+
+$grey-9: #050505;
+$grey-8: #02020D;
+$grey-7: #14141e;
+$grey-6: #29293d;
+$grey-5: #555;//mid
+$grey-4: #999;
+$grey-3: #ccc;
+$grey-2: #dedede;
+$grey-1: #eee;
 
 $green-8:#08452c;
 $green-7:#0a5c3b;
 $green-6:#0d734a;
-$green-5:#0f8a59; //mid
+$green-5:#b0b0ff; //mid
 $green-4: #14b876;
 $green-3: #19e694;
 $green-2: #5AEDB2;
@@ -85,7 +97,7 @@ $space-xxxs: 0.25rem; //4px
 $space-xxxxs: 0.125rem; //2px
 
 //Border
-$border-md:0.25rem solid; //2px
+$border-md:0.25rem solid; //4px
 $border-sm:0.125rem solid; //2px
 $border-xs:1px solid; //1px
 
@@ -101,8 +113,9 @@ $heading-colour-lg:$white;
 $heading-colour-md:$grey-1;
 $heading-colour-sm:$grey-2;
 $copy-colour:$grey-3;
-$link-color:$green-5;
-$link-color-hover:$green-4;
+//$link-color:$green-5;
+$link-color:#fff;
+$link-color-hover:$green-5;
 
 // Font Families
 $font-heading: georgia, serif;

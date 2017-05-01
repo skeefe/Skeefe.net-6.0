@@ -7,11 +7,11 @@ export class Work {
 	launched: string;
 	company: string;
 	companyurl: string;
+	logo: string;
 	client: string;
 	screenshots: ScreenShots[];
 	summary: string;
 	workskills: WorkSkills[];
-	//carousel: string;
 }
 
 export class ScreenShots {

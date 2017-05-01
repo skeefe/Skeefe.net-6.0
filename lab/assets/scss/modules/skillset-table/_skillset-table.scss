@@ -3,4 +3,13 @@
 		min-width:50px;
 		width:25%;
 	}
+
+	th:nth-child(3),
+	td:nth-child(3){
+		display:none;
+
+		@media (min-width: $screen-xs){
+			display:table-cell;
+		}
+	}
 }

@@ -35,31 +35,31 @@ System.register(['@angular/core', 'rxjs/Rx', './skillset.service'], function(exp
                 function SkillsetComponent(skillsetService) {
                     this.skillsetService = skillsetService;
                 }
-                //Return All Skills.
-                SkillsetComponent.prototype.loadSkillset = function () {
-                    var _this = this;
-                    this.skillsetService.getSkillset()
-                        .subscribe(function (skillset) { return _this.skillset = skillset; }, function (err) {
-                        console.log(err);
-                    });
-                };
                 SkillsetComponent.prototype.ngOnInit = function () {
-                    this.loadSkillset();
+                    this.loadCoreSkills();
                 };
                 //Return Selected Skill Category
                 SkillsetComponent.prototype.loadCategorySkills = function (skillCategory) {
                     var _this = this;
                     return this.skillsetService.getSkillset()
-                        .map(function (skillset) { return skillset.filter(function (skill) { return SkillCategorySearch(skillCategory, skill.category); }); })
+                        .map(function (skillset) { return skillset.filter(function (skill) { return SkillCategorySearch(skillCategory, skill.categories); }); })
                         .subscribe(function (skillset) { return _this.skillset = skillset; }, function (err) {
                         console.log(err);
                     });
                 };
                 //Return Strongest Skills
-                SkillsetComponent.prototype.loadStrongestSkills = function (skillLevel) {
+                SkillsetComponent.prototype.loadCoreSkills = function () {
                     var _this = this;
                     return this.skillsetService.getSkillset()
-                        .map(function (skillset) { return skillset.filter(function (skill) { return skill.level >= skillLevel; }); })
+                        .map(function (skillset) { return skillset.filter(function (skill) { return skill.core === true; }); })
+                        .subscribe(function (skillset) { return _this.skillset = skillset; }, function (err) {
+                        console.log(err);
+                    });
+                };
+                //Return All Skills.
+                SkillsetComponent.prototype.loadSkillset = function () {
+                    var _this = this;
+                    return this.skillsetService.getSkillset()
                         .subscribe(function (skillset) { return _this.skillset = skillset; }, function (err) {
                         console.log(err);
                     });

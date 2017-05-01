@@ -60,7 +60,7 @@ $(function () {
 		
 		//Update the H1.
 		var headingBase = $('h1').data('filter-heading');
-		$(selectedFilter).index() === 0 ? $('h1').text(headingBase) : $('h1').text(headingBase + ': ' + $(selectedFilter).text());
+		$('h1').html(headingBase + $(selectedFilter).data('title'));
 
 	});
 

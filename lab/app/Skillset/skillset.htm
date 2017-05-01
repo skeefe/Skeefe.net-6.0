@@ -2,21 +2,26 @@
 
 	<section id="skillset" class="section">
 		<div class="inner">
-			<h1 data-filter-heading="Primary Skillset">Primary Skillset</h1>
+
+			<h1 data-filter-heading="Skillset: ">Skillset: Core</h1>
+			
 			<table>
 				<thead>
 					<tr>
 						<th>Skill Title</th>
 						<th>Level</th>
+						<th>Category</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr *ngFor="let skill of skillset | orderBy : ['-level', 'title']">
+					<tr *ngFor="let skill of skillset | orderBy : ['-score']">
 						<td>{{skill.title}}</td>
 						<td>{{skill.level}}</td>
+						<td><span *ngFor="let category of skill.categories | orderBy : ['title']">{{category.title}}</span></td>
 					</tr>
 				</tbody>
 			</table>
+
 		</div>
 	</section>
 
@@ -28,13 +33,15 @@
 	<aside id="skillset-filter" class="module">
 		<div class="inner">
 			<h2>Filter Skillet</h2>
-			<ul class="filter">
-				<li (click)="loadSkillset()" class="active">Show All</li>
-				<li (click)="loadStrongestSkills(5)">Core Skills</li>
-				<li (click)="loadCategorySkills('Web Software/System')">Web Software/Systems</li>
-				<li (click)="loadCategorySkills('Language/Framework')">Languages/Frameworks</li>
-				<li (click)="loadCategorySkills('CMS')">Content Management Systems</li>
-				<li (click)="loadCategorySkills('General Business')">General Business</li>
+			<ul class="filter">				
+				<li (click)="loadCoreSkills()" class="active" data-title="Core">Core</li>
+				<li (click)="loadCategorySkills('Language/Framework/Library')" data-title="Languages/<wbr>Frameworks/<wbr>Libraries">Languages/<wbr>Frameworks/<wbr>Libraries</li>
+				<li (click)="loadCategorySkills('Content Management System')" data-title="Content Management Systems">Content Management Systems</li>
+				<li (click)="loadCategorySkills('Software')" data-title="Software">Software</li>
+				<li (click)="loadCategorySkills('HTML Email')" data-title="HTML Emails">HTML Emails</li>
+				<li (click)="loadCategorySkills('Web System')" data-title="Web Systems">Web Systems</li>
+				<li (click)="loadCategorySkills('General Web')" data-title="General Web">General Web</li>
+				<li (click)="loadSkillset()" data-title="Full List">SHOW ALL</li>
 			</ul>
 		</div>
 	</aside>

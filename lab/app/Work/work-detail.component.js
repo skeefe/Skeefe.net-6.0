@@ -37,23 +37,6 @@ System.register(['@angular/core', '@angular/router', '@angular/platform-browser'
                 WorkDetailComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     this.route.data.forEach(function (data) {
-                        /*
-                        //Build the carousel;
-                        if (data.work.screenshots.length > 0) {
-                            //let flickityOptions = "='{"imagesLoaded": true, "cellSelector": ".carousel__slide", "percentPosition": false}'";
-                            let carousel = "<div class='main-carousel carousel' data-flickity='{" + flickityOptions + "}'>";
-                            data.work.screenshots.forEach(s => {
-                                carousel = carousel + `
-                                    <figure class="carousel__slide carousel-cell">
-                                        <img src="` + s.file + `" />
-                                        <figcaption class="copy">` + s.caption + `</figcaption>
-                                    </figure>
-                                `;
-                            });
-                            carousel = carousel + '</div>';
-                            //data.work.carousel = carousel;
-                        }
-                        */
                         _this.work = data.work;
                     });
                 };

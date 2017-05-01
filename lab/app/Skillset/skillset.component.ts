@@ -16,26 +16,14 @@ export class SkillsetComponent implements OnInit {
 
 	skillset: Skill[];
 
-	//Return All Skills.
-	loadSkillset() {
-		this.skillsetService.getSkillset()
-		.subscribe(
-			skillset => this.skillset = skillset,
-			err => {
-				console.log(err);
-			}
-		);
-
-	}
-
 	ngOnInit() {
-		this.loadSkillset();
+		this.loadCoreSkills();
 	}
 
 	//Return Selected Skill Category
 	loadCategorySkills(skillCategory: string) {
 		return this.skillsetService.getSkillset()
-			.map(skillset => skillset.filter(skill => SkillCategorySearch(skillCategory, skill.category)))
+			.map(skillset => skillset.filter(skill => SkillCategorySearch(skillCategory, skill.categories)))
 			.subscribe(
 				skillset => this.skillset = skillset,
 				err => {
@@ -45,15 +33,27 @@ export class SkillsetComponent implements OnInit {
 	}
 
 	//Return Strongest Skills
-	loadStrongestSkills(skillLevel: number) {
+	loadCoreSkills() {
 		return this.skillsetService.getSkillset()
-			.map(skillset => skillset.filter(skill => skill.level >= skillLevel))
+			.map(skillset => skillset.filter(skill => skill.core === true))
 			.subscribe(
 				skillset => this.skillset = skillset,
 				err => {
 					console.log(err);
 				}
 			);
+	}
+
+	//Return All Skills.
+	loadSkillset() {
+		return this.skillsetService.getSkillset()
+		.subscribe(
+			skillset => this.skillset = skillset,
+			err => {
+				console.log(err);
+			}
+		);
+
 	}
 
 }

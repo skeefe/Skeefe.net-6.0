@@ -1,4 +1,6 @@
 .featured-work__item{
+	background:$grey-6;
+	margin:0 0 $space-sm;
 	overflow: auto;
 
 	.item-screenshot{
@@ -12,25 +14,28 @@
 
 	.item-meta{
 		display: table;
-		margin:0 0 $space-sm;
 
 		.item-logo{
 			display: table-cell;
 			vertical-align: middle;
-			width:$col4;
+			width:$col12;
 
 			.logo{
 				display:block;
 				height:auto;
-				width:100%;
+				margin:0 auto;
+				max-width:100%;
+				padding:$space-lg $space-xxl;
+				
 			}
 		}
 
 		.item-title{
-			display: table-cell;
+			display: none;
+			line-height: $line-md;
 			padding-left:$space-sm;
 			vertical-align: middle;
-			width:$col8;
+			width:$col7;
 		}
 	}
 

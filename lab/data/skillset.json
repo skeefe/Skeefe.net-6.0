@@ -1,75 +1,583 @@
 [
 	{
 		"title": "HTML5",
-		"level": 5,
-		"category":
+		"score": 7,
+		"level": "Strong",
+		"core": true,
+		"categories":
 			[
-				{ "title": "Language/Framework" },
-				{ "title": "CMS" }
+				{ "title": "Language/Framework/Library" }
 			]
 	},
 	{
 		"title": "CSS3",
-		"level": 5,
-		"category":
+		"score": 7,
+		"level": "Strong",
+		"core": true,
+		"categories":
 			[
-				{ "title": "Language/Framework" }
+				{ "title": "Language/Framework/Library" }
 			]
 	},
 	{
-		"title": "Javascript",
-		"level": 4,
-		"category":
+		"title": "SASS",
+		"score": 5,
+		"level": "Strong",
+		"core": true,
+		"categories":
 			[
-				{ "title": "Language/Framework" }
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "Bootstrap",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "JavaScript",
+		"score": 6,
+		"level": "Intermediate",
+		"core": true,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "jQuery",
+		"score": 4,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "AJAX",
+		"score": 3,
+		"level": "Intermediate",
+		"core": true,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "Lodash",
+		"score": 2,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "C# .NET4.5 - Updates/Maintenance",
+		"score": 2,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "SQL",
+		"score": 2,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "PHP",
+		"score": 2,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "Angular 2",
+		"score": 1,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "VS Code",
+		"score": 5,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Software" }
+			]
+	},
+	{
+		"title": "Visusal Studio",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Software" }
+			]
+	},
+	{
+		"title": "Adobe Photoshop (not design)",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Software" }
+			]
+	},
+	{
+		"title": "MS Visio",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Software" }
+			]
+	},
+	{
+		"title": "MySQL, PHPMyAdmin",
+		"score": 2,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Software" }
+			]
+	},
+	{
+		"title": "MS SQL Server",
+		"score": 2,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Software" }
 			]
 	},
 	{
 		"title": "WordPress",
-		"level": 4,
-		"category":
+		"score": 5,
+		"level": "Strong",
+		"core": true,
+		"categories":
 			[
-				{ "title": "CMS" }
+				{ "title": "Content Management System" }
 			]
 	},
 	{
-		"title": "DNN",
-		"level": 4,
-		"category":
+		"title": "Sitecore",
+		"score": 4,
+		"level": "Strong",
+		"core": true,
+		"categories":
 			[
-				{ "title": "CMS" }
+				{ "title": "Content Management System" }
 			]
 	},
 	{
-		"title": "SiteCore",
-		"level": 4,
-		"category":
+		"title": "Adobe Business Catalyst",
+		"score": 5,
+		"level": "Strong",
+		"core": false,
+		"categories":
 			[
-				{ "title": "CMS" }
+				{ "title": "Content Management System" }
 			]
 	},
 	{
-		"title": "NetSuite Templates",
-		"level": 4,
-		"category":
+		"title": "DotNetNuke",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
 			[
-				{ "title": "Web Software/System" }
+				{ "title": "Content Management System" }
 			]
 	},
 	{
-		"title": "Visual Studio",
-		"level": 4,
-		"category":
+		"title": "Magento (Front-End)",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
 			[
-				{ "title": "Web Software/System" }
+				{ "title": "Content Management System" }
+			]
+	},
+	{
+		"title": "Umbraco",
+		"score": 1,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Content Management System" }
+			]
+	},
+	{
+		"title": "Visualforce",
+		"score": 2,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Web System" }
+			]
+	},
+	{
+		"title": "NetSuite Templating",
+		"score": 2,
+		"level": "Learning",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Web System" }
+			]
+	},
+	{
+		"title": "HTML Email Development",
+		"score": 4,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "HTML Email" }
+			]
+	},
+	{
+		"title": "ExactTarget",
+		"score": 3,
+		"level": "Intermediate",
+		"core": true,
+		"categories":
+			[
+				{ "title": "HTML Email" }
+			]
+	},
+	{
+		"title": "Mail Chimp",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+
+			[
+				{ "title": "HTML Email" }
+			]
+	},
+	{
+		"title": "Campaign Monitor",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "HTML Email" }
 			]
 	},
 	{
 		"title": "Project Management",
-		"level": 5,
-		"category":
+		"score": 5,
+		"level": "Strong",
+		"core": true,
+		"categories":
 			[
-				{ "title": "General Business" }
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Project Scoping and Quoting",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Web Support",
+		"score": 5,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Working both in a team or individually",
+		"score": 5,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Information Architecture",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "User Experience Design",
+		"score": 4,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Direct Client Communication",
+		"score": 5,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Stakeholder Management",
+		"score": 4,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Quality Control",
+		"score": 4,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Assessing Client Requirements",
+		"score": 4,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Google Analytics",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "DNS Management",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Wire Framing - MS Visio",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Staff Training",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Contractor Management",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Web Design",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Source Control - Git/Butbucket",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Responsive Development - Fluid",
+		"score": 5,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Cross-Browser/Device Testing",
+		"score": 5,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Task Runners - Grunt and Gulp",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Google DoubleClick",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Web System" }
+			]
+	},
+	{
+		"title": "Conversion Rate Optimisation",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Visual Website Optimizer",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Web Systems" }
+			]
+	},
+	{
+		"title": "Client CMS Training",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "General Web" }
+			]
+	},
+	{
+		"title": "Google Docs API",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Language/Framework/Library" }
+			]
+	},
+	{
+		"title": "LiveFyre",
+		"score": 4,
+		"level": "Strong",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Web Systems" }
+			]
+	},
+	{
+		"title": "Brightcove",
+		"score": 3,
+		"level": "Intermediate",
+		"core": false,
+		"categories":
+			[
+				{ "title": "Web Systems" }
+			]
+	},
+	{
+		"title": "JIRA",
+		"score": 4,
+		"level": "Strong",
+		"core": true,
+		"categories":
+			[
+				{ "title": "Web Systems" }
 			]
 	}
 ]

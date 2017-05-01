@@ -1,19 +1,16 @@
 <div class="layout__secondary layout--alpha">
 	<aside id="work-list" class="module">
-		<div class="inner">
-			<h2>Featured Work</h2>
+		<h2>Featured Work</h2>
 
-			<select (change)="onSelect($event.target.value)">
-				<option *ngFor="let work of works" value="{{work.id}}">{{work.title}}</option>
-			</select>
+		<select (change)="onSelect($event.target.value)">
+			<option *ngFor="let work of works" value="{{work.id}}">{{work.title}}</option>
+		</select>
 
-			<ul>
-				<li *ngFor="let work of works" (click)="onSelect(work.id)" attr.data-work="{{work.id}}">
-					<img src="{{work.thumbnail}}" alt="{{work.title}}">
-					<span>{{work.title}}</span>
-				</li>
-			</ul>
-		</div>
+		<ul>
+			<li *ngFor="let work of works" (click)="onSelect(work.id)" attr.data-work="{{work.id}}" class="inner">
+				<img src="{{work.thumbnail}}" alt="{{work.title}}">
+			</li>
+		</ul>
 	</aside>
 </div>
 

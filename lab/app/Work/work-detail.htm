@@ -28,8 +28,8 @@
 	</section>
 
 	<section id="primary-skills" *ngIf="work.workskills">
-		<h2>Primary Skills Required</h2>
-		<ul>
+		<h2>Skills Required</h2>
+		<ul class="blocks">
 			<li *ngFor="let skill of work.workskills">{{skill.title}}</li>
 		</ul>
 	</section>

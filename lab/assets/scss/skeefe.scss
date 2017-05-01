@@ -20,6 +20,7 @@
 @import 'components/table';
 @import 'components/carousel';
 @import 'components/filter';
+@import 'components/blocks';
 
 //Modules
 @import 'modules/featured-work/featured-work';
@@ -28,13 +29,15 @@
 @import 'modules/social-nav/social-nav';
 @import 'modules/skillset-table/skillset-table';
 
+//Print
+@import 'print';
 
 
 ////DEV: Show which breakpoint is active.
 footer:after{
 	color:red;	
 	content:"Too small dog.";
-	display:block;
+	display:none;
 	text-transform: uppercase;
 	
 	@media (min-width:320px){

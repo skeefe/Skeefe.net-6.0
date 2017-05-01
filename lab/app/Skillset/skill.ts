@@ -1,8 +1,10 @@
 //Skill Model
 export class Skill {
 	title: string;
-	level: number;
-	category: SkillCategory[];
+	score: number;
+	level: string;
+	core: boolean;
+	categories: SkillCategory[];
 }
 
 export class SkillCategory {
