@@ -2,11 +2,12 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
-#content .btn{
-	background:$green-6;
+.btn{
+	background:$brand-7;
 	border:none;
+	border-radius:$radius-sm;
 	box-shadow:$shadow-md;
-	color:$white;
+	color:$grey-1;
 	cursor:pointer;
 	display:block;
 	font:$size-md $font-copy;
@@ -17,11 +18,14 @@ button,
 	transition:background $transition-lg;
 	width:100%;
 
+	-webkit-appearance: none;
+	border-radius: 0;
+
 	&:hover,
-	&:focus,
+	//&:focus,
 	&:active{
-		background:$green-7;
-		color:$white;
+		background:$brand-8;
+		color:$grey-1;
 	}
 
 	&.btn--lg{
@@ -36,10 +40,10 @@ button,
 }
 
 #content a:hover button{
-	background:$green-7;
-	color:$white;
+	background:$brand-7;
+	color:$grey-1;
 }
 
 input[type="reset"]{
-	background:$green-8;
+	background:$brand-8;
 }

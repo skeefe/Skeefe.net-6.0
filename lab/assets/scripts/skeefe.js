@@ -1,7 +1,5 @@
-console.log('Hit the JS like Barry Bonds.');
-
 $(function () {
-
+	
 	/* ---- Mobile Nav ---- */
 	$('#mobile-nav, header.primary ul a').click(function () {
 		toggleNav();
@@ -49,6 +47,27 @@ $(function () {
 			$('#nav-overlay').fadeIn(350);
 		}
 	}
+
+	
+	/* ---- Desktop Nav ---- */
+
+	//Find active menu item.
+	var path = window.location.pathname;
+	path = path.substring(1, path.length);
+	$('nav.primary a.active').removeClass('active');
+
+	if(path === "" || path.toLowerCase() === "home"){
+		$('nav.primary li:first a').addClass('active');
+	}
+	else if(path.toLowerCase().indexOf('work') >= 0){
+		$('nav.primary a[href*=Work]').addClass('active');
+	}
+	else if(path.toLowerCase().indexOf('contact') >= 0){
+		$('nav.primary a[href*=Contact]').addClass('active');
+	}
+	else{
+		$('nav.primary a[href*='+ path + ']').addClass('active');
+	}	
 
 
 	/* ---- Filter Menu ---- */

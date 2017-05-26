@@ -1,48 +1,109 @@
 /* ---- Sitewide Variables ---- */
 
-/* General */
-
-// Site Colours
-$white: #fff;
-$black: #000;
+/* Colours */
 
 /*
-$grey-9: #050505;
-$grey-8: #111;
-$grey-7: #222;
-$grey-6: #333;
-$grey-5: #555;//mid
-$grey-4: #999;
-$grey-3: #ccc;
-$grey-2: #dedede;
-$grey-1: #eee;
-*/
-
-$grey-9: #050505;
+//// Deep Purple
+//Grey
 $grey-8: #02020D;
 $grey-7: #14141e;
 $grey-6: #29293d;
-$grey-5: #555;//mid
-$grey-4: #999;
-$grey-3: #ccc;
-$grey-2: #dedede;
-$grey-1: #eee;
+$grey-5: #535363;
+$grey-4: #94949E;
+$grey-3: #D4D4D8;
+$grey-2: #E9E9EB;
+$grey-1: #fff;
 
-$green-8:#08452c;
-$green-7:#0a5c3b;
-$green-6:#0d734a;
-$green-5:#b0b0ff; //mid
-$green-4: #14b876;
-$green-3: #19e694;
-$green-2: #5AEDB2;
+//Purple
+$purple-9:#20082b;
+$purple-8:#310c40;
+$purple-7:#4A148C;
+$purple-6:#6A1B9A;
+$purple-5:#7B1FA2;
+$purple-4:#8E24AA;
+$purple-3:#9C27B0;
+$purple-2-5:#a629bc;
+$purple-2:#be69e2;
+$purple-1:#d194eb;
 
+//Brand
+$brand-9:$purple-9;
+$brand-8:$purple-8;
+$brand-7:$purple-7;
+$brand-6:$purple-6;
+$brand-5:$purple-5;
+$brand-4:$purple-4;
+$brand-3:$purple-3;
+$brand-2-5:$purple-2-5;
+$brand-2:$purple-2;
+$brand-1:$purple-1;
+*/
+
+//// Light Blue
+//Grey
+$grey: #dedede; 
+$grey-25: darken($grey, 100%);
+$grey-24: darken($grey, 95%);
+$grey-23: darken($grey, 90%);
+$grey-22: darken($grey, 85%);
+$grey-21: darken($grey, 80%);
+$grey-20: darken($grey, 75%);
+$grey-19: darken($grey, 70%);
+$grey-18: darken($grey, 65%);
+$grey-17: darken($grey, 60%);
+$grey-16: darken($grey, 55%);
+$grey-15: darken($grey, 50%);
+$grey-14: darken($grey, 45%);
+$grey-13: darken($grey, 40%);
+$grey-12: darken($grey, 35%);
+$grey-11: darken($grey, 30%);
+$grey-10: darken($grey, 25%);
+$grey-9: darken($grey, 20%);
+$grey-8: darken($grey, 15%);
+$grey-7: darken($grey, 10%);
+$grey-6: darken($grey, 5%);
+$grey-5: $grey;
+$grey-4: lighten($grey, 5%);
+$grey-3: lighten($grey, 10%);
+$grey-2: lighten($grey, 15%);
+$grey-1: lighten($grey, 20%);
+
+//Blue
+$blue:#1b4164;
+$blue-10:darken($blue, 25%);
+$blue-9:darken($blue, 20%);
+$blue-8:darken($blue, 15%);
+$blue-7:darken($blue, 10%);
+$blue-6:darken($blue, 5%);
+$blue-5:$blue;
+$blue-4:lighten($blue, 5%);
+$blue-3:lighten($blue, 10%);
+$blue-2:lighten($blue, 15%);
+$blue-1:lighten($blue, 20%);
+
+//Brand
+$brand-9:$blue-9;
+$brand-8:$blue-8;
+$brand-7:$blue-7;
+$brand-6:$blue-6;
+$brand-5:$blue-5;
+$brand-4:$blue-4;
+$brand-3:$blue-3;
+$brand-2:$blue-2;
+$brand-1:$blue-1;
+
+
+
+//Loader
+$loader-3:$brand-4;
+$loader-4:$brand-5;
+$loader-5:$brand-6;
+$loader-6:$brand-7;
+$loader-7:$brand-8;
+
+//Overlay
 $overlay-md: rgba(0,0,0,0.78);
 $overlay-sm: rgba(0,0,0,0.6);
-
-$body-bg: $grey-7;
-
-
-/* Misc */
 
 // Breakpoints
 $screen-xl:1400px; //Extra wide
@@ -63,10 +124,10 @@ $transition-xs: 400ms ease-out;
 $shadow-md: 0 2px 2px 0 rgba(0,0,0,0.2);
 
 //Tables
-$table-border: $grey-8;
-$theading-background: $grey-8;
-$table-row-altnerate: $grey-6;
-$table-row-hover: $green-8;
+$table-border: $grey-6;
+$theading-background: $brand-7;
+$table-row-altnerate: $grey-4;
+$table-row-hover: $grey-3;
 
 
 /* Layout */
@@ -101,6 +162,10 @@ $border-md:0.25rem solid; //4px
 $border-sm:0.125rem solid; //2px
 $border-xs:1px solid; //1px
 
+//Border Radius
+$radius-lg: .75rem;
+$radius-md: .5rem;
+$radius-sm: .25rem;
 
 
 //Box Shadow
@@ -109,17 +174,19 @@ $border-xs:1px solid; //1px
 /* Typography */
 
 //Colours
-$heading-colour-lg:$white;
-$heading-colour-md:$grey-1;
-$heading-colour-sm:$grey-2;
-$copy-colour:$grey-3;
-//$link-color:$green-5;
-$link-color:#fff;
-$link-color-hover:$green-5;
+$heading-colour-lg:$brand-6;
+$heading-colour-md:$brand-5;
+$heading-colour-sm:$brand-7;
+$copy-colour:$grey-22;
+$link-color:$brand-3;
+$link-color-hover:$brand-1;
+
+//Web Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Bitter);
 
 // Font Families
-$font-heading: georgia, serif;
-$font-copy: calibri, sans-serif;
+$font-heading: 'Bitter', georgia, serif;
+$font-copy: 'Open Sans', helvetica, calibri, sans-serif;
 
 // Font Sizing
 $size-xxl: 2rem; //32px
@@ -136,7 +203,7 @@ $weight-heading:700;
 $weight-link:700;
 
 // Line-Height
-$line-lg:2;
+$line-lg:1.75;
 $line-md:1.4;
 $line-sm:1;
 $line-xs:0.5;

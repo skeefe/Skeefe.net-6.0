@@ -11,19 +11,27 @@
 		"screenshots":
 			[
 				{
-					"file": "http://placehold.it/1040x400",
-					"caption": "Placeholder caption 1."
+					"file": "/assets/images/work/img-rugby-fixturesRibbon.jpg",
+					"caption": "Live Fixtures Ribbon.",
+					"url": "http://www.rugby.com.au"
 				},
 				{
-					"file": "http://placehold.it/1040x400",
-					"caption": "Placeholder caption 2."
+					"file": "/assets/images/work/img-rugby-pointsSummary.jpg",
+					"caption": "Live Points Summary in Match Centre.",
+					"url": "http://www.rugby.com.au/match-centre/205/2017/517052"
 				},
 				{
-					"file": "http://placehold.it/1040x400",
-					"caption": "Placeholder caption 3."
+					"file": "/assets/images/work/img-rugby-playerComparison.jpg",
+					"caption": "Live Match Player Comparison.",
+					"url": "http://www.rugby.com.au/match-centre/205/2017/517052"
+				},
+				{
+					"file": "/assets/images/work/img-rugby-seasonPlayerPerformers.jpg",
+					"caption": "Season Player Performers module.",
+					"url": "http://www.rugby.com.au/competitions/super-rugby#player-stats"
 				}
 			],
-		"summary": "<p>Rugby.com.au has been my primary project for the last 1.5 years and it is the site of which I am particularly proud. I was involved with this project from the discovery phase, and worked closely with the project team to make sure the website met our goals. The initial build of the site was outsourced to Accenture (ARU's Technology partner) who were great to work with.</p><p>Since its launch in early 2016, I have worked closely with the Head of Digital Media, continuously identifying sections of the site that could be improved, then prioritising them in JIRA. My role then is to work through the list of tasks with a back-end developer, deploying them in UAT and then to the live site. This often involves taking responsibility for the aesthetic design and UX of new elements on the site.</p><p>Over the last six months, I have had the opportunity to take on considerably more of the back-end tasks on the site, which has been awesome! It has been great building elements from start to finish, having access to senior Back-End Developers when I get stuck!</p><p>I have listed some recent updates below:</p><ul><li><a href='http://www.rugby.com.au/' target='_blank'>Fixtures Ribbon</a>: The Fixtures Ribbon module was added to allow users to quickly find recent results or upcoming fixtures, across multiple rugby competitions on the site. I handled the Design and Front-End Development elements of this task, and worked closely with the Developer who built the Back-End functionality. This ribbon has become key to showing users when a live is game on, and has also been key to promoting the online audio broadcast of Super Rugby games played in Australia.</li><li><a href='http://www.rugby.com.au/match-centre/205/2017/517016' target='_blank'>Points Summary</a>: Although this module is common across sporting sites, it is a recent addition to Rugby.com.au. I designed and built this module from start to finish (with some assistance from our back-end dev). It automatically updates during a live match using AJAX.</li><li><a href='http://www.rugby.com.au/match-centre/205/2017/517016' target='_blank'>Player Comparison</a> (last tab): As a Rugby fan, I often wanted to compare 2 players in a match, determining who had the most impact (or the most missed tackles!) in a match. I designed and built the player comparison tool to allow users to find that information quickly, both during and after the match. Again, this function updates automatically using AJAX, so refreshing is not required.</li><li><a href='http://www.rugby.com.au/competitions/super-rugby' target='_blank'>Season Player Performers</a>: When the site was first launched, this module highlighted the top player in each category. Whilst this was adequate, it quickly became frustrating for users who wanted to see more than just the leading player for each statistic. I updated this module significantly, adding accordion functionality allowing users to see the top 5 players for each category (without significantly increasing the length of the page for mobile users). I was responsible for the Design, Front-End and Back-End development for this update.</li></ul>",
+		"summary": "<p>Rugby.com.au has been my primary project for the last 1.5 years and it is the site of which I am particularly proud. I was involved with this project from the discovery phase, and worked closely with the project team to make sure the website met our goals. The initial build of the site was outsourced to Accenture (ARU's Technology partner) who were great to work with.</p><p>Since its launch in early 2016, I have worked closely with the Head of Digital Media, continuously identifying sections of the site that could be improved, then prioritising them in JIRA. My role then is to work through the list of tasks with a back-end developer, deploying them in UAT and then to the live site. This often involves taking responsibility for the aesthetic design and UX of new elements on the site.</p><p>Over the last six months, I have had the opportunity to take on considerably more of the back-end tasks on the site, which has been awesome! It has been great building elements from start to finish, having access to senior Back-End Developers when I get stuck!</p><p>I have listed some recent updates below:</p><ul><li><a href='http://www.rugby.com.au/' target='_blank'>Fixtures Ribbon</a>: The Fixtures Ribbon module was added to allow users to quickly find recent results or upcoming fixtures, across multiple rugby competitions on the site. I handled the Design and Front-End Development elements of this task, and worked closely with the Developer who built the Back-End functionality. This ribbon has become key to showing users when a live is game on, and has also been key to promoting the online audio broadcast of Super Rugby games played in Australia.</li><li><a href='http://www.rugby.com.au/match-centre/205/2017/517016' target='_blank'>Points Summary</a>: Although this module is common across sporting sites, it is a recent addition to Rugby.com.au. I designed and built this module from start to finish (with some assistance from our back-end dev). It automatically updates during a live match using AJAX.</li><li><a href='http://www.rugby.com.au/match-centre/205/2017/517016' target='_blank'>Player Comparison</a>: As a Rugby fan, I often wanted to compare 2 players in a match, determining who had the most impact (or the most missed tackles!) in a match. I designed and built the player comparison tool to allow users to find that information quickly, both during and after the match. Again, this function updates automatically using AJAX, so refreshing is not required.</li><li><a href='http://www.rugby.com.au/competitions/super-rugby' target='_blank'>Season Player Performers</a>: When the site was first launched, this module highlighted the top player in each category. Whilst this was adequate, it quickly became frustrating for users who wanted to see more than just the leading player for each statistic. I updated this module significantly, adding accordion functionality allowing users to see the top 5 players for each category (without significantly increasing the length of the page for mobile users). I was responsible for the Design, Front-End and Back-End development for this update.</li></ul>",
 		"workskills":
 			[
 				{
@@ -130,11 +138,17 @@
 		"screenshots":
 			[
 				{
-					"file": "http://placehold.it/1040x400",
-					"caption": "Placeholder caption 1."
+					"file": "/assets/images/work/img-viva7s-googleIntegration.jpg",
+					"caption": "VIVA7s - &quot;Find a Centre Near You&quot; - Google Sheets integration.",
+					"url": "http://www.viva7s.com.au/#centres"
+				},
+				{
+					"file": "/assets/images/work/img-viva7s-introduction.jpg",
+					"caption": "VIVA7s - Landing Page",
+					"url": "http://www.viva7s.com.au/#centres"
 				}
 			],
-		"summary": "<p>My role at Australian Rugby Union involves supporting many rugby-related sites for various parts of the organisation, one of which is &quot;VIVA7s&quot;, a non-contact version of the game. Much of this site was already built when I started the role, however I have been required to update many of the element on the pages.</p><p>Although the site is built in a CMS (DotNetNuke) I quickly found I was spending a lot of time making small content updates in the &quot;<a href='http://www.viva7s.com.au/#dnn_FindPane' target='_blank'>Find a Centre Near You</a>&quot; section of the site. The issue was that the code for this section had simply been dumped RTE, making it very difficult for non-technical staff to update without breaking module.</p><p>Late one night after watching a Wallabies match, I decided to stay up and find a better solution. I copied the data from the site onto a Google Sheet and then wrote the JS to pull the data back to the page using the API. Although the updated section looked identical, it meant that the information for each VIVA7s centre could quickly be updated on the Google Sheet. After minimal training, the non-technical staff responsible for updating this content have not required my assistance. It may not currently be on my list of favourite sites, however I am really happy with this solution!</p>",
+		"summary": "<p>My role at Australian Rugby Union involves supporting many rugby-related sites for various parts of the organisation, one of which is &quot;VIVA7s&quot;, a non-contact version of the game. Much of this site was already built when I started the role, however I have been required to update many of the elements on the pages.</p><p>Although the site is built in a CMS (DotNetNuke) I quickly found I was spending a lot of time making small content updates in the &quot;<a href='http://www.viva7s.com.au/#dnn_FindPane' target='_blank'>Find a Centre Near You</a>&quot; section of the site. The issue was that the code for this section had simply been dumped RTE, making it very difficult for non-technical staff to update without breaking module.</p><p>Late one night after watching a Wallabies match, I decided to stay up and find a better solution. I copied the data from the site onto a Google Sheet and then wrote the JS to pull the data back to the page using the API. Although the updated section looked identical, it meant that the information for each VIVA7s centre could quickly be updated on the Google Sheet. After minimal training, the non-technical staff responsible for updating this content have not required my assistance. It may not currently be on my list of favourite sites, however I am really happy with this solution!</p>",
 		"workskills":
 			[
 				{
@@ -174,12 +188,29 @@
 		"screenshots":
 			[
 				{
-					"file": "http://placehold.it/1040x400",
-					"caption": "Placeholder caption 1."
+					"file": "/assets/images/work/img-cornerstone-digital-tiltedContentAreas.jpg",
+					"caption": "Tilted content areas.",
+					"url": "http://cornerstone-digital.com.au/#subscribe"
 				},
 				{
-					"file": "http://placehold.it/1040x400",
-					"caption": "Placeholder caption 2."
+					"file": "/assets/images/work/img-cornerstone-digital-ourProcess-1.jpg",
+					"caption": "&quot;Our Process&quot; module.",
+					"url": "http://cornerstone-digital.com.au/about/#process"
+				},
+				{
+					"file": "/assets/images/work/img-cornerstone-digital-ourProcess-2.jpg",
+					"caption": "&quot;Our Process&quot; module - Mobile/Tablet.",
+					"url": "http://cornerstone-digital.com.au/about/#process"
+				},
+				{
+					"file": "/assets/images/work/img-cornerstone-digital-meetTeam-1.jpg",
+					"caption": "&quot;Meet the Team&quot; module.",
+					"url": "http://cornerstone-digital.com.au/about/#meetTeam"
+				},
+				{
+					"file": "/assets/images/work/img-cornerstone-digital-meetTeam-2.jpg",
+					"caption": "&quot;Meet the Team&quot; module - expanded.",
+					"url": "http://cornerstone-digital.com.au/about/#meetTeam"
 				}
 			],
 		"summary": "<p>One of my final projects for Cornerstone Digital was to rebuild their website. The primary goals for the rebuild were to increase conversions (requests for quotes) through improved UX and IA and to present Cornerstone as experts in the Digital Technology field. The new company branding was also launched in conjunction with the site.</p><p>This was a great project to work on as it provided me with an opportunity to implement some relatively new web trends on the site. I was the sole developer on this project, working closely with the agency's Director, Head of Production and Designer from the planning phase until the site was launched.</p><p>My first step in the development phase was to build static page templates in HTMl5, CSS3 and JS before converting them to WordPress templates (starting from a customised blank theme). From there I completed the WordPress integration by adding the page/directory structure in WordPress and adding the required custom post types, taxonomies and fields to ensure the content in the site was easy to update for non-technical members of our team.</p><p>Some of the more technical aspects of the site included:</p><ul><li><a href='http://www.cornerstone-digital.com.au/#subscribe' target='_blank'>Tilted content areas</a>: I wanted to avoid littering the mark-up with numerous divs to achieve the tilted/rotated effect. I built this using pseudo elements which could be easily added to each section by simply adding a class name. Content sections having single colour backgrounds were a little easier than those with background images and parallax!</li><li><a href='http://www.cornerstone-digital.com.au/web-development/#process' target='_blank'>&quot;Our Process&quot; module</a>: This involved working with pseudo elements, CSS3's transform and transition properties and hover effects (no JS required). I am particularly happy with how this module responds on narrower breakpoints, maintaining the same look and feel, stacking vertically down the page.</li><li><a href='http://www.cornerstone-digital.com.au/about/#meetTeam' target='_blank'>&quot;Meet the Team&quot; module</a>: The majority of this functionality was built using jQuery which was fairly straight forward. The complexity was ensuring our non-technical staff would be able to update the content easily, without accidentally breaking the module (simply using a RTE to hold the code and content would have been a nightmare). I added a custom post type for team members, and then added numerous custom fields that staff would use to insert the content.</li></ul>",
@@ -261,15 +292,18 @@
 			[
 				{
 					"file": "/assets/images/work/img-poppyShop-splash.jpg",
-					"caption": "Spash screen and navigation."
+					"caption": "Spash screen and navigation.",
+					"url": "http://poppyshop.org.au/"
 				},
 				{
-					"file": "http://placehold.it/1040x400",
-					"caption": "Placeholder caption 2."
+					"file": "/assets/images/work/img-poppyShop-productFilter.jpg",
+					"caption": "Product Filter",
+					"url": "http://poppyshop.org.au/accessories.html"
 				},
 				{
-					"file": "http://placehold.it/1040x400",
-					"caption": "Placeholder caption 3."
+					"file": "/assets/images/work/img-poppyShop-checkout.jpg",
+					"caption": "Checkout validation.",
+					"url": "https://poppyshop.org.au/checkout/onepage/"
 				}
 			],
 		"summary": "<p>The Poppy Shop was an ecommerce project for RSL NSW (Returned and Services League) which I completed when working for Cornerstone Digital. The primary goal of this site was to assist the RSL raise funds to support the men and women who have served in Australia's armed forces.</p><p>I worked closely with our team’s Head of Production, Project Manager, Designer and Back-End Developer from the discovery phase launch. This site is built in Magento starting from their default (non-responsive) template.</p><p>Development on this project was particularly efficient as the Back-End Developer and I had previously worked on similar projects. The main complexity was rewriting the default template mark-up/CSS to be responsive, especially as it included many tables that would not have worked when viewed on narrow break points.</p><p>I continued to be involved with this project after it launched, assisting with Conversion Rate Optimisation and providing web support.</p>",

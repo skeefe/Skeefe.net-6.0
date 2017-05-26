@@ -5,14 +5,14 @@ strong{
 	h1{
 		color:$heading-colour-lg;
 		font-family:$font-heading;
-		font-size:$size-xl;
+		font-size:$size-xxl;
 		line-height:$line-md;
-		margin-bottom:$space-lg;
+		margin-bottom:$space-sm;
 	}
 	h2{
 		color:$heading-colour-md;
 		font-family:$font-heading;
-		font-size:$size-lg;
+		font-size:$size-xl;
 		line-height:$line-md;
 		margin-bottom:$space-md;
 	}
@@ -29,9 +29,9 @@ strong{
 		margin-bottom:$space-md;
 	}
 	th{
-		color:$heading-colour-sm;
+		color:$grey-1;
 		font-family:$font-heading;
-		font-size:$size-md;
+		font-size:$size-lg;
 		text-align: left;
 	}
 	p, li, button, label, input, textarea, select, td, figcaption{
@@ -40,12 +40,12 @@ strong{
 		font-size:$size-md;
 		line-height:$line-md;
 	}
-	p, ul, ol, figure, table{
+	p, .copy li, figure, table{
 		margin-bottom:$line-md * $size-md;
 	}
 	a{
 		color:$link-color;
-		text-decoration: none;
+		//text-decoration: none;
 		transition:color $transition-lg;
 
 		&:hover{
@@ -60,5 +60,14 @@ strong{
 	ul{
 		list-style:square outside none;
 		margin-left:$space-md;
+	}
+}
+
+#content .layout__secondary{
+	p, li, button, label, input, textarea, select, td, figcaption{
+		color:$grey-5;
+	}
+	h2, h3{
+		color:$grey-1;
 	}
 }

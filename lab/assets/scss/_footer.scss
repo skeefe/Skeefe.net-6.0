@@ -1,11 +1,16 @@
 footer.primary{
+	background:$brand-7;
 	color:$grey-4;
 	font:$size-sm $font-copy;
+	height:5.625rem;
 	padding:$space-md;
+	position: relative;
 	text-align: center;
+	z-index: 1;
 
 	@media (min-width: $screen-md){
 		bottom:0;
+		height:auto;
 		position:fixed;
 		width:$col3;
 		z-index: 5;
@@ -23,16 +28,16 @@ footer.primary{
 
 			a{
 				display:inline-block;
-				margin:0 $space-xxs/2;
+				margin:0 $space-xxxs;
 
 				.icon{
-					fill:$grey-4;
+					fill:$grey-1;
 					transition:fill $transition-md;
 					width:$space-lg;
 				}
 
 				&:hover .icon{
-					fill:$green-5;
+					fill:$grey-1;
 				}
 			}
 		}

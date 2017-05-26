@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from "./Home/Home.component";
+import { AboutComponent } from "./About/about.component";
 import { SkillsetComponent } from "./Skillset/skillset.component";
 import { ContactComponent } from "./Contact/Contact.component";
 import { ThankYouComponent } from "./Contact/thankyou.component";
@@ -22,6 +23,14 @@ import { Error404Component } from "./Error/Error404.component";
 			{
 				path: 'home',
 				redirectTo: '/'
+			},
+			{
+				path: 'About',
+				component: AboutComponent
+			},
+			{
+				path: 'about',
+				redirectTo: '/About'
 			},
 			{
 				path: 'Work',
@@ -74,6 +83,7 @@ import { Error404Component } from "./Error/Error404.component";
 	],
 	declarations: [
 		HomeComponent,
+		AboutComponent,
 		ContactComponent,
 		ThankYouComponent,
 		Error404Component

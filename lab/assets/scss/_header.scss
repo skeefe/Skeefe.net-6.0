@@ -1,5 +1,5 @@
 header.primary{
-	background:$grey-8;
+	background:$brand-7;
 	overflow:visible;
 	padding:$space-xs $space-md;
 	position:fixed;
@@ -32,7 +32,7 @@ header.primary{
 		}
 
 		&:hover path{
-			fill:$white;
+			fill:$grey-1;
 		}
 	}
 

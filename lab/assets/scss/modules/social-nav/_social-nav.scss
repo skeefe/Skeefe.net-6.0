@@ -1,33 +1,31 @@
 #social-nav{
 
 	ul{
-		border-top:1px solid $grey-6;
+		border-top:1px solid $brand-5;
 		list-style:none inside none;
 		margin:0;
 	
 		li{
-			border-bottom:1px solid $grey-6;
+			border-bottom:1px solid $brand-5;
 
 			a{
-				color:$grey-2;
+				color:$grey-1;
 				display: block;
 				padding:$space-xs $space-sm;
 				transition:color $transition-md;
+				text-decoration: none;
 
 				.icon{
-					fill:$grey-2;
+					fill:$grey-1;
 					margin-right:$space-xs;
-					margin-bottom:-$space-xs/1.5;
-					transition:fill $transition-md;
-					width:$space-lg;
+					margin-bottom:-$space-xs/2;
+					transition:background $transition-md;
+					width:1.25rem;
 				}
 
 				&:hover{
-					color:$link-color-hover;
-
-					.icon{
-						fill:$green-5;
-					}
+					background:$brand-6;
+					color:$grey-1;
 				}
 				
 			}
@@ -36,4 +34,8 @@
 
 	}
 	
+}
+
+#content .layout__secondary #social-nav h2{
+	color:$grey-1;
 }

@@ -1,26 +1,27 @@
 #content ul.filter{
-	border-top:1px solid $grey-6;
+	border-top:1px solid $brand-5;
 	list-style: none;
 	margin-left:0;
 
 	li{
-		border-bottom:1px solid $grey-6;
-		color:$link-color;
+		border-bottom:1px solid $brand-5;
 		cursor:pointer;
 		padding:$space-xs $space-sm;
 		transition:color $transition-lg;
 
 		&:hover{
-			color:$link-color-hover;
+			background-color:$brand-6;
+			color:$grey-1;
 		}
 
-
-		&.active,
-		&:active,
-		&:focus{
-			background-color:$green-7;
-			color:$white;
+		&.active{
+			background-color:$brand-8;
+			color:$grey-1;
 		}
 	}
 	
+}
+
+#content .layout__secondary #skillset-filter h2{
+	color:$grey-1;
 }

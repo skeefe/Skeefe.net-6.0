@@ -19,6 +19,7 @@ tr{
 	}
 
 	&:hover td{
-		background:$table-row-hover;
+		//background:$table-row-hover;
+		border-bottom-color:$brand-1;
 	}
 }

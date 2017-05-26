@@ -3,9 +3,12 @@
 	margin:0;
 
 	li{
-		@include overlay-sm;
-		display: block;		
+		background:$brand-7;
+		box-shadow:$shadow-md;
+		color:$grey-4;
+		display: block;
 		margin-bottom:2%;				
+		padding:$space-md;
 		text-align:center;			
 	
 		@media (min-width: $screen-xs/1.5){

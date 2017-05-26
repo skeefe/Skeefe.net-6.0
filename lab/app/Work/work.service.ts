@@ -31,15 +31,14 @@ export class WorkService {
 		$('.carousel').flickity({
 			imagesLoaded: true,
 			cellSelector: '.carousel__slide',
-			percentPosition: false
+			percentPosition: true,
+			groupCells: true
 		});
-		console.log('triggered');
 	}
 
 	//Destroy Flickity
 	destroyFlickity() {
 		$('.carousel').flickity('destroy');
-		console.log('destroyed');
 	}
 
 	//Reload Flickity
@@ -50,10 +49,10 @@ export class WorkService {
 			$('.carousel').flickity({
 				imagesLoaded: true,
 				cellSelector: '.carousel__slide',
-				percentPosition: false
+				percentPosition: true,
+				groupCells: true
 			});
 		}, 50);
-		console.log('reloaded');
 	}
 
 	//Set active classes.

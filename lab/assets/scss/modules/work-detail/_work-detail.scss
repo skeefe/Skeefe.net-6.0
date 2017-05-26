@@ -8,8 +8,16 @@
 	}
 
 	.view-site{
+		border-radius:$radius-sm;
+		color:$grey-1;
 		margin-top:-$space-xxxs*1.5;
 		margin-bottom:$line-md * $size-md;
+		text-decoration: none;
+
+		&:hover{
+			background:$brand-8;
+			color:$grey-1;
+		}
 
 		@media (min-width: $screen-xs){
 			float:right;			
@@ -18,11 +26,12 @@
 	}
 
 	.meta{
-		@include overlay;
+		background:$brand-7;
 		margin-bottom:$line-md * $size-md;
+		padding:1rem;
 
 		span{
-			color:$copy-colour;
+			color:$grey-1;
 			display:block;
 			font-family:$font-copy;
 			font-size:$size-md;
@@ -45,5 +54,10 @@
 			}
 
 		}
+
+		a{
+			color:$grey-1;
+		}
+
 	}
 }

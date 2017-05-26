@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/router', "./Home/Home.component", "./Skillset/skillset.component", "./Contact/Contact.component", "./Contact/thankyou.component", "./Error/Error404.component"], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/router', "./Home/Home.component", "./About/about.component", "./Skillset/skillset.component", "./Contact/Contact.component", "./Contact/thankyou.component", "./Error/Error404.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, router_1, Home_component_1, skillset_component_1, Contact_component_1, thankyou_component_1, Error404_component_1;
+    var core_1, router_1, Home_component_1, about_component_1, skillset_component_1, Contact_component_1, thankyou_component_1, Error404_component_1;
     var AppRoutingModule;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
             },
             function (Home_component_1_1) {
                 Home_component_1 = Home_component_1_1;
+            },
+            function (about_component_1_1) {
+                about_component_1 = about_component_1_1;
             },
             function (skillset_component_1_1) {
                 skillset_component_1 = skillset_component_1_1;
@@ -55,6 +58,14 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
                                 {
                                     path: 'home',
                                     redirectTo: '/'
+                                },
+                                {
+                                    path: 'About',
+                                    component: about_component_1.AboutComponent
+                                },
+                                {
+                                    path: 'about',
+                                    redirectTo: '/About'
                                 },
                                 {
                                     path: 'Work',
@@ -107,6 +118,7 @@ System.register(['@angular/core', '@angular/router', "./Home/Home.component", ".
                         ],
                         declarations: [
                             Home_component_1.HomeComponent,
+                            about_component_1.AboutComponent,
                             Contact_component_1.ContactComponent,
                             thankyou_component_1.ThankYouComponent,
                             Error404_component_1.Error404Component

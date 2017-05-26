@@ -3,12 +3,16 @@
 }
 
 ::selection{
-	background:$grey-8;
+	background:$brand-5;
 }
-a::selection{
-	color:#fff;
+*::selection{
+	color:$grey-1;
 }
 
 body{
-	background:$body-bg;
+	background:$grey-1;
+
+	@media (min-width: $screen-sm){
+		background:$grey-4;
+	}
 }

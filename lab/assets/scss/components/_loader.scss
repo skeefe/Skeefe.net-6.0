@@ -5,14 +5,23 @@
 - Vertically center.
 - Use SASS variables.
 
-
 */
-
-
 .loader{
-	margin:200px 0;
-	text-align: center;
+	margin:-50px 0 0;
+	position:absolute;
+	text-align:center;
+	top:50%;
+	width:100%;
+	z-index: 500;
+
+	@media (min-width: $screen-md){
+		padding-left:$col3;
+	}
+	@media (min-width: $screen-lg){
+		padding-left:$col2;
+	}	
 }
+
 .mult2rect {
 	height: 100px;
 	width: 15px;
@@ -20,7 +29,7 @@
 }
 
 .mult2rect1 {
-	background-color: $green-2;
+	background-color: $loader-3;
 	animation: mult2rect1 3s infinite linear;
 }
 
@@ -41,7 +50,7 @@
 	}
 }
 .mult2rect2 {
-	background-color: $green-3;
+	background-color: $loader-4;
 	animation: mult2rect2 3s infinite linear;
 }
 @-webkit-keyframes mult2rect2 {
@@ -51,6 +60,7 @@
 	10%, 70% {
 		transform: scaleY(2);
 	}
+	
 }
 
 @keyframes mult2rect2 {
@@ -63,7 +73,7 @@
 }
 
 .mult2rect3 {
-	background-color: $green-4;
+	background-color: $loader-5;
 	animation: mult2rect3 3s infinite linear;
 }
 
@@ -86,7 +96,7 @@
 }
 
 .mult2rect4 {
-	background-color: $green-5;
+	background-color: $loader-6;
 	animation: mult2rect4 3s infinite linear;
 }
 
@@ -109,7 +119,7 @@
 }
 
 .mult2rect5 {
-	background-color: $green-6;
+	background-color: $loader-7;
 	animation: mult2rect5 3s infinite linear;
 }
 
@@ -130,8 +140,6 @@
 		transform: scaleY(2);
 	}
 }
-
-
 
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {

@@ -6,6 +6,7 @@ nav.primary{
 	}
 
 	#mobile-nav{
+		background:$brand-4;
 		display:block;
 		font-size:$size-lg;
 		line-height:$line-sm;
@@ -17,10 +18,14 @@ nav.primary{
 			display:none;
 		}
 
+		&:hover{
+			background:$brand-3;
+		}
+
 	}
 
 	ul{
-		background: $green-8;
+		background: $brand-8;
 		height: 100%;
 		right: -200px;
 		position: fixed;
@@ -31,7 +36,7 @@ nav.primary{
 
 		@media (min-width: $screen-md){
 			background: none;
-			border-top:1px solid $grey-6;
+			border-top:1px solid $brand-5;
 			position: relative;
 			right:auto;
 			top:$space-lg;
@@ -46,14 +51,15 @@ nav.primary{
 
 		li{
 			display:block;
-			border-bottom:1px solid $green-7;
+			border-bottom:1px solid $brand-6;
 
 			@media (min-width: $screen-md){
-				border-bottom:1px solid $grey-6;
+				border-bottom:1px solid $brand-5;
 			}
 			
 			a{
-				color:$grey-2;
+				background:transparent;
+				color:$grey-1;
 				display:block;
 				font-family:$font-copy;
 				padding:$space-md;
@@ -61,23 +67,29 @@ nav.primary{
 
 				@media (min-width: $screen-md){
 					padding:$space-xs $space-sm;
-					transition:color $transition-md;
+					transition:background $transition-md, color $transition-md;
 				}
 				
 				&:hover{
-					background:$green-6;
-					color:$white;
+					background-color:$brand-6;
+					color:$grey-1;
+				}
+
+				&.active,
+				&:active,
+				&:focus{
+					background:$brand-9;
+					color:$grey-1;
 
 					@media (min-width: $screen-md){
-						background:none;
-						color:$link-color-hover;
+						background:$brand-8;
 					}
 				}
 			}
 
 			&.active a{
-				background:$green-6;
-				color:$white;
+				background:$brand-6;
+				color:$grey-1;
 
 				@media (min-width: $screen-md){
 					color:$link-color-hover;

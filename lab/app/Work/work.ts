@@ -17,6 +17,7 @@ export class Work {
 export class ScreenShots {
 	file: string;
 	caption: string;
+	url: string;
 }
 
 export class WorkSkills {

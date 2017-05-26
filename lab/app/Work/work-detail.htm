@@ -12,15 +12,13 @@
 	<section id="screenshots" *ngIf="work.screenshots">
 		<div class="carousel">
 			<figure *ngFor="let screenshot of work.screenshots;" class="carousel__slide">
-				<img src="{{screenshot.file}}" />
-				<figcaption [innerHTML]="screenshot.caption" class="copy"></figcaption>
-			</figure>
+				<a href="{{screenshot.url}}" target="_blank">
+					<img src="{{screenshot.file}}" />
+					<figcaption [innerHTML]="screenshot.caption" class="copy"></figcaption>
+				</a>
+			</figure>			
 		</div>
 	</section>
-
-	<!--
-	<section id="screenshots" *ngIf="work.screenshots" [innerHTML]="work.carousel | safe: 'html'"></section>
-	-->
 
 	<section *ngIf="work.summary">
 		<h2>Project Summary</h2>
@@ -29,7 +27,7 @@
 
 	<section id="primary-skills" *ngIf="work.workskills">
 		<h2>Skills Required</h2>
-		<ul class="blocks">
+		<ul class="columns">
 			<li *ngFor="let skill of work.workskills">{{skill.title}}</li>
 		</ul>
 	</section>

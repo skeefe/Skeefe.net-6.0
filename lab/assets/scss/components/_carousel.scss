@@ -1,12 +1,32 @@
 .carousel{
 	margin:0 (-$space-md) $space-xl;
 
-	@media (min-width: $screen-md){
+	@media (min-width: $screen-sm){
 		margin:0 0 $space-xl;
 	}
 
 	figure{
 		width:100%;
+		
+		@media (min-width: 700px){
+			border:$border-xs $grey-5;
+			margin-right:3%;
+			transition: border-color $transition-md;
+			width:48.5%;
+
+			&:hover{
+				border-color:$brand-1;
+			}
+		}
+
+		@media (min-width: 1800px){
+			margin-right:2%;
+			width:32%;
+		}
+
+		a{
+			text-decoration: none;
+		}
 
 		img{
 			display:block;
@@ -18,19 +38,20 @@
 		}
 
 		figcaption{
-			background:$grey-9;
+			background:$grey-4;
 			padding:$space-md;
 		}
 
 	}
 
 	.flickity-prev-next-button{
-		background:$green-6;
+		background:$brand-6;
+		margin-top:-30px;
 
 		&:hover,
 		&:active,
 		&:focus{
-			background:$green-7;
+			background:$brand-7;
 			opacity: 1;
 		}
 
@@ -40,16 +61,16 @@
 	}
 
 	ol.flickity-page-dots{
-		bottom:-$space-xl;
+		bottom:-$space-sm;
 
 		.dot{
-			background:$grey-3;
-    		height: 0.7rem;
-			width: 0.7rem;
+			background:$brand-6;
+    		height: 0.9rem;
+			width: 0.9rem;
 			transition:opacity $transition-md, background $transition-md;
 
 			&:not(.is-selected):hover{
-				background:$green-4;
+				background:$brand-6;
 				opacity: .5
 			}
 		}
