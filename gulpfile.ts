@@ -155,10 +155,15 @@ gulp.task("vendor", () => {
 gulp.task('build', function (callback) {
 	runSequence(
 		'clean', // Deletes the distillery.
-		'markup', // Places Markup.
-		'useref', // Optimises and places JS and CSS.
-		'images', // Optimises and places Images.
-		'fonts', // Places Fonts.
+		'markup', // Replaces Markup.
+		'useref', // Optimises and replaces CSS and vendor JS.
+		'vendor', // Optimises and replaces Vendor JS.
+		'app', // Optimises and replaces app JS.
+		'images', // Optimises and replaces Images.
+		'fonts', // Replaces Fonts.
+		'data', // Replaces Data.
+		'config', // Replaces config files.
+
 		['browserSync:distillery'], // Launches BrowserSync.
 		callback
 	)
@@ -189,16 +194,16 @@ gulp.task('browserSync:distillery', function () {
 
 /* Markup */
 
-// Places markup.
+// Replaces markup.
 gulp.task("markup", () => {
 	return gulp.src(["lab/**/{.htm,html/**}"])
 		.pipe(gulp.dest("distillery"));
 });
 
 
-/* JS */
+/* Concatenate */
 
-// Optimises and places CSS and JavaScript.
+// Concatenates CSS and JavaScript.
 gulp.task('useref', function () {
 	return gulp.src('lab/**/*.htm')
 		.pipe(useref())
@@ -208,22 +213,62 @@ gulp.task('useref', function () {
 });
 
 
+/* Vendor */
+
+// Concatenates vendor JavaScript and CSS.
+gulp.task('vendor', function () {
+	return gulp.src('lab/assets/vendor/**/*')
+		.pipe(gulpIf('*.js', uglify()))
+		.pipe(gulpIf('*.css', cssnano()))
+		.pipe(gulp.dest('distillery/assets/vendor/'))
+});
+
+
+/* App JS */
+
+//Optimises and replaces App JS.
+gulp.task("app", () => {
+	return gulp.src('lab/app/**/*.js')
+		.pipe(uglify())
+		.pipe(gulp.dest("distillery/app"));
+});
+
+
 /* Images */
 
-// Optimises and places images.
+// Optimises and replaces images.
 gulp.task('images', function () {
-	return gulp.src('lab/assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
-		//.pipe(cache(imagemin({ //Resolve this.
-		//	interlaced: true,
-		//})))
+	return gulp.src('lab/assets/images/**/*.+(png|jpg|jpeg|gif|ico|svg)')
+		.pipe(gulpIf('*.+(png|jpg|jpeg|gif|ico)', cache(imagemin({//Bug running on svg files.
+			interlaced: true
+		}))))
 		.pipe(gulp.dest('distillery/assets/images/'))
 });
 
 
 /* Fonts */
 
-//Places fonts.
+//Replaces fonts.
 gulp.task('fonts', function () {
 	return gulp.src('lab/assets/fonts/**/*')
 		.pipe(gulp.dest('distillery/assets/fonts'))
 })
+
+
+/* Data */
+
+//Replaces fonts.
+gulp.task('data', function () {
+	return gulp.src('lab/data/**/*.json')
+		.pipe(gulp.dest('distillery/data'))
+})
+
+
+/* Config */
+
+//Relaces config files.
+gulp.task("config", () => {
+	return gulp.src(["lab/*.+(js|config)"])
+		.pipe(gulpIf('*.js', uglify()))
+		.pipe(gulp.dest("distillery/"));
+});

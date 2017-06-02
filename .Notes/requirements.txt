@@ -1,0 +1,55 @@
+~~~~~~~ This Project Will Use ~~~~~~~
+	- Sass with SCSS
+	- Gulp task runner
+	- Versioning - GIT
+	- JS/CSS minification.
+	- rems
+	- SVG
+	- Angular2
+
+
+~~~~~~~ This Project Will Be ~~~~~~~
+- Retina ready
+-- Updatable online.
+-- Secure.
+- Focussed on where the job I want to eventually move to.
+- Clean
+- Light weight
+- Valid (except for Ang2)
+- The markup will be visually nice (or minified)
+-- The JS/CSS will be minified.
+- Modular
+- Responsive
+
+-- 5 Break points
+- Printable
+	- Single page application.
+- != Use Bootstrap
+
+
+~~~~~~~ This Project Will Contain ~~~~~~~
+-- A blog
+- List of skills
+-- Code jungle.
+- Detailed projects
+- Hero image
+- Contact page.
+
+
+~~~~~~~ This Project May ~~~~~~~
+-- Use RequireJS
+--- Be Mobile first
+
+
+~~~~~~~ Gulp File ~~~~~~~
+	- Spin up server for source
+	- Auto update browser on save for source.
+	- Compile Sass
+	- CSS Sourcemaps for source
+	- Auto prefix CSS for source and production
+	- Minify CSS in production
+	- Minify JS in production
+- Contactenate JS in production
+- Compress images
+- Cache images
+- Copy fonts

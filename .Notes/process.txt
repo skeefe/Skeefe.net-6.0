@@ -1,0 +1,10 @@
+1. Make sure GIT was installed.
+	a. Had to make sure the "GIT bin" path was set (ran the following in command prompt): set PATH=%PATH%;C:\Program Files\Git\bin;
+2. Install Node/NPM.
+3. Initialise NPM: npm init
+4. Setup package.json file with dependances.
+	a. Installed with: npm installed
+	b. Ensure all Gulp dependancies are listed in this file.
+5. Ensure Gulp file is working.
+	a. This can be improved.
+

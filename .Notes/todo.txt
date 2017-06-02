@@ -1,0 +1,147 @@
+~~~~~~~ To Do ~~~~~~~
+
+~~~~ High Priority ~~~~
+- Work out where I am saving commits.
+- Sortable Skillset table.
+- Setup META tags for each of the pages.
+- Make the home page more visually interesting.
+	- Photo of me.
+		- Add a bg image to the home page?
+	- New logo.
+	- Value statement.
+- Make the favicons brand blue.
+- Custom select field for mobile with better styling.
+	- Must still be easily usable on a phone.
+	- Select2
+- Review Skillset content.
+- Order Work and Skillset Skills by importance.
+
+
+~~~~ Mid Priority ~~~~
+- Tweak for SEO. No mental content/wording changes - of limited importance.
+	- Make sure it is crawlable (being a JS framework)...
+	- https://www.sitepoint.com/9-point-technical-seo-checklist-for-developers/
+	- https://www.sitepoint.com/on-page-seo-checklist-for-the-optimized-page/
+- Make the project list scroll seperately.
+	- Fixed where possible.
+- Work Specific 404 page?
+	- Or just fix it so it finds the main 404.
+- Animate Skillset filter.
+- Get rid of the .copy css class?
+- Refactor CSS (SASS)
+	- Reassess BEM, and current class names.
+	- Make sure there are no hardcoded sizes in sass without reason.
+	- Review loader.scss
+	- Get rid of unnecessary IDs on .sections?
+	- Do I need the "#content" section?
+	- Modular
+	- Fix button styling sitewide.
+	- Re-think mixins.
+	- Clean this up - shouldnt have to have all those selectors: #content .layout__secondary #work-list
+	- Reduce selectors
+- Find the best place to place the mobile nav JS.
+- Find better solution to the timeout to show the active current project.
+- Come up with a witty 404 error page.
+- Reasses JS.
+	- JS the active menu is straight nasty.
+- Make accessible:http://accessibility.voxmedia.com/#engineers
+- Add hero image to the about page?
+- Replace logo.
+- Improve the clarity of the project photos.
+- Reduce HTTP requests.
+
+
+~~~~ Low Priority ~~~~
+- Update Carousel without jQuery?
+- Add blog.
+- Find better solution to the timeout on the Work Carousel.
+	- ForEach callback...
+- Tidy up SASS/JS comments.
+- Learn about Angular2!
+- Move skillset filter functions to the service?
+- Generate JSON data feeds from a DB.
+	- Build an interface to insert/update/delete data.
+- Use Skillset style table to display Work Details skills?
+- Restyle loading animation.
+- Make Featured work module pick up projects based on a property in the feed.
+- Move OrderBy pipe so it can be used globally (including in work details).
+- Make bullet points look better.
+- Replace formspree contact form functionality.
+
+
+~~~~ Cancelled ~~~~
+- Should the logo be an SVG file rather than SVG code?
+- Build my own carousel for featured work.
+- Do I want to have a reset button on the contact form?
+- Add content to Contact page
+- Add content to Thank You page.
+- Display different carousel images for mobile.
+- Break wide asides into multiple columns (respnsive breakpoints).
+- Consider Teal to orange to red colour scheme.
+- Correct color styles for headings.
+
+
+~~~~ Not Reviewed ~~~~
+
+
+
+
+
+
+
+~~~~~~~ Done ~~~~~~~
+- Lock in a naming strategy for SASS colour variables.
+- Call skillset data from a JSON file.
+	- Use observables.
+- Call work data from a JSON file.
+	- Use observables.
+- Use the work model file rather than the Work class in the service.
+- Handle different casing in URLs.
+- Work out how to best build the Skillset filter.
+- Complete Work model.
+	- Handle X number of screenshots (like Skillset categories).
+- Automatically redirect work to the first item. - Hardcoded.
+- Sorted Skillset table.
+- Show active li in Skillset filter.
+- Setup carousel for work.
+	- Fix Flickity bug on project change. (Trash temporary fix).
+- Add Favicon and i icons.
+- Build out Contact Form functionality
+	- Add Thank You message/page.
+- Make Work work responsively.
+- Work - get rid of unrequired views.
+	- Do I need Work List base?
+	- Do I need Work Details base?
+- Fix "Company" link in Work Details view.
+- Add active state to the select list items for the current project.
+- Fix Work Skills list columns in Work Details page.
+- Remove the pre-flickity flash from the Carousel.
+- Handle layout__secondary if there is only 1 section. E.g. work.
+- Review layout for all break points.
+- Veritcally improve spacing re aside and section.
+- Add content to 404 page.
+- Design how featured work will look.
+- Replace Skillset level number with words, like "Strong", "Learning" etc.
+- Categorise skillset data.
+	- Only display core skills onload.
+		- Move "Show All" to the bottom of the filter.
+- Make printable.
+- Skillset
+	- Add 7 remaining skills difficult to categorise.
+	- Reassess skill ranking - move some from "Strong" to intermediate.
+- Work
+	- Write all content.
+	- Vertically center the loader.
+- Featured work - Add thumbnails (logos).
+- Pick image for splash screen.
+- Overlayed readable text/logo on splash screen.
+- Work - Make screenshots for carousel (700px by 500px).
+	- Link screenshots to the pages they sit on.
+- Stop running ng2 in dev mode - Console message: Angular 2 is running in the development mode. Call enableProdMode() to enable the production mode.
+- Make sure the distillery is building properly.
+	- Fix the imagemin bug in the GulpTask file.
+- Update the Skillset H1 to display selected filter options.
+- Update the work select field to preselect the current featured project.
+- Add active state to current project in list.
+- Choose custom typography.
+- Optimise site for production.
