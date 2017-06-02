@@ -1,32 +1,24 @@
 #content .layout__secondary #work-list{
 
 	h2{
-		@media (min-width: $screen-md){
+		color:$heading-colour-md;
+
+		@media (min-width: $screen-lg){
 			display: none;
 		}
 	}
 
 	select{
-		background:$brand-7;
-		border:none;
-		color:$grey-2;
-		font-size:$size-lg;
-		outline: none!important;
-		padding:$space-md $space-sm;
+		color:$grey-20;
 
-		option{
-			background:$brand-5;
-			border:none;
-
-			&:checked,
-			&:hover{
-				background:$brand-9;		
-			}
+		@media (min-width: $screen-sm){
+			background:$grey-1;
 		}
 
 		@media (min-width: $screen-lg){
 			display:none;
 		}
+		
 	}
 
 	ul{
@@ -75,6 +67,7 @@
 	}
 
 }
-#content .layout__secondary h2{
-	color:$heading-colour-md;
+
+#content .layout__secondary.layout--alpha{
+	margin-bottom:$space-xl;
 }

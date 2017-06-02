@@ -1,8 +1,6 @@
 ~~~~~~~ To Do ~~~~~~~
 
 ~~~~ High Priority ~~~~
-- Work out where I am saving commits.
-- Sortable Skillset table.
 - Setup META tags for each of the pages.
 - Make the home page more visually interesting.
 	- Photo of me.
@@ -10,14 +8,13 @@
 	- New logo.
 	- Value statement.
 - Make the favicons brand blue.
-- Custom select field for mobile with better styling.
-	- Must still be easily usable on a phone.
-	- Select2
+	- Waiting for logo.
 - Review Skillset content.
 - Order Work and Skillset Skills by importance.
 
 
 ~~~~ Mid Priority ~~~~
+- Sortable Skillset table.
 - Tweak for SEO. No mental content/wording changes - of limited importance.
 	- Make sure it is crawlable (being a JS framework)...
 	- https://www.sitepoint.com/9-point-technical-seo-checklist-for-developers/
@@ -81,11 +78,6 @@
 - Correct color styles for headings.
 
 
-~~~~ Not Reviewed ~~~~
-
-
-
-
 
 
 
@@ -144,4 +136,7 @@
 - Update the work select field to preselect the current featured project.
 - Add active state to current project in list.
 - Choose custom typography.
-- Optimise site for production.
+- Optimise site enough for production.
+- Work out where I am saving commits.
+- Custom select field for mobile with better styling.
+	- Must still be easily usable on a phone.
