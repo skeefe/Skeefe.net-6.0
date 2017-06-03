@@ -2,44 +2,6 @@
 
 /* Colours */
 
-/*
-//// Deep Purple
-//Grey
-$grey-8: #02020D;
-$grey-7: #14141e;
-$grey-6: #29293d;
-$grey-5: #535363;
-$grey-4: #94949E;
-$grey-3: #D4D4D8;
-$grey-2: #E9E9EB;
-$grey-1: #fff;
-
-//Purple
-$purple-9:#20082b;
-$purple-8:#310c40;
-$purple-7:#4A148C;
-$purple-6:#6A1B9A;
-$purple-5:#7B1FA2;
-$purple-4:#8E24AA;
-$purple-3:#9C27B0;
-$purple-2-5:#a629bc;
-$purple-2:#be69e2;
-$purple-1:#d194eb;
-
-//Brand
-$brand-9:$purple-9;
-$brand-8:$purple-8;
-$brand-7:$purple-7;
-$brand-6:$purple-6;
-$brand-5:$purple-5;
-$brand-4:$purple-4;
-$brand-3:$purple-3;
-$brand-2-5:$purple-2-5;
-$brand-2:$purple-2;
-$brand-1:$purple-1;
-*/
-
-//// Light Blue
 //Grey
 $grey: #dedede; 
 $grey-25: darken($grey, 100%);
@@ -182,7 +144,22 @@ $link-color:$brand-3;
 $link-color-hover:$brand-1;
 
 //Web Fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Bitter);
+/* latin */
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bitter-Regular'), url(../fonts/Bitter.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 
 // Font Families
 $font-heading: 'Bitter', georgia, serif;
