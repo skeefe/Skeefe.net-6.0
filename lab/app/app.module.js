@@ -52,6 +52,9 @@ System.register(['@angular/core', '@angular/platform-browser', './app-routing.mo
                         declarations: [
                             app_component_1.AppComponent
                         ],
+                        providers: [
+                            platform_browser_1.Title
+                        ],
                         bootstrap: [
                             app_component_1.AppComponent
                         ]

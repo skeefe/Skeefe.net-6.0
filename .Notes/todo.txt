@@ -1,6 +1,7 @@
 ~~~~~~~ To Do ~~~~~~~
 
 ~~~~ High Priority ~~~~
+- Setup title tags for the pages.
 - Setup META tags for each of the pages.
 - Make the home page more visually interesting.
 	- Photo of me.

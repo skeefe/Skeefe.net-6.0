@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Title } from '@angular/platform-browser';
 
 import { Work } from './work';
 import { WorkService } from './work.service';
@@ -20,12 +20,14 @@ export class WorkDetailComponent implements OnInit, AfterViewInit {
 		private route: ActivatedRoute,
 		private router: Router,
 		private service: WorkService,
-		private sanitized: DomSanitizer
+		private sanitized: DomSanitizer,
+		private title: Title
 	) { }
 
 	ngOnInit() {
 		this.route.data.forEach((data: { work: Work }) => { //Doesn't need to be a loop.
 			this.work = data.work;
+			this.title.setTitle('Work: ' + data.work.title + ' | Skeefe.net');
 		});
 	}
 

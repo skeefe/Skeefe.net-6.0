@@ -28,16 +28,18 @@ System.register(['@angular/core', '@angular/router', '@angular/platform-browser'
             }],
         execute: function() {
             WorkDetailComponent = (function () {
-                function WorkDetailComponent(route, router, service, sanitized) {
+                function WorkDetailComponent(route, router, service, sanitized, title) {
                     this.route = route;
                     this.router = router;
                     this.service = service;
                     this.sanitized = sanitized;
+                    this.title = title;
                 }
                 WorkDetailComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     this.route.data.forEach(function (data) {
                         _this.work = data.work;
+                        _this.title.setTitle('Work: ' + data.work.title + ' | Skeefe.net');
                     });
                 };
                 WorkDetailComponent.prototype.ngAfterViewInit = function () {
@@ -48,7 +50,7 @@ System.register(['@angular/core', '@angular/router', '@angular/platform-browser'
                     core_1.Component({
                         templateUrl: './app/Work/work-detail.htm'
                     }), 
-                    __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, work_service_1.WorkService, platform_browser_1.DomSanitizer])
+                    __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, work_service_1.WorkService, platform_browser_1.DomSanitizer, platform_browser_1.Title])
                 ], WorkDetailComponent);
                 return WorkDetailComponent;
             }());

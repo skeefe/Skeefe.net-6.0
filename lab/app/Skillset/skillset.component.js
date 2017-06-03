@@ -1,4 +1,4 @@
-System.register(['@angular/core', 'rxjs/Rx', './skillset.service'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', 'rxjs/Rx', './skillset.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['@angular/core', 'rxjs/Rx', './skillset.service'], function(exp
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, skillset_service_1;
+    var core_1, platform_browser_1, skillset_service_1;
     var SkillsetComponent;
     //Check if Skill exists in cateogry
     function SkillCategorySearch(skill, list) {
@@ -26,14 +26,20 @@ System.register(['@angular/core', 'rxjs/Rx', './skillset.service'], function(exp
             function (core_1_1) {
                 core_1 = core_1_1;
             },
+            function (platform_browser_1_1) {
+                platform_browser_1 = platform_browser_1_1;
+            },
             function (_1) {},
             function (skillset_service_1_1) {
                 skillset_service_1 = skillset_service_1_1;
             }],
         execute: function() {
             SkillsetComponent = (function () {
-                function SkillsetComponent(skillsetService) {
+                function SkillsetComponent(title, skillsetService) {
+                    this.title = title;
                     this.skillsetService = skillsetService;
+                    //Sets the page title.
+                    this.title.setTitle('Skillset | Skeefe.net');
                 }
                 SkillsetComponent.prototype.ngOnInit = function () {
                     this.loadCoreSkills();
@@ -68,7 +74,7 @@ System.register(['@angular/core', 'rxjs/Rx', './skillset.service'], function(exp
                     core_1.Component({
                         templateUrl: './app/Skillset/skillset.htm'
                     }), 
-                    __metadata('design:paramtypes', [skillset_service_1.SkillsetService])
+                    __metadata('design:paramtypes', [platform_browser_1.Title, skillset_service_1.SkillsetService])
                 ], SkillsetComponent);
                 return SkillsetComponent;
             }());

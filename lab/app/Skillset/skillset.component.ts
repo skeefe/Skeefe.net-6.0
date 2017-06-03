@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
+
 import 'rxjs/Rx';
 
 import { Skill } from './skill';
@@ -12,7 +14,10 @@ import { SkillsetService } from './skillset.service';
 
 export class SkillsetComponent implements OnInit {
 
-	constructor(private skillsetService: SkillsetService) { }
+	constructor(private title: Title, private skillsetService: SkillsetService) {
+		//Sets the page title.
+    	this.title.setTitle('Skillset | Skeefe.net');
+	}
 
 	skillset: Skill[];
 
