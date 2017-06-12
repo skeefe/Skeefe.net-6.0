@@ -10,7 +10,7 @@ nav.primary{
 		display:block;
 		font-size:$size-lg;
 		line-height:$line-sm;
-		margin:0;
+		margin:0.3rem 0 0;
 		padding:$space-xxs $space-sm;
 		width:auto;
 
@@ -29,7 +29,7 @@ nav.primary{
 		height: 100%;
 		right: -200px;
 		position: fixed;
-		top: 56px;
+		top: 64px;
 		transform: translateZ(0) translateX(0);
 		transition:transform $transition-md;
 		width:200px;
@@ -61,7 +61,7 @@ nav.primary{
 				background:transparent;
 				color:$grey-1;
 				display:block;
-				font-family:$font-copy;
+				font-family:$font-heading;
 				padding:$space-md;
 				text-decoration:none;
 

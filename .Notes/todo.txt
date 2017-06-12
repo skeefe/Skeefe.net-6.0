@@ -1,16 +1,13 @@
 ~~~~~~~ To Do ~~~~~~~
 
 ~~~~ High Priority ~~~~
-- Fix custom heading font.
 - Make the home page more visually interesting.
 	- Photo of me.
 		- Add a bg image to the home page?
-	- New logo.
-	- Value statement.
+	- Value statement?
 - Review Skillset content.
 - Order Work and Skillset Skills by importance.
 - Make the favicons brand blue.
-	- Waiting for logo.
 
 
 ~~~~ Mid Priority ~~~~
@@ -142,3 +139,5 @@
 - Custom select field for mobile with better styling.
 	- Must still be easily usable on a phone.
 - Setup title tags for the pages.
+- Fix custom heading font.
+- New logo.

@@ -19,10 +19,12 @@ header.primary{
 	.logo{
 		display:block;
 		float:left;
-		width:5rem;
+		padding:$space-xxs 0;
+		width:8rem;
 
 		@media (min-width: $screen-md){
 			float:none;
+			margin:0 0 $space-md;
 			width:100%;
 		}
 

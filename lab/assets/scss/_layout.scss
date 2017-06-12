@@ -50,13 +50,9 @@
 				color:$grey-1;
 				display: inline-block;
 				font-size:$size-xl;
-				padding:$space-xl;
+				padding:$space-xl $space-xl $space-md;
 				position: relative;
 				line-height: 1.4;
-
-				@media (min-width: $screen-md){
-					font-size:$size-xxl;
-				}
 
 				svg{
 					display: block;
