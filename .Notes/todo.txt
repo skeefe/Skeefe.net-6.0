@@ -1,16 +1,6 @@
 ~~~~~~~ To Do ~~~~~~~
 
 ~~~~ High Priority ~~~~
-- Make the home page more visually interesting.
-	- Photo of me.
-		- Add a bg image to the home page?
-	- Value statement?
-- Review Skillset content.
-- Order Work and Skillset Skills by importance.
-- Make the favicons brand blue.
-
-
-~~~~ Mid Priority ~~~~
 - Sortable Skillset table.
 - Tweak for SEO. No mental content/wording changes - of limited importance.
 	- Make sure it is crawlable (being a JS framework)...
@@ -20,6 +10,13 @@
 	- Fixed where possible.
 - Work Specific 404 page?
 	- Or just fix it so it finds the main 404.
+- Make accessible:http://accessibility.voxmedia.com/#engineers
+
+
+~~~~ Mid Priority ~~~~
+- Make the home page more visually interesting.
+	- Photo of me.
+	- Value statement?
 - Animate Skillset filter.
 - Get rid of the .copy css class?
 - Refactor CSS (SASS)
@@ -38,9 +35,7 @@
 - Come up with a witty 404 error page.
 - Reasses JS.
 	- JS the active menu is straight nasty.
-- Make accessible:http://accessibility.voxmedia.com/#engineers
 - Add hero image to the about page?
-- Replace logo.
 - Improve the clarity of the project photos.
 - Reduce HTTP requests.
 - Setup META tags for each of the pages.
@@ -141,3 +136,6 @@
 - Setup title tags for the pages.
 - Fix custom heading font.
 - New logo.
+- Make the favicons brand blue.
+- Review Skillset content.
+- Order Work and Skillset Skills by importance.
