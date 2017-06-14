@@ -1,7 +1,7 @@
 [
 	{
 		"title": "HTML5",
-		"score": 7,
+		"score": 8,
 		"level": "Strong",
 		"core": true,
 		"categories":
@@ -11,7 +11,7 @@
 	},
 	{
 		"title": "CSS3",
-		"score": 7,
+		"score": 8,
 		"level": "Strong",
 		"core": true,
 		"categories":
@@ -21,7 +21,7 @@
 	},
 	{
 		"title": "SASS",
-		"score": 5,
+		"score": 6,
 		"level": "Strong",
 		"core": true,
 		"categories":
@@ -41,7 +41,7 @@
 	},
 	{
 		"title": "JavaScript",
-		"score": 6,
+		"score": 7,
 		"level": "Intermediate",
 		"core": true,
 		"categories":
@@ -51,7 +51,7 @@
 	},
 	{
 		"title": "jQuery",
-		"score": 4,
+		"score": 7,
 		"level": "Strong",
 		"core": true,
 		"categories":
@@ -61,7 +61,7 @@
 	},
 	{
 		"title": "AJAX",
-		"score": 3,
+		"score": 4,
 		"level": "Intermediate",
 		"core": true,
 		"categories":
@@ -80,8 +80,8 @@
 			]
 	},
 	{
-		"title": "C# .NET4.5 - Updates/Maintenance",
-		"score": 2,
+		"title": "C# .NET - Updates/Maintenance",
+		"score": 3,
 		"level": "Learning",
 		"core": false,
 		"categories":
@@ -130,7 +130,7 @@
 			]
 	},
 	{
-		"title": "Visusal Studio",
+		"title": "Visual Studio",
 		"score": 4,
 		"level": "Strong",
 		"core": false,
@@ -181,7 +181,7 @@
 	},
 	{
 		"title": "WordPress",
-		"score": 5,
+		"score": 6,
 		"level": "Strong",
 		"core": true,
 		"categories":
@@ -191,7 +191,7 @@
 	},
 	{
 		"title": "Sitecore",
-		"score": 4,
+		"score": 5,
 		"level": "Strong",
 		"core": true,
 		"categories":
@@ -221,8 +221,8 @@
 	},
 	{
 		"title": "Magento (Front-End)",
-		"score": 3,
-		"level": "Intermediate",
+		"score": 2,
+		"level": "Learning",
 		"core": false,
 		"categories":
 			[
@@ -263,7 +263,7 @@
 		"title": "HTML Email Development",
 		"score": 4,
 		"level": "Strong",
-		"core": true,
+		"core": false,
 		"categories":
 			[
 				{ "title": "HTML Email" }
@@ -271,9 +271,9 @@
 	},
 	{
 		"title": "ExactTarget",
-		"score": 3,
-		"level": "Intermediate",
-		"core": true,
+		"score": 4,
+		"level": "Strong",
+		"core": false,
 		"categories":
 			[
 				{ "title": "HTML Email" }
@@ -324,14 +324,14 @@
 		"title": "Web Support",
 		"score": 5,
 		"level": "Strong",
-		"core": true,
+		"core": false,
 		"categories":
 			[
 				{ "title": "General Web" }
 			]
 	},
 	{
-		"title": "Working both in a team or individually",
+		"title": "Working both in a team and individually",
 		"score": 5,
 		"level": "Strong",
 		"core": false,
@@ -342,8 +342,8 @@
 	},
 	{
 		"title": "Information Architecture",
-		"score": 4,
-		"level": "Strong",
+		"score": 3,
+		"level": "Intermediate",
 		"core": false,
 		"categories":
 			[
@@ -374,7 +374,7 @@
 		"title": "Stakeholder Management",
 		"score": 4,
 		"level": "Strong",
-		"core": true,
+		"core": false,
 		"categories":
 			[
 				{ "title": "General Web" }
@@ -384,7 +384,7 @@
 		"title": "Quality Control",
 		"score": 4,
 		"level": "Strong",
-		"core": true,
+		"core": false,
 		"categories":
 			[
 				{ "title": "General Web" }
@@ -407,7 +407,7 @@
 		"core": false,
 		"categories":
 			[
-				{ "title": "General Web" }
+				{ "title": "Web System" }
 			]
 	},
 	{
@@ -421,9 +421,9 @@
 			]
 	},
 	{
-		"title": "Wire Framing - MS Visio",
-		"score": 4,
-		"level": "Strong",
+		"title": "Wire Framing",
+		"score": 3,
+		"level": "Intermediate",
 		"core": false,
 		"categories":
 			[
@@ -452,8 +452,8 @@
 	},
 	{
 		"title": "Web Design",
-		"score": 3,
-		"level": "Intermediate",
+		"score": 2,
+		"level": "Learning",
 		"core": false,
 		"categories":
 			[
@@ -461,9 +461,9 @@
 			]
 	},
 	{
-		"title": "Source Control - Git/Butbucket",
-		"score": 3,
-		"level": "Intermediate",
+		"title": "Source Control - Git/Bitbucket",
+		"score": 2,
+		"level": "Learning",
 		"core": false,
 		"categories":
 			[
@@ -484,7 +484,7 @@
 		"title": "Cross-Browser/Device Testing",
 		"score": 5,
 		"level": "Strong",
-		"core": true,
+		"core": false,
 		"categories":
 			[
 				{ "title": "General Web" }
@@ -574,7 +574,7 @@
 		"title": "JIRA",
 		"score": 4,
 		"level": "Strong",
-		"core": true,
+		"core": false,
 		"categories":
 			[
 				{ "title": "Web Systems" }
