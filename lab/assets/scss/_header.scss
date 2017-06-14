@@ -11,6 +11,7 @@ header.primary{
 		padding:$space-lg $space-md;
 		width:$col3;
 	}
+	
 	@media (min-width: $screen-lg){
 		padding:$space-lg;
 		width:$col2;
@@ -24,18 +25,16 @@ header.primary{
 
 		@media (min-width: $screen-md){
 			float:none;
-			margin:0 0 $space-md;
+			margin:0 0 $space-xs;
+			padding:$space-xxs 0;
+			padding:$space-xxs $space-md 0;
 			width:100%;
 		}
 
-		path{
-			fill:$grey-3;
-			transition:fill $transition-md;
+		@media (min-width: $screen-lg){
+			padding:$space-sm $space-lg 0;
 		}
 
-		&:hover path{
-			fill:$grey-1;
-		}
 	}
 
 }
