@@ -37,7 +37,7 @@
 	li.inner{
 
 		@media (min-width: $screen-md){
-			background:$grey-8;
+			background:$brand-6;
 			border:none;
 			box-shadow:$shadow-md;
 			cursor:pointer;
@@ -47,7 +47,7 @@
 			transition:background $transition-lg;
 
 			&:hover{
-				background:$brand-6;
+				background:$brand-5;
 			}
 
 			&.active{

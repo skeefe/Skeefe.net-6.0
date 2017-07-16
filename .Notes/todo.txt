@@ -1,5 +1,16 @@
 ~~~~~~~ To Do ~~~~~~~
 
+~~~~ Low Hangers ~~~~
+- Come up with a witty 404 error page.
+- Tidy up SASS/JS comments.
+- Use Skillset style table to display Work Details skills?
+- Work Specific 404 page?
+	- Or just fix it so it finds the main 404.
+	- Or just redirect to first work project.
+- Move OrderBy pipe so it can be used globally (including in work details).
+- Make bullet points look better.
+
+
 ~~~~ High Priority ~~~~
 - Sortable Skillset table.
 - Tweak for SEO. No mental content/wording changes - of limited importance.
@@ -8,8 +19,6 @@
 	- https://www.sitepoint.com/on-page-seo-checklist-for-the-optimized-page/
 - Make the project list scroll seperately.
 	- Fixed where possible.
-- Work Specific 404 page?
-	- Or just fix it so it finds the main 404.
 - Make accessible:http://accessibility.voxmedia.com/#engineers
 
 
@@ -32,12 +41,12 @@
 	- Reduce selectors
 - Find the best place to place the mobile nav JS.
 - Find better solution to the timeout to show the active current project.
-- Come up with a witty 404 error page.
 - Reasses JS.
 	- JS the active menu is straight nasty.
 - Add hero image to the about page?
 - Improve the clarity of the project photos.
 - Reduce HTTP requests.
+	- Google score.
 - Setup META tags for each of the pages.
 
 
@@ -46,16 +55,12 @@
 - Add blog.
 - Find better solution to the timeout on the Work Carousel.
 	- ForEach callback...
-- Tidy up SASS/JS comments.
 - Learn about Angular2!
 - Move skillset filter functions to the service?
 - Generate JSON data feeds from a DB.
 	- Build an interface to insert/update/delete data.
-- Use Skillset style table to display Work Details skills?
-- Restyle loading animation.
+- Restyle loading animation?
 - Make Featured work module pick up projects based on a property in the feed.
-- Move OrderBy pipe so it can be used globally (including in work details).
-- Make bullet points look better.
 - Replace formspree contact form functionality.
 
 
@@ -139,3 +144,5 @@
 - Make the favicons brand blue.
 - Review Skillset content.
 - Order Work and Skillset Skills by importance.
+- Add Google Tag Manager.
+- Add Google Analytics

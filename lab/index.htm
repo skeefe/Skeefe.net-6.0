@@ -5,8 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Simon Keefe's Front-End Web Development Portfolio | Skeefe.net</title>
 	<meta name="description" content="Front-End Web Development Portfolio of Simon Keefe.">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicon/apple-touch-icon-144x144.png" />
@@ -23,13 +21,20 @@
 	<link rel="stylesheet" href="/assets/css/skeefe.css">
 	<!--endbuild-->
 
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WHRPZ4G');</script>
+
 	<!-- Vendor -->
 	<script src="/assets/vendor/core-js/client/shim.min.js"></script>
-	<script src="/assets/vendor/zone.js/dist/zone.min.js"></script>
-	<script src="/assets/vendor/reflect-metadata/Reflect.js"></script>
+	<script src="/assets/vendor/zone.js/dist/zone.min.js" async></script>
+	<script src="/assets/vendor/reflect-metadata/Reflect.js" async></script>
 	<script src="/assets/vendor/systemjs/dist/system.src.js"></script>
 	<script src="/assets/vendor/jquery-3.1.1.min.js"></script>
-	<script src="/assets/vendor/flickity/dist/flickity.pkgd.min.js"></script>
+	<script src="/assets/vendor/flickity/dist/flickity.pkgd.min.js" async></script>
 
 	<!-- Configure Site -->
 	<base href="/">
@@ -37,6 +42,8 @@
 </head>
 
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHRPZ4G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<header class="primary">
 		<a class="logo" href="/">
@@ -107,7 +114,7 @@
 	</footer>
 
 	<!-- Scripts -->
-	<!--build:js /assets/scripts/skeefe.min.js-->
+	<!--build:js /assets/scripts/skeefe.min.js async -->
 	<script src="/assets/scripts/skeefe.js"></script>
 	<!--endbuild-->
 

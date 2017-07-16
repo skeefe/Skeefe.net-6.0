@@ -157,7 +157,7 @@ gulp.task('build', function (callback) {
 		'clean', // Deletes the distillery.
 		'markup', // Replaces Markup.
 		'useref', // Optimises and replaces CSS and vendor JS.
-		'vendor', // Optimises and replaces Vendor JS.
+		'vendor', // Optimises and replaces Vendor JS. NOTE: Slows the build process signifincantly.
 		'app', // Optimises and replaces app JS.
 		'images', // Optimises and replaces Images.
 		'fonts', // Replaces Fonts.
